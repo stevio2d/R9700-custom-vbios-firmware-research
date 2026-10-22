@@ -1,0 +1,4 @@
+command 1/4: GDN NW16 versus stock NW8: output, state, alias replay and timing
+command 2/4: GDN stock-fallback smoke: N2 H4 Hg2
+command 3/4: Four-rank exact collectives: geometry, oracle, repeated and changed-input replay
+command 4/4: Four-rank exact collectives: geometry, oracle, repeated and changed-input replay

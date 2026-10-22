@@ -1,0 +1,8 @@
+{
+  "executable": "EXTERNAL_WORKTREE/.venv/bin/python",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numpy": "2.5.4",
+  "numpy_path": "EXTERNAL_WORKTREE/.venv/lib/python3.12/site-packages/numpy/__init__.py",
+  "betterbench_runner": "EXTERNAL_WORKTREE/BetterBench/betterbench/runner.py",
+  "betterbench_client": "EXTERNAL_WORKTREE/BetterBench/betterbench/client.py"
+}

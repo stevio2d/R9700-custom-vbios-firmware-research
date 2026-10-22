@@ -1,0 +1,28 @@
+command 1/28: GDN NW16 versus stock NW8: output, state, alias replay and timing
+command 2/28: MoE M=4 regular=512 rank=0
+command 3/28: MoE M=4 regular=512 rank=1
+command 4/28: MoE M=4 regular=512 rank=2
+command 5/28: MoE M=4 regular=512 rank=3
+command 6/28: MoE M=4 regular=510 rank=0
+command 7/28: MoE M=4 regular=510 rank=1
+command 8/28: MoE M=4 regular=510 rank=2
+command 9/28: MoE M=4 regular=510 rank=3
+command 10/28: MoE M=4 regular=508 rank=0
+command 11/28: MoE M=4 regular=508 rank=1
+command 12/28: MoE M=4 regular=508 rank=2
+command 13/28: MoE M=4 regular=508 rank=3
+command 14/28: MoE M=1 regular=512 rank=0
+command 15/28: MoE M=8 regular=512 rank=0
+command 16/28: MoE M=20 regular=512 rank=0
+command 17/28: MoE M=32 regular=512 rank=0
+command 18/28: MoE M=48 regular=512 rank=0
+command 19/28: MoE M=200 regular=512 rank=0
+command 20/28: MoE M=512 regular=512 rank=0
+command 21/28: MoE M=2048 regular=512 rank=0
+command 22/28: MoE M=2048 regular=510 rank=0
+command 23/28: MoE M=2048 regular=508 rank=0
+command 24/28: MoE M=65 regular=510 rank=0
+command 25/28: MoE M=65 regular=510 rank=1
+command 26/28: MoE M=65 regular=510 rank=2
+command 27/28: MoE M=65 regular=510 rank=3
+command 28/28: Four-rank exact collectives: geometry, oracle, repeated and changed-input replay

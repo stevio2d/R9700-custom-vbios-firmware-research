@@ -1,0 +1,10 @@
+{
+  "same_arguments": true,
+  "same_driver_and_boot": true,
+  "same_executable": true,
+  "same_libraries": true,
+  "same_model_stat": true,
+  "same_probe_usage": true,
+  "same_six_response_texts": true,
+  "version_1.6.0": true
+}

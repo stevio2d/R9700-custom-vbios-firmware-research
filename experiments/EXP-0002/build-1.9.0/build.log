@@ -1,0 +1,1228 @@
+[0/2] Re-checking globbed directories...
+[1/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/unicode.cpp.o
+[2/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/src/unicode-data.cpp.o
+[3/742] Building CXX object core/CMakeFiles/rad_core.dir/device/aql_code.cpp.o
+[4/742] Building CXX object core/CMakeFiles/rad_core.dir/device/directio.cpp.o
+[5/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/shim/llama_shim.cpp.o
+[6/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/jinja/string.cpp.o
+[7/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/jinja/lexer.cpp.o
+[8/742] Building CXX object core/CMakeFiles/rad_core.dir/device/hip.cpp.o
+[9/742] Building CXX object core/CMakeFiles/rad_core.dir/util/rad_util.cpp.o
+[10/742] Building CXX object core/CMakeFiles/rad_core.dir/device/dispatch.cpp.o
+[11/742] Building CXX object core/CMakeFiles/rad_core.dir/util/stallwatch.cpp.o
+[12/742] Building CXX object core/CMakeFiles/rad_core.dir/plugin/bands.cpp.o
+[13/742] Building CXX object core/CMakeFiles/rad_core.dir/device/host.cpp.o
+[14/742] Building CXX object core/CMakeFiles/rad_core.dir/plugin/schema.cpp.o
+[15/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/jinja/parser.cpp.o
+[16/742] Building CXX object core/CMakeFiles/rad_core.dir/build/rad_bufplan.cpp.o
+[17/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/jinja/runtime.cpp.o
+[18/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/arena.cpp.o
+[19/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/regex-partial.cpp.o
+[20/742] Building CXX object core/CMakeFiles/rad_core.dir/plugin/select.cpp.o
+[21/742] Building CXX object core/CMakeFiles/rad_core.dir/plugin/loader.cpp.o
+[22/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/kvbind.cpp.o
+[23/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/wtab.cpp.o
+[24/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/chat-auto-parser-helpers.cpp.o
+[25/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/jinja/caps.cpp.o
+[26/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/rank_barrier.cpp.o
+[27/742] Building CXX object core/CMakeFiles/rad_core.dir/build/startup.cpp.o
+[28/742] Building CXX object core/CMakeFiles/rad_core.dir/mem/hostarena.cpp.o
+[29/742] Building CXX object core/CMakeFiles/rad_core.dir/device/aql.cpp.o
+[30/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/oracle.cpp.o
+[31/742] Building CXX object core/CMakeFiles/rad_core.dir/build/rad_builder.cpp.o
+[32/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/tierexec.cpp.o
+[33/742] Building CXX object core/CMakeFiles/rad_core.dir/mem/pools.cpp.o
+[34/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/issue.cpp.o
+[35/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/ctx.cpp.o
+[36/742] Building CXX object core/CMakeFiles/rad_core.dir/sched/advance.cpp.o
+[37/742] Building CXX object core/CMakeFiles/rad_core.dir/mem/vram_budget.cpp.o
+[38/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/chat-auto-parser-generator.cpp.o
+[39/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/json-partial.cpp.o
+[40/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/src/unicode.cpp.o
+[41/742] Building CXX object core/CMakeFiles/rad_core.dir/sched/draft.cpp.o
+[42/742] Building CXX object core/CMakeFiles/rad_core.dir/sched/derive.cpp.o
+[43/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/accept.cpp.o
+[44/742] Building CXX object core/CMakeFiles/rad_core.dir/runtime/xprefetch.cpp.o
+[45/742] Building CXX object core/CMakeFiles/rad_core.dir/mem/kv.cpp.o
+[46/742] Building CXX object core/CMakeFiles/rad_core.dir/sched/geometry.cpp.o
+[47/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/chat-peg-parser.cpp.o
+[48/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/jinja/value.cpp.o
+[49/742] Building CXX object core/CMakeFiles/rad_core.dir/mem/kvtier.cpp.o
+[50/742] Building CXX object core/CMakeFiles/rad_core.dir/build/rad_graph.cpp.o
+[51/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/word_scan.cpp.o
+[52/742] Building CXX object core/CMakeFiles/rad_core.dir/mem/prefix.cpp.o
+[53/742] Building CXX object core/CMakeFiles/rad_core.dir/place/heat.cpp.o
+[54/742] Building CXX object core/CMakeFiles/rad_core.dir/place/stager.cpp.o
+[55/742] Building CXX object core/CMakeFiles/rad_core.dir/text/tokenizer_ucd.cpp.o
+[56/742] Building CXX object core/CMakeFiles/rad_core.dir/sched/batch.cpp.o
+[57/742] Building CXX object core/CMakeFiles/rad_core.dir/text/tokenizer_nfc.cpp.o
+[58/742] Building CXX object core/CMakeFiles/rad_core.dir/text/tokenizer_bpe.cpp.o
+[59/742] Building CXX object core/CMakeFiles/rad_core.dir/text/gguf.cpp.o
+[60/742] Building CXX object core/CMakeFiles/rad_core.dir/text/unicode_norm.cpp.o
+[61/742] Building CXX object core/CMakeFiles/rad_core.dir/text/unicode_norm_data.cpp.o
+[62/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/host_ref.cpp.o
+[63/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/json-schema-to-grammar.cpp.o
+[64/742] Building CXX object core/CMakeFiles/rad_core.dir/server/json_partial.cpp.o
+[65/742] Building CXX object core/CMakeFiles/rad_core.dir/place/planner.cpp.o
+[66/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/sampler.cpp.o
+[67/742] Building CXX object core/CMakeFiles/rad_core.dir/sched/scheduler.cpp.o
+[68/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/chat-diff-analyzer.cpp.o
+[69/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/grammar.cpp.o
+[70/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/gbnf.cpp.o
+[71/742] Building CXX object core/CMakeFiles/rad_core.dir/place/mover.cpp.o
+[72/742] Building CXX object core/CMakeFiles/rad_core.dir/server/metrics.cpp.o
+[73/742] Building CXX object core/CMakeFiles/rad_core.dir/text/tokenizer_regex.cpp.o
+[74/742] Building CXX object core/CMakeFiles/rad_core.dir/text/tokenizer.cpp.o
+[75/742] Building CXX object core/CMakeFiles/rad_core.dir/server/text_split.cpp.o
+[76/742] Building CXX object core/CMakeFiles/rad_core.dir/server/sink.cpp.o
+[77/742] Building CXX object core/CMakeFiles/rad_core.dir/server/liveview.cpp.o
+[78/742] Building CXX object core/CMakeFiles/rad_core.dir/sample/gbnf_mask.cpp.o
+[79/742] Building CXX object core/CMakeFiles/rad_core.dir/format/machine_key.cpp.o
+[80/742] Building CXX object core/CMakeFiles/rad_core.dir/server/dashboard.cpp.o
+[81/742] Building CXX object core/CMakeFiles/rad_core.dir/server/audio_gen.cpp.o
+[82/742] Building CXX object core/CMakeFiles/rad_core.dir/format/imatrix.cpp.o
+[83/742] Building CXX object core/CMakeFiles/rad_core.dir/text/chat.cpp.o
+[84/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/peg-parser.cpp.o
+[85/742] Building CXX object core/CMakeFiles/rad_core.dir/server/http.cpp.o
+[86/742] Building CXX object core/CMakeFiles/rad_core.dir/text/tokenizer_json.cpp.o
+[87/742] Building CXX object vendor/CMakeFiles/rad_vendor_llama.dir/llama/common/chat.cpp.o
+[88/742] Linking CXX static library vendor/librad_vendor_llama.a
+[89/742] Building CXX object core/CMakeFiles/rad_core.dir/format/quantise.cpp.o
+[90/742] Building CXX object core/CMakeFiles/rad_core.dir/text/chatparse.cpp.o
+[91/742] Building CXX object core/CMakeFiles/rad_core.dir/format/encoding.cpp.o
+[92/742] Building CXX object core/CMakeFiles/rad_core.dir/server/admin.cpp.o
+[93/742] Building CXX object core/CMakeFiles/rad_core.dir/format/safetensors.cpp.o
+[94/742] Building CXX object core/CMakeFiles/rad_core.dir/mm/media.cpp.o
+[95/742] Building CXX object core/CMakeFiles/rad_core.dir/mm/item.cpp.o
+[96/742] Building CXX object core/CMakeFiles/rad_core.dir/mm/imaging.cpp.o
+[97/742] Building CXX object core/CMakeFiles/rad_core.dir/format/share.cpp.o
+[98/742] Building CXX object core/CMakeFiles/rad_core.dir/format/table_copy.cpp.o
+[99/742] Building CXX object core/CMakeFiles/rad_core.dir/format/radfile.cpp.o
+[100/742] Building CXX object core/CMakeFiles/rad_core.dir/mm/resample.cpp.o
+[101/742] Building CXX object core/CMakeFiles/rad_core.dir/mm/mp4.cpp.o
+[102/742] Building CXX object core/CMakeFiles/rad_core.dir/format/recipe.cpp.o
+[103/742] Building CXX object vendor/CMakeFiles/rad_vendor_httplib.dir/cpp-httplib/httplib.cpp.o
+[104/742] Linking CXX static library vendor/librad_vendor_httplib.a
+[105/742] Building CXX object core/CMakeFiles/rad_core.dir/format/tunecache.cpp.o
+[106/742] Building CXX object core/CMakeFiles/rad_core.dir/server/images.cpp.o
+[107/742] Building CXX object core/CMakeFiles/rad_core.dir/server/speech.cpp.o
+[108/742] Building CXX object core/CMakeFiles/rad_core.dir/lora/slots.cpp.o
+[109/742] Building CXX object core/CMakeFiles/rad_core.dir/diag/checks.cpp.o
+[110/742] Building CXX object core/CMakeFiles/rad_core.dir/lora/declare.cpp.o
+[111/742] Building CXX object core/CMakeFiles/rad_core.dir/server/systemone.cpp.o
+[112/742] Building CXX object core/CMakeFiles/rad_core.dir/diag/sysinfo.cpp.o
+[113/742] Building CXX object core/CMakeFiles/rad_core.dir/text/chatfmt.cpp.o
+[114/742] Building CXX object core/CMakeFiles/rad_core.dir/mm/processor.cpp.o
+[115/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_hostmem.cpp.o
+[116/742] Building CXX object core/CMakeFiles/rad_core.dir/gen/gen.cpp.o
+[117/742] Building CXX object core/CMakeFiles/rad_core.dir/server/speech_stream.cpp.o
+[118/742] Building CXX object core/CMakeFiles/rad_core.dir/server/realtime.cpp.o
+[119/742] Building CXX object core/CMakeFiles/rad_core.dir/gen/driver.cpp.o
+[120/742] Building CXX object core/CMakeFiles/rad_core.dir/gen/audio_driver.cpp.o
+[121/742] Building CXX object core/CMakeFiles/rad_core.dir/server/videos.cpp.o
+[122/742] Building CXX object core/CMakeFiles/rad_core.dir/gen/video_driver.cpp.o
+[123/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_base.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+1 warning generated.
+[124/742] Building CXX object core/CMakeFiles/rad_core.dir/hf_model.cpp.o
+[125/742] Linking CXX shared module radiance_home/testkernels/radtest_base.so
+[126/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_over.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+16 warnings generated.
+[127/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_conflict.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+18 warnings generated.
+[128/742] Linking CXX shared module radiance_home/testkernels/radtest_over.so
+[129/742] Linking CXX shared module radiance_home/testkernels/bad/radtest_conflict.so
+[130/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_badabi.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+18 warnings generated.
+[131/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_arch.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:108:29: warning: unused variable 'kOpdGemm' [-Wunused-const-variable]
+  108 | static const RadOperandSpec kOpdGemm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+20 warnings generated.
+[132/742] Linking CXX shared module radiance_home/testkernels/bad/radtest_badabi.so
+[133/742] Building CXX object core/CMakeFiles/rad_core.dir/diag/report.cpp.o
+[134/742] Linking CXX shared module radiance_home/testarch/radtest_arch.so
+[135/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_arch2.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:108:29: warning: unused variable 'kOpdGemm' [-Wunused-const-variable]
+  108 | static const RadOperandSpec kOpdGemm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+20 warnings generated.
+[136/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_draft.cpp.o
+[137/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_ord_a.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+1 warning generated.
+[138/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_ord_b.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+1 warning generated.
+[139/742] Linking CXX shared module radiance_home/testarch/radtest_arch2.so
+[140/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_gen.cpp.o
+[141/742] Linking CXX shared module radiance_home/testkernels/order/radtest_ord_b.so
+[142/742] Linking CXX shared module radiance_home/testkernels/order/radtest_ord_a.so
+[143/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_diag.cpp.o
+[144/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_badtune_default.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+18 warnings generated.
+[145/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_badtune_twice.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+18 warnings generated.
+[146/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_decline.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+18 warnings generated.
+[147/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_archq_plain.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:108:29: warning: unused variable 'kOpdGemm' [-Wunused-const-variable]
+  108 | static const RadOperandSpec kOpdGemm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+20 warnings generated.
+[148/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_extra.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+15 warnings generated.
+[149/742] Linking CXX shared module radiance_home/testkernels/bad/radtest_badtune_twice.so
+[150/742] Linking CXX shared module radiance_home/testkernels/bad/radtest_badtune_default.so
+[151/742] Linking CXX shared module radiance_home/testkernels/decline/radtest_decline.so
+[152/742] Linking CXX shared module radiance_home/testarchq/radtest_archq_plain.so
+[153/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_archq_fp8.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:108:29: warning: unused variable 'kOpdGemm' [-Wunused-const-variable]
+  108 | static const RadOperandSpec kOpdGemm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+20 warnings generated.
+[154/742] Linking CXX shared module radiance_home/testkernels/extra/radtest_extra.so
+[155/742] Linking CXX shared module radiance_home/testarchq/radtest_archq_fp8.so
+[156/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_archq_w4.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:108:29: warning: unused variable 'kOpdGemm' [-Wunused-const-variable]
+  108 | static const RadOperandSpec kOpdGemm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+20 warnings generated.
+[157/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_archq_w8.dir/testplugin.cc.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:108:29: warning: unused variable 'kOpdGemm' [-Wunused-const-variable]
+  108 | static const RadOperandSpec kOpdGemm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:111:29: warning: unused variable 'kOpdNorm' [-Wunused-const-variable]
+  111 | static const RadOperandSpec kOpdNorm[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:114:29: warning: unused variable 'kOpdAttn' [-Wunused-const-variable]
+  114 | static const RadOperandSpec kOpdAttn[] = {
+      |                             ^~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:121:29: warning: unused variable 'kOpdMoe' [-Wunused-const-variable]
+  121 | static const RadOperandSpec kOpdMoe[] = {
+      |                             ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:132:27: warning: unused variable 'kPGemm' [-Wunused-const-variable]
+  132 | static const RadParamSpec kPGemm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:138:27: warning: unused variable 'kPNorm' [-Wunused-const-variable]
+  138 | static const RadParamSpec kPNorm[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:146:27: warning: unused variable 'kPTie' [-Wunused-const-variable]
+  146 | static const RadParamSpec kPTie[] = {
+      |                           ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:150:27: warning: unused variable 'kPAttn' [-Wunused-const-variable]
+  150 | static const RadParamSpec kPAttn[] = {
+      |                           ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:166:27: warning: unused variable 'kPGemmWrong' [-Wunused-const-variable]
+  166 | static const RadParamSpec kPGemmWrong[] = {
+      |                           ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:174:28: warning: unused variable 'kCGemmM16' [-Wunused-const-variable]
+  174 | static const RadConstraint kCGemmM16[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:177:28: warning: unused variable 'kCGemmM64' [-Wunused-const-variable]
+  177 | static const RadConstraint kCGemmM64[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:180:28: warning: unused variable 'kCNorm4096' [-Wunused-const-variable]
+  180 | static const RadConstraint kCNorm4096[] = {
+      |                            ^~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:183:28: warning: unused variable 'kCTie' [-Wunused-const-variable]
+  183 | static const RadConstraint kCTie[] = {
+      |                            ^~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:187:28: warning: unused variable 'kCPeer' [-Wunused-const-variable]
+  187 | static const RadConstraint kCPeer[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:193:28: warning: unused variable 'kCAttn' [-Wunused-const-variable]
+  193 | static const RadConstraint kCAttn[] = {
+      |                            ^~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:201:28: warning: unused variable 'kCAttnAny' [-Wunused-const-variable]
+  201 | static const RadConstraint kCAttnAny[] = {
+      |                            ^~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:204:28: warning: unused variable 'kCSkinnyM64' [-Wunused-const-variable]
+  204 | static const RadConstraint kCSkinnyM64[] = { RAD_CLE("M", 64) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:205:28: warning: unused variable 'kCSkinnyBig' [-Wunused-const-variable]
+  205 | static const RadConstraint kCSkinnyBig[] = { RAD_CGE("M", 4096) };
+      |                            ^~~~~~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:206:28: warning: unused variable 'kCEqM32' [-Wunused-const-variable]
+  206 | static const RadConstraint kCEqM32[]     = { RAD_CEQ("M", 32) };
+      |                            ^~~~~~~
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/core/plugin/testplugin/testplugin.cc:213:25: warning: unused variable 'kTGemmM64' [-Wunused-const-variable]
+  213 | static const RadTunable kTGemmM64[] = {
+      |                         ^~~~~~~~~
+20 warnings generated.
+[158/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_rows.dir/tierrows.cc.o
+[159/742] Linking CXX shared module radiance_home/testarchq/radtest_archq_w4.so
+[160/742] Linking CXX shared module radiance_home/testarchq/radtest_archq_w8.so
+[161/742] Linking CXX shared module radiance_home/testrows/radtest_rows.so
+[162/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_quant.dir/testquant.cc.o
+[163/742] Linking CXX shared module radiance_home/testquant/radtest_quant.so
+[164/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_ok.dir/kbmutant.cc.o
+[165/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_scale.dir/kbmutant.cc.o
+[166/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_ok.so
+[167/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_scale.so
+[168/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_nan.dir/kbmutant.cc.o
+[169/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_overrun.dir/kbmutant.cc.o
+[170/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_half.dir/kbmutant.cc.o
+[171/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_nan.so
+[172/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_half.so
+[173/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_overrun.so
+[174/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_kld.cpp.o
+[175/742] Building CXX object core/plugin/testplugin/CMakeFiles/radtest_kbarch.dir/kbarch.cc.o
+[176/742] Linking CXX shared module radiance_home/testarch/kbench/radtest_kbarch.so
+[177/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_refuse.dir/kbmutant.cc.o
+[178/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_mm.cpp.o
+[179/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_refuse.so
+[180/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_shape.dir/kbmutant.cc.o
+[181/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_argmax.dir/kbmutant.cc.o
+[182/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_shape.so
+[183/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_argmax.so
+[184/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_inwrite.dir/kbmutant.cc.o
+[185/742] Building CXX object core/plugin/testplugin/CMakeFiles/kbm_enc.dir/kbmutant.cc.o
+[186/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_inwrite.so
+[187/742] Linking CXX shared module radiance_home/testkernels/kbmut/kbm_enc.so
+[188/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_probe.cpp.o
+[189/742] Building CXX object core/CMakeFiles/rad_core.dir/format/checkpoint.cpp.o
+[190/742] Building CXX object libref/CMakeFiles/libref.dir/ref_dsa.cpp.o
+[191/742] Building CXX object libref/CMakeFiles/libref.dir/ref_glm.cpp.o
+[192/742] Building CXX object core/CMakeFiles/radiance.dir/main.cpp.o
+[193/742] Building CXX object core/CMakeFiles/rad_core.dir/gen_config.cpp.o
+[194/742] Building CXX object core/CMakeFiles/rad_core.dir/config.cpp.o
+[195/742] Building CXX object libref/CMakeFiles/libref.dir/ref_kda.cpp.o
+[196/742] Building CXX object libref/CMakeFiles/libref.dir/ref_lora.cpp.o
+[197/742] Building CXX object libref/CMakeFiles/libref.dir/ref_hc.cpp.o
+[198/742] Building CXX object libref/CMakeFiles/libref.dir/ref_collective.cpp.o
+[199/742] Building CXX object libref/CMakeFiles/libref.dir/ref_gdn.cpp.o
+[200/742] Building CXX object libref/CMakeFiles/libref.dir/ref_mla.cpp.o
+[201/742] Building CXX object libref/CMakeFiles/libref.dir/ref_mhc.cpp.o
+[202/742] Building CXX object libref/CMakeFiles/libref.dir/ref_audio.cpp.o
+[203/742] Building CXX object libref/CMakeFiles/libref.dir/ref_elementwise.cpp.o
+[204/742] Building CXX object libref/CMakeFiles/libref.dir/ref_attn.cpp.o
+[205/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_lora.cpp.o
+[206/742] Building CXX object core/CMakeFiles/rad_core.dir/server/server.cpp.o
+[207/742] Building CXX object libref/CMakeFiles/libref.dir/ref_ngram.cpp.o
+[208/742] Building CXX object libref/CMakeFiles/libref.dir/ref_gen.cpp.o
+[209/742] Building CXX object libref/CMakeFiles/libref.dir/ref_ple.cpp.o
+[210/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_ggml_tables.cpp.o
+[211/742] Building CXX object libref/CMakeFiles/libref.dir/ref_ltx.cpp.o
+[212/742] Building CXX object libref/CMakeFiles/libref.dir/ref_registry.cpp.o
+[213/742] Building CXX object libref/CMakeFiles/libref.dir/ref_qsa.cpp.o
+[214/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_autoround.cpp.o
+[215/742] Building CXX object libref/CMakeFiles/libref.dir/ref_vsa.cpp.o
+[216/742] Building CXX object libref/CMakeFiles/libref.dir/ref_sample.cpp.o
+[217/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_ggml.cpp.o
+[218/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_awq.cpp.o
+[219/742] Building CXX object libref/CMakeFiles/libref.dir/ref_quant.cpp.o
+[220/742] Building CXX object libref/CMakeFiles/libref.dir/ref_video.cpp.o
+[221/742] Building CXX object core/CMakeFiles/rad_core.dir/server/oai.cpp.o
+[222/742] Building CXX object core/CMakeFiles/rad_core.dir/kld.cpp.o
+[223/742] Building CXX object libr4d/CMakeFiles/libr4d.dir/r4d_fp8_layout.cpp.o
+[224/742] Building CXX object libref/CMakeFiles/libref.dir/ref_shapes.cpp.o
+[225/742] Building CXX object libr4d/CMakeFiles/libr4d.dir/r4d_fuse.cpp.o
+[226/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_gptq.cpp.o
+[227/742] Building CXX object libr4d/CMakeFiles/libr4d.dir/r4d_rows.cpp.o
+[228/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_hess.cpp.o
+[229/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_registry.cpp.o
+[230/742] Building CXX object core/CMakeFiles/rad_core.dir/lora/lora.cpp.o
+[231/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_grid.cpp.o
+[232/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_paro.cpp.o
+[233/742] Building CXX object libr4d/CMakeFiles/libr4d.dir/r4d_layout.cpp.o
+[234/742] Building CXX object libref/CMakeFiles/libref.dir/ref_moe.cpp.o
+[235/742] Building CXX object core/CMakeFiles/rad_core.dir/engine_bringup.cpp.o
+[236/742] Building CXX object libr4d/CMakeFiles/libr4d.dir/r4d_shapes.cpp.o
+[237/742] Building CXX object libquant/CMakeFiles/libquant.dir/lq_ggml_port.cpp.o
+[238/742] Linking CXX shared module radiance_home/quantizers/libquant.so
+[239/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_vit_h72_bf16.hip.o
+[240/742] Building CXX object libref/CMakeFiles/libref.dir/ref_gemm.cpp.o
+[241/742] Linking CXX shared module radiance_home/kernels/libref.so
+[242/742] Building CXX object core/CMakeFiles/rad_core.dir/engine.cpp.o
+[243/742] Building HIP object core/CMakeFiles/rad_core.dir/runtime/wtab.hip.o
+[244/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h128_gqa4.hip.o
+[245/742] Building HIP object core/CMakeFiles/rad_core.dir/device/aql_blit.hip.o
+[246/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h128_gqa2w.hip.o
+[247/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_dense_bf16.hip.o
+[248/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_video.hip.o
+[249/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h128_gqa2.hip.o
+[250/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h256_gqa2.hip.o
+[251/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ltx.hip.o
+[252/742] Building HIP object core/CMakeFiles/rad_core.dir/sched/advance.hip.o
+[253/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_gen.hip.o
+[254/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gdn_gated_rmsnorm_h128_bf16.hip.o
+[255/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h256_gqa4.hip.o
+[256/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gdn_conv_w4_h128_bf16.hip.o
+[257/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gdn_kkt_solve_k128_c64_bf16.hip.o
+[258/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_vsa.hip.o
+[259/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip.o
+[260/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gen.hip.o
+[261/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h256_gqa6.hip.o
+[262/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_dsa.hip.o
+[263/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_audio.hip.o
+[264/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_kda.hip.o
+[265/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_upscaler.hip.o
+[266/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_gqa8.hip.o
+[267/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ngram_ids.hip.o
+[268/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_mhc.hip.o
+[269/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ple_gate_bf16.hip.o
+[270/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_f32_nt_bias.hip.o
+[271/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_encoder_bf16.hip.o
+[272/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_gather_2rank.hip.o
+[273/742] Building HIP object core/CMakeFiles/rad_core.dir/runtime/xprefetch.hip.o
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+ld.lld: warning: <unknown>:0:0: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering
+[274/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h256_gqa12.hip.o
+[275/742] Linking HIP static library core/librad_core.a
+[276/742] Linking HIP executable bin/radiance
+[277/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ple_conv_bf16.hip.o
+[278/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_fp8_f32scale.hip.o
+[279/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_h256_gqa6_bs4.hip.o
+[280/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_glm.hip.o
+[281/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_gather_Nrank.hip.o
+[282/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_entry.hip.o
+[283/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_moe_mxfp4.hip.o
+ld.lld: warning: <unknown>:0:0: failed to meet occupancy target given by 'amdgpu-waves-per-eu' in '_ZN12_GLOBAL__N_120moe_mxfp4_p64_kernelILi32ELi64ELi128ELi4ELb1EEEvPKhPKfPKvS6_S6_S6_PKiS8_PtNS_6MxMetaE': desired occupancy was 14, final occupancy is 12
+[284/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_oneshot_2rank_exact.hip.o
+[285/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_bf16_nt_m16.hip.o
+[286/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_bf16_nt_m64.hip.o
+[287/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_bf16_nt_tiled.hip.o
+[288/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_oneshot_2rank_wht6.hip.o
+[289/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_wpa8i8_tiled.hip.o
+[290/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_twoshot_Nrank_ti8.hip.o
+[291/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_oneshot_Nrank_exact.hip.o
+[292/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_givens_dense.hip.o
+[293/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_vit_bf16.hip.o
+[294/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w4a16_nt_m64.hip.o
+[295/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_mxfp4a8_tiled.hip.o
+[296/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_twoshot_Nrank_exact.hip.o
+[297/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_quant_act_fp8.hip.o
+[298/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gram_accum_fp8.hip.o
+[299/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_givens_rotate.hip.o
+[300/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w2a8_nt.hip.o
+[301/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w8a16_nt_m64.hip.o
+[302/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w8a8_nt_m64.hip.o
+[303/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w8a8_tiled.hip.o
+[304/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w4a8_prefill.hip.o
+[305/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qsa_block_key_bf16.hip.o
+[306/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qsa_tail_store_bf16.hip.o
+[307/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_mla.hip.o
+[308/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w4a8_tiled.hip.o
+[309/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w5a16_nt_m64.hip.o
+[310/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qsa_work_bf16.hip.o
+[311/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_sample_chain_f32.hip.o
+[312/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_quant_act_i8.hip.o
+[313/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_mxfp4a8_nt_m64.hip.o
+[314/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qsa_select_bf16.hip.o
+[315/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_sample_stages_f32.hip.o
+[316/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gelu_mul_quant_i8.hip.o
+[317/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_fp8a16_nt_m1.hip.o
+[318/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_had_quant_act_i8.hip.o
+[319/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qkv_norm_rope.hip.o
+[320/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_model_bf16.hip.o
+[321/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_dequant_w4_bf16.hip.o
+[322/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gdn_gated_norm_had_quant_i8.hip.o
+[323/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_pair_argmax_f32.hip.o
+[324/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_fused_quant_fp8.hip.o
+[325/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_expert_scale_bf16.hip.o
+[326/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_support.cpp.o
+[327/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gated_had_quant_i8.hip.o
+[328/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_table.cpp.o
+[329/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_rmsnorm_had_quant_i8.hip.o
+[330/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_dflash_conv_t2_g16_bf16.hip.o
+[331/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qk_norm_rope_gate.hip.o
+[332/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_dflash_select_bf16.hip.o
+[333/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_mla.cpp.o
+[334/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_norm.cpp.o
+[335/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_dsa.cpp.o
+[336/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_hc.cpp.o
+[337/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_planes.cpp.o
+[338/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_glm.cpp.o
+[339/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_lora.cpp.o
+[340/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_gemm_tile.cpp.o
+[341/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_quant.cpp.o
+[342/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_elementwise.cpp.o
+[343/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_gemm.cpp.o
+[344/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_norm_join_bf16.hip.o
+[345/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_sample.cpp.o
+[346/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_misc.cpp.o
+[347/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_qsa.cpp.o
+[348/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_rowtopk_bf16.hip.o
+[349/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_moe.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_moe.cpp:238:19: warning: unused variable 'kCbMR' [-Wunused-const-variable]
+  238 | constexpr int64_t kCbMR = 2, kCbNR = 4;
+      |                   ^~~~~
+1 warning generated.
+[350/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_gdn.cpp.o
+[351/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_table.cpp.o
+[352/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_gen_attn.cpp.o
+[353/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_attn.cpp.o
+[354/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_rmsnorm_quant_i8.hip.o
+[355/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_support.cpp.o
+[356/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_video.cpp.o
+[357/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_ltx.cpp.o
+[358/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_vsa.cpp.o
+[359/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_gen.cpp.o
+[360/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_mla.cpp.o
+[361/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_dsa.cpp.o
+[362/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_norm.cpp.o
+[363/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_planes.cpp.o
+[364/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_hc.cpp.o
+[365/742] Building CXX object libavx/CMakeFiles/avx_lvl0.dir/avx_audio.cpp.o
+[366/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_glm.cpp.o
+[367/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_lora.cpp.o
+[368/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_gemm_tile.cpp.o
+[369/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_elementwise.cpp.o
+[370/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_w4a8_nt_m64.hip.o
+[371/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_gemm.cpp.o
+[372/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_attn_paged_window.hip.o
+[373/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_quant.cpp.o
+[374/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_misc.cpp.o
+[375/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_sample.cpp.o
+[376/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_qsa.cpp.o
+[377/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_table.cpp.o
+[378/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_gen_attn.cpp.o
+[379/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_support.cpp.o
+[380/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_moe.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_moe.cpp:238:19: warning: unused variable 'kCbMR' [-Wunused-const-variable]
+  238 | constexpr int64_t kCbMR = 2, kCbNR = 4;
+      |                   ^~~~~
+1 warning generated.
+[381/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_attn.cpp.o
+[382/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_gdn.cpp.o
+[383/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_video.cpp.o
+[384/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_ltx.cpp.o
+[385/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_norm.cpp.o
+[386/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_vsa.cpp.o
+[387/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_dsa.cpp.o
+[388/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_ar_ln_had_quant_i8.hip.o
+[389/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_hc.cpp.o
+[390/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_mla.cpp.o
+[391/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_planes.cpp.o
+[392/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_glm.cpp.o
+[393/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_gen.cpp.o
+[394/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_elementwise.cpp.o
+[395/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_lora.cpp.o
+[396/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_hc_bf16.hip.o
+[397/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_gemm_tile.cpp.o
+[398/742] Building CXX object libavx/CMakeFiles/avx_lvl1.dir/avx_audio.cpp.o
+[399/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_quant.cpp.o
+[400/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_misc.cpp.o
+[401/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_table.cpp.o
+[402/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_qsa.cpp.o
+[403/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_sample.cpp.o
+[404/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_support.cpp.o
+[405/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_gemm.cpp.o
+[406/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_gen_attn.cpp.o
+[407/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_qsa_score_bf16.hip.o
+[408/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_video.cpp.o
+[409/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_gdn.cpp.o
+[410/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_norm.cpp.o
+[411/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_attn.cpp.o
+[412/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_ltx.cpp.o
+[413/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_vsa.cpp.o
+[414/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_hc.cpp.o
+[415/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_mla.cpp.o
+[416/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_dsa.cpp.o
+[417/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_planes.cpp.o
+[418/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gemm_tile.cpp.o
+FAILED: libavx/CMakeFiles/avx_lvl3.dir/avx_gemm_tile.cpp.o 
+/opt/rocm/core-10.1/lib/llvm/bin/clang++ -DAVX_LEVEL=3 -DRAD_DEFAULT_HOME=\"EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/install/share/radiance\" -DRAD_HAVE_HIP=1 -D__HIP_PLATFORM_AMD__=1 -IEXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx -IEXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/abi -IEXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/rad_include -isystem /opt/rocm/core-10.1/include -O3 -DNDEBUG -std=gnu++20 -fPIC -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -mavx512f -mavx512bw -mavx512dq -mavx512vl -mavx2 -mfma -mf16c -ffp-contract=fast -fno-math-errno -fopenmp=libomp -MD -MT libavx/CMakeFiles/avx_lvl3.dir/avx_gemm_tile.cpp.o -MF libavx/CMakeFiles/avx_lvl3.dir/avx_gemm_tile.cpp.o.d -o libavx/CMakeFiles/avx_lvl3.dir/avx_gemm_tile.cpp.o -c EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_gemm_tile.cpp
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_gemm_tile.cpp:289:24: error: always_inline function '_pdep_u64' requires target feature 'bmi2', but would be inlined into function 'qb_codes_zp' that is compiled without support for 'bmi2'
+  289 |                 q[r] = _pdep_u64(v & 0xffffffffffull, kLow5);
+      |                        ^
+1 error generated.
+[419/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_glm.cpp.o
+[420/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_gen.cpp.o
+[421/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_moe.cpp.o
+[422/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_elementwise.cpp.o
+[423/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_lora.cpp.o
+[424/742] Building CXX object libavx/CMakeFiles/avx_lvl2.dir/avx_audio.cpp.o
+[425/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_quant.cpp.o
+[426/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_misc.cpp.o
+[427/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_sample.cpp.o
+[428/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_qsa.cpp.o
+[429/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gdn_recurrent_update_k128_v128_bf16_fp32state.hip.o
+[430/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gemm.cpp.o
+[431/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gen_attn.cpp.o
+[432/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_video.cpp.o
+[433/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gdn.cpp.o
+[434/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_attn.cpp.o
+[435/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gen.cpp.o
+[436/742] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_moe.cpp.o
+[437/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_moe.hip.o
+[438/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_mxfp4a8_decode.hip.o
+[439/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_lora_bf16.hip.o
+[440/742] Building CXX object libr4d/CMakeFiles/r4d_selftest.dir/r4d_selftest.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libr4d/r4d_selftest.cpp:20838:18: warning: lambda capture 'numel' is not used [-Wunused-lambda-capture]
+ 20838 |     auto sent = [numel](int rank, int64_t i) -> uint32_t {
+       |                  ^~~~~
+1 warning generated.
+[441/742] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_gemm_fp8a8.hip.o
+ld.lld: warning: <unknown>:0:0: failed to meet occupancy target given by 'amdgpu-waves-per-eu' in '_ZN12_GLOBAL__N_117gemm_fp8a8_kernelILb1ELj1ELj1ELj256ELb0ELb0ELb0EEEvPKhPKvS2_S4_PvS5_PjjjjjjjjjPhPfPtjjjPKtj': desired occupancy was 8, final occupancy is 7
+ld.lld: warning: <unknown>:0:0: failed to meet occupancy target given by 'amdgpu-waves-per-eu' in '_ZN12_GLOBAL__N_117gemm_fp8a8_kernelILb0ELj1ELj1ELj256ELb0ELb0ELb0EEEvPKhPKvS2_S4_PvS5_PjjjjjjjjjPhPfPtjjjPKtj': desired occupancy was 8, final occupancy is 7
+ninja: build stopped: subcommand failed.

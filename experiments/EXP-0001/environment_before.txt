@@ -1,0 +1,21 @@
+2026-10-20T09:06:16
+capture-host
+Linux 7.0.14-custom-nogpu x86_64 GNU/Linux
+Ubuntu 24.04.4 LTS
+AMDSMI Tool: 27.1.0+7da43026 | AMDSMI Library version: 27.1.0 | ROCm version: 10.1.0 | amdgpu version: N/A | ionic version: N/A
+{"status":"ok","model":"Qwen3.8-Flash-Next","in_flight":0,"queue_cap":64}
+{"object":"list","data":[{"id":"Qwen3.8-Flash-Next","object":"model","created":1792445519,"owned_by":"radiance","max_model_len":262144,"root":"EXTERNAL_WORKTREE/models/radiance/qwen3.8-next-flash-fp8-iq4r-moe.rad","capabilities":{"chat":true,"tools":true,"reasoning":true,"grammar":true,"embedding":false,"image":false,"video":false,"audio":false,"logprobs":true,"image_generation":false,"image_edit":false,"reasoning_efforts":["none","minimal","low","medium","xhigh"]}}]}
+EXTERNAL_WORKTREE/native/bin/radiance --model EXTERNAL_WORKTREE/models/radiance/qwen3.8-next-flash-fp8-iq4r-moe.rad --tp 4 --tp-wire exact --max-model-len 262144 --max-num-seqs 8 --kv-cache-dtype fp8 --num-speculative-tokens 3 --max-num-batched-tokens 2048 --checkpoint-interval 2048 --placement expert_tiered --host-pool-mib 0 --ngram-placement ram --gpu-headroom-mib 96 --chat-template-kwargs {"enable_thinking":false} --served-model-name Qwen3.8-Flash-Next --host 0.0.0.0 --port 8001 
+-1
+f72bb9011a830fd98e82ab89d01e549efa76e9c5
+ M betterbench/client.py
+ M betterbench/config.py
+ M betterbench/runner.py
+ M tests/test_concurrency_executor.py
+ A tests/test_extra_body.py
+ betterbench/client.py              |  5 +++-
+ betterbench/config.py              |  1 +
+ betterbench/runner.py              |  9 ++++--
+ tests/test_concurrency_executor.py |  4 +--
+ tests/test_extra_body.py           | 57 ++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 70 insertions(+), 6 deletions(-)

@@ -1,0 +1,6 @@
+{
+  "same_engine_sha256": true,
+  "same_argv": true,
+  "same_model_stat": true,
+  "same_other_loaded_libraries": true
+}

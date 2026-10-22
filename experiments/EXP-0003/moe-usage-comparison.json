@@ -1,0 +1,38 @@
+[
+  {
+    "repeat": 1,
+    "request_groups": 280,
+    "groups_differing_by_field": {
+      "completion_tokens": 7,
+      "answer_chars": 7
+    },
+    "completion_token_differences_by_phase": {
+      "concurrency": 7
+    }
+  },
+  {
+    "repeat": 2,
+    "request_groups": 280,
+    "groups_differing_by_field": {
+      "answer_chars": 11,
+      "completion_tokens": 10
+    },
+    "completion_token_differences_by_phase": {
+      "concurrency": 10
+    }
+  },
+  {
+    "repeat": 3,
+    "request_groups": 280,
+    "groups_differing_by_field": {
+      "completion_tokens": 14,
+      "answer_chars": 14,
+      "reasoning_chars": 1,
+      "finish_reason": 1
+    },
+    "completion_token_differences_by_phase": {
+      "single_stream": 1,
+      "concurrency": 13
+    }
+  }
+]

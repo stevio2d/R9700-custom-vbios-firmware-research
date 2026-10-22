@@ -1,0 +1,32 @@
+{
+  "method": "Compare per-request SHA256 groups using multisets of each usage field; includes warmups. Generated-token differences are descriptive, not a general quality score.",
+  "repeats": [
+    {
+      "repeat": 1,
+      "distinct_request_groups": 280,
+      "mismatched_groups_by_usage_field": {
+        "prompt_tokens": 0,
+        "cached_tokens": 0,
+        "completion_tokens": 62
+      }
+    },
+    {
+      "repeat": 2,
+      "distinct_request_groups": 280,
+      "mismatched_groups_by_usage_field": {
+        "prompt_tokens": 0,
+        "cached_tokens": 0,
+        "completion_tokens": 67
+      }
+    },
+    {
+      "repeat": 3,
+      "distinct_request_groups": 280,
+      "mismatched_groups_by_usage_field": {
+        "prompt_tokens": 0,
+        "cached_tokens": 0,
+        "completion_tokens": 63
+      }
+    }
+  ]
+}

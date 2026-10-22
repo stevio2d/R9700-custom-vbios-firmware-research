@@ -1,0 +1,35 @@
+{
+  "concurrency_levels": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "concurrency_requests": 32,
+  "extra_body": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "greedy": true,
+  "max_model_len": 262144,
+  "prefill_depths": [
+    2000,
+    8000,
+    16000,
+    32000,
+    64000
+  ],
+  "prefill_max_tokens": 16,
+  "prefill_runs": 6,
+  "prefill_warmup": 2,
+  "run_concurrency": true,
+  "run_prefill": true,
+  "run_single_stream": true,
+  "runs_per_category": 12,
+  "seed": 9700,
+  "temperature": 0.0,
+  "timeout_s": 120,
+  "unique_nonce": true,
+  "warmup": 2
+}

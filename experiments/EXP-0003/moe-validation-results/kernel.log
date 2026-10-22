@@ -1,0 +1,20 @@
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: GECC is disabled, set amdgpu_ras_enable=1 to enable GECC in next boot cycle if needed
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: RAP: optional rap ta ucode is not available
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: SMU is resuming...
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: smu driver if version = 0x0000002e, smu fw if version = 0x00000032, smu fw program = 0, smu fw version = 0x00684a00 (104.74.0)
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: SMU is resumed successfully!
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: program CP_MES_CNTL : 0x4000000
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: program CP_MES_CNTL : 0xc000000
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: [drm] DMUB hardware initialized: version=0x0A000400
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: [drm] Cannot find any crtc or sizes
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring comp_1.0.1 uses VM inv eng 7 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring comp_1.1.1 uses VM inv eng 8 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring sdma0 uses VM inv eng 9 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring sdma1 uses VM inv eng 10 on hub 0
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring vcn_unified_0 uses VM inv eng 0 on hub 8
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: ring jpeg_dec uses VM inv eng 1 on hub 8
+Oct 20 13:37:45 capture-host kernel: amdgpu 0000:06:00.0: [drm] Cannot find any crtc or sizes

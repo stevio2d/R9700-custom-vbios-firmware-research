@@ -1,0 +1,1 @@
+Oct 20 12:00:02 capture-host kernel: audit: type=1400 audit(1792458002.580:171): apparmor="DENIED" operation="open" class="file" profile="snap.firmware-updater.firmware-notifier" name="/proc/sys/vm/max_map_count" pid=78263 comm="firmware-notifi" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0

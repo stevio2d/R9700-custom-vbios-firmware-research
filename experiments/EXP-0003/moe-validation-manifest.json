@@ -1,0 +1,356 @@
+{
+  "experiment": "EXP-0003",
+  "trial": "moe-production-validation",
+  "upstream_commit": "685ec5bd858a31e90ba0431e844e3353c8c266fc",
+  "hard_deadline_seconds": 1680,
+  "commands": [
+    {
+      "label": "MoE M=4 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=512 rank=1",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "512",
+        "1",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=512 rank=2",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "512",
+        "2",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=512 rank=3",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "512",
+        "3",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=510 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "510",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=510 rank=1",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "510",
+        "1",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=510 rank=2",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "510",
+        "2",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=510 rank=3",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "510",
+        "3",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=508 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "508",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=508 rank=1",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "508",
+        "1",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=508 rank=2",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "508",
+        "2",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=4 regular=508 rank=3",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "4",
+        "508",
+        "3",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=1 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "1",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=8 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "8",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=20 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "20",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=32 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "32",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=48 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "48",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=200 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "200",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=512 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "512",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=2048 regular=512 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "2048",
+        "512",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=2048 regular=510 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "2048",
+        "510",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=2048 regular=508 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "2048",
+        "508",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=65 regular=510 rank=0",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "65",
+        "510",
+        "0",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=65 regular=510 rank=1",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "65",
+        "510",
+        "1",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=65 regular=510 rank=2",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "65",
+        "510",
+        "2",
+        "30"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "label": "MoE M=65 regular=510 rank=3",
+      "argv": [
+        "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so",
+        "--tp4-moe",
+        "65",
+        "510",
+        "3",
+        "30"
+      ],
+      "timeout_seconds": 120
+    }
+  ],
+  "inputs_sha256": {
+    "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/bin/r4d_selftest": "452bfecc47ec30df812fca4004c19cdd604e58650c47160137cba1abceb22471",
+    "EXTERNAL_WORKTREE/trials/EXP-0003/v1/build/radiance_home/kernels/libr4d.so": "747a7b771bc2aa26733da1faace341010b312749da3e8d9c15ce92dc7fefa946",
+    "EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/install/share/radiance/kernels/libr4d.so": "3a522c44f3d0ec9b98405f6385acf5dc7f1a673fd6993469e066dcb6827de8b7",
+    "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_kernel_trial.py": "9874dddfb4cfc438edd383cf22a3a630d9623daa64435af6343adfc2971854cb",
+    "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_version_trial.py": "5a9883d3fb977627057e572dee480848a147522c0fbdfcaade7744ff57e57323",
+    "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build/radiance_home/kernels/libr4d.so": "287c7296624c7b95e370af310eda5ec04f785f068530d41fa03b2a469d4cb1e3"
+  },
+  "baseline": "unchanged 1.9.0; EXP-0002 B",
+  "driver_source_provenance_qualified": false
+}

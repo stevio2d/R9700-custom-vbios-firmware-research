@@ -1,0 +1,39 @@
+[
+  {
+    "repeat": 1,
+    "request_groups": 280,
+    "groups_differing_by_field": {
+      "completion_tokens": 7,
+      "answer_chars": 7,
+      "reasoning_chars": 1,
+      "finish_reason": 1
+    },
+    "completion_token_differences_by_phase": {
+      "concurrency": 7
+    }
+  },
+  {
+    "repeat": 2,
+    "request_groups": 280,
+    "groups_differing_by_field": {
+      "answer_chars": 12,
+      "completion_tokens": 11
+    },
+    "completion_token_differences_by_phase": {
+      "concurrency": 11
+    }
+  },
+  {
+    "repeat": 3,
+    "request_groups": 280,
+    "groups_differing_by_field": {
+      "completion_tokens": 11,
+      "answer_chars": 12,
+      "reasoning_chars": 1,
+      "finish_reason": 1
+    },
+    "completion_token_differences_by_phase": {
+      "concurrency": 11
+    }
+  }
+]

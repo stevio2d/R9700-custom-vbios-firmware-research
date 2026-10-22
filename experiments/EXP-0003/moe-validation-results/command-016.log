@@ -1,0 +1,15 @@
+TP4_MOE M=48 E=512 rank=0 projection=gate_up variant=rule group=0 us=219.799995 hash=10920371582526699939 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=gate_up variant=aligned group=0 us=232.679993 hash=10920371582526699939 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=gate_up variant=uniform group=0 us=347.719997 hash=10920371582526699939 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=gate_up variant=tile_run_fk128 group=-1 us=246.999994 hash=10920371582526699939 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=gate_up variant=tile_run_fk256 group=-1 us=218.799993 hash=10920371582526699939 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=rule group=0 us=110.280000 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=aligned group=0 us=122.400001 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=uniform group=0 us=130.400002 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=tile_run_fk128 group=-1 us=119.158998 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=down_group group=1 us=117.760003 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=down_group group=2 us=109.760001 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=down_group group=4 us=110.160001 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=down_group group=8 us=112.080000 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=aligned128 group=0 us=119.080000 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass
+TP4_MOE M=48 E=512 rank=0 projection=down variant=aligned256 group=0 us=122.440003 hash=11730267334844745164 routing=7810262739709554095 oracle=pass bytes=pass

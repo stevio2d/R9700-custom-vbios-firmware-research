@@ -1,0 +1,42 @@
+{
+  "recorded_date": "2026-10-20",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "tests_run": 112,
+      "passed": 112,
+      "errors": 0,
+      "log": "host-unit-tests.log"
+    },
+    {
+      "command": "python3 tools/check_repository.py",
+      "exit_code": 0,
+      "result": "valid",
+      "log": "repository-check.log"
+    }
+  ],
+  "repository": {
+    "markdown_files": 44,
+    "local_links": 419,
+    "missing_local_links": 0,
+    "chapters": 11,
+    "chapters_linked_in_readme": 11,
+    "csv_files": 8,
+    "cards": 1,
+    "roms": 3,
+    "vendor_artifacts": 3,
+    "test_log_rows": 17,
+    "preserved_originals": 3
+  },
+  "privacy_scan": {
+    "scope": "working files and retained evidence, excluding immutable originals and ignored caches/build output",
+    "location_or_timezone_matches": 0,
+    "private_network_addresses": 0,
+    "home_directory_paths": 0
+  },
+  "historical_hardware_trials": {
+    "gpu_tests_run": true,
+    "status": "completed; see retained EXP-0003 run evidence",
+    "restoration": "original service restored and health checks passed"
+  }
+}

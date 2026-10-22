@@ -1,0 +1,1 @@
+rom_id,card_id,file_path,image_type,file_type,source,acquisition_date,acquisition_method,tool,tool_version,acquisition_details,bytes,sha256,parent_sha256,vbios_version,board_revision,read_group,read_1_matches_read_2,repeat_read_status,signature_status,experiment_id,notes

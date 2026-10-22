@@ -1,0 +1,6 @@
+-- radiance: HIP backend ON, targets gfx1201
+-- radiance: HIP Release flags '-O3 -DNDEBUG'
+-- radiance: no libavformat -- image, video and audio input will be refused
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build

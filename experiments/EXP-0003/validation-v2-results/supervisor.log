@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_kernel_trial.py", line 223, in <module>
+    main()
+  File "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_kernel_trial.py", line 200, in main
+    worker(args)
+  File "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_kernel_trial.py", line 148, in worker
+    guard()
+  File "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_kernel_trial.py", line 117, in guard
+    sensors = read_telemetry()
+              ^^^^^^^^^^^^^^^^
+  File "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_version_trial.py", line 86, in read_telemetry
+    value = int(p.read_text())
+                ^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1030, in read_text
+    return f.read()
+           ^^^^^^^^
+OSError: [Errno 16] Device or resource busy

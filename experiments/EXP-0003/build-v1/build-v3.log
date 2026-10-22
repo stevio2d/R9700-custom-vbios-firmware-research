@@ -1,0 +1,7 @@
+[0/2] Re-checking globbed directories...
+[1/2] Building CXX object libr4d/CMakeFiles/r4d_selftest.dir/r4d_selftest.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0003/v1/source/libr4d/r4d_selftest.cpp:20838:18: warning: lambda capture 'numel' is not used [-Wunused-lambda-capture]
+ 20838 |     auto sent = [numel](int rank, int64_t i) -> uint32_t {
+       |                  ^~~~~
+1 warning generated.
+[2/2] Linking CXX executable bin/r4d_selftest

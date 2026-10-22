@@ -1,0 +1,8 @@
+{
+  "boot_id": "bc8383d0-ae43-4d7b-b2c4-a4d0a912d449",
+  "installed_module_path": "/usr/lib/modules/7.0.14-custom-nogpu/kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko",
+  "installed_module_sha256": "4d20d89ed3b4dc934b378cd208be5d4aa179368e53fe9b3a14892a9d1b2965cd",
+  "kernel": "7.0.14-custom-nogpu",
+  "loaded_srcversion": "320BD36FB295F662FB7E836",
+  "module_source_provenance_qualified": false
+}

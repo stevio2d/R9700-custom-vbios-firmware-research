@@ -1,0 +1,40 @@
+{
+  "v1": {
+    "source_files_verified": 1052,
+    "prepared_sha256": {
+      "libr4d/r4d_selftest.cpp": "8089138e57b9d528b70b5062c1f84a0cb86a91f3da4e4a967f34bac693249f3b",
+      "libr4d/tp4_trials.inc": "41ad581f3a7d5f8a8c3ab424bb4eb2dac1ca6ca2fa84a61173a5e5dfd91d9c3a",
+      "libr4d/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip": "91c310f835eb92567e67fcac0e7fa8adefcda1536e572ccc08d3f36eae92abd8"
+    },
+    "build/radiance_home/kernels/libr4d.so": "747a7b771bc2aa26733da1faace341010b312749da3e8d9c15ce92dc7fefa946",
+    "build/bin/r4d_selftest": "452bfecc47ec30df812fca4004c19cdd604e58650c47160137cba1abceb22471"
+  },
+  "gdn16": {
+    "source_files_verified": 1052,
+    "prepared_sha256": {
+      "libr4d/r4d_selftest.cpp": "8089138e57b9d528b70b5062c1f84a0cb86a91f3da4e4a967f34bac693249f3b",
+      "libr4d/tp4_trials.inc": "41ad581f3a7d5f8a8c3ab424bb4eb2dac1ca6ca2fa84a61173a5e5dfd91d9c3a",
+      "libr4d/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip": "91d5a7a6a69e1b3c0f8626532877a2b9741501d5b3f1fff8c064155f9f61dc55"
+    },
+    "build/radiance_home/kernels/libr4d.so": "f23dc56f0f589ee9be4eba6b124aefa1ce0d7c84bc6a1d1f01cc5442c435af12"
+  },
+  "moe": {
+    "source_files_verified": 1052,
+    "prepared_sha256": {
+      "libr4d/r4d_selftest.cpp": "8089138e57b9d528b70b5062c1f84a0cb86a91f3da4e4a967f34bac693249f3b",
+      "libr4d/tp4_trials.inc": "41ad581f3a7d5f8a8c3ab424bb4eb2dac1ca6ca2fa84a61173a5e5dfd91d9c3a",
+      "libr4d/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip": "91c310f835eb92567e67fcac0e7fa8adefcda1536e572ccc08d3f36eae92abd8",
+      "libr4d/r4d_moe.hip": "599ca2a6e6293183b48303e15d0714439b2bca9f3c2ab99dd8ecf8cb5c89ad70"
+    },
+    "build/radiance_home/kernels/libr4d.so": "287c7296624c7b95e370af310eda5ec04f785f068530d41fa03b2a469d4cb1e3"
+  },
+  "fallback": {
+    "source_files_verified": 1052,
+    "prepared_sha256": {
+      "libr4d/r4d_selftest.cpp": "8089138e57b9d528b70b5062c1f84a0cb86a91f3da4e4a967f34bac693249f3b",
+      "libr4d/tp4_trials.inc": "2e2fdd45020ba0ab70d70a39b64114a86422385507b0d557ebfd8caaacc7a67e",
+      "libr4d/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip": "91d5a7a6a69e1b3c0f8626532877a2b9741501d5b3f1fff8c064155f9f61dc55"
+    },
+    "build/bin/r4d_selftest": "f8dba4db2de4d8a2bc3839fd77ddcebcca0966ef435a435c3820696c14678a13"
+  }
+}

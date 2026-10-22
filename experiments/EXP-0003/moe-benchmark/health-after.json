@@ -1,0 +1,6 @@
+{
+  "in_flight": 0,
+  "model": "Qwen3.8-Flash-Next",
+  "queue_cap": 64,
+  "status": "ok"
+}

@@ -1,0 +1,6 @@
+{
+  "HIP_PATH": "/opt/rocm/core-10.1",
+  "LD_LIBRARY_PATH": "/opt/rocm/core-10.1/lib/llvm/lib:/opt/rocm/core-10.1/lib",
+  "ROCM_PATH": "/opt/rocm/core-10.1",
+  "ROCR_VISIBLE_DEVICES": "GPU-REDACTED-1,GPU-REDACTED-2,GPU-REDACTED-3,GPU-REDACTED-4"
+}

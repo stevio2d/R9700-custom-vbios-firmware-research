@@ -1,0 +1,8 @@
+{
+  "completed_repeats": 3,
+  "deadline_seconds": 1320,
+  "elapsed_seconds": 1122.6379857409993,
+  "started_utc": "2026-10-20T03:09:25Z",
+  "status": "completed",
+  "version_expected": "1.9.0"
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "request": {
+      "model": "Qwen3.8-Flash-Next",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Reply with only the integer result of 17 + 25."
+        }
+      ],
+      "temperature": 0,
+      "seed": 9700,
+      "max_tokens": 128,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "response": {
+      "id": "chatcmpl-f4a9b2d8857068e7e968cead",
+      "object": "chat.completion",
+      "created": 1792459030,
+      "model": "Qwen3.8-Flash-Next",
+      "system_fingerprint": "radiance-1.6.0",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "42"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 27,
+        "completion_tokens": 3,
+        "total_tokens": 30,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 184.31947599999998,
+        "prompt_per_token_ms": 6.826647259259259,
+        "prompt_per_second": 146.48479143896873,
+        "predicted_n": 3,
+        "predicted_ms": 7.418647999999999,
+        "predicted_per_token_ms": 3.7093239999999996,
+        "predicted_per_second": 269.5909011992482,
+        "ttft_ms": 206.58705899999998,
+        "total_ms": 214.005707,
+        "draft_n": 3,
+        "draft_n_accepted": 1
+      }
+    },
+    "text": "42",
+    "text_sha256": "73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049"
+  },
+  {
+    "request": {
+      "model": "Qwen3.8-Flash-Next",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Return only a JSON object with keys \"name\" and \"count\", values \"r9700\" and 4."
+        }
+      ],
+      "temperature": 0,
+      "seed": 9700,
+      "max_tokens": 128,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "response": {
+      "id": "chatcmpl-a99496a34ddaadc28431f322",
+      "object": "chat.completion",
+      "created": 1792459031,
+      "model": "Qwen3.8-Flash-Next",
+      "system_fingerprint": "radiance-1.6.0",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"name\": \"r9700\",\n  \"count\": 4\n}"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 38,
+        "completion_tokens": 23,
+        "total_tokens": 61,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 38,
+        "prompt_ms": 29.363643,
+        "prompt_per_token_ms": 0.772727447368421,
+        "prompt_per_second": 1294.1173545802883,
+        "predicted_n": 23,
+        "predicted_ms": 70.146284,
+        "predicted_per_token_ms": 3.1884674545454543,
+        "predicted_per_second": 313.6302986484644,
+        "ttft_ms": 47.560303999999995,
+        "total_ms": 117.706588,
+        "draft_n": 18,
+        "draft_n_accepted": 16
+      }
+    },
+    "text": "{\n  \"name\": \"r9700\",\n  \"count\": 4\n}",
+    "text_sha256": "99ec95f24bf14fd85f936b33846adbb513a0de365e46fb09ac7d339a21eb1f62"
+  },
+  {
+    "request": {
+      "model": "Qwen3.8-Flash-Next",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Reply with only the Python expression that reverses a list named xs using slicing."
+        }
+      ],
+      "temperature": 0,
+      "seed": 9700,
+      "max_tokens": 128,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "response": {
+      "id": "chatcmpl-bcf923733c6c94f553e16718",
+      "object": "chat.completion",
+      "created": 1792459031,
+      "model": "Qwen3.8-Flash-Next",
+      "system_fingerprint": "radiance-1.6.0",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "xs[::-1]"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 28,
+        "completion_tokens": 5,
+        "total_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 23.90975,
+        "prompt_per_token_ms": 0.8539196428571428,
+        "prompt_per_second": 1171.0703792385953,
+        "predicted_n": 5,
+        "predicted_ms": 11.526119,
+        "predicted_per_token_ms": 2.88152975,
+        "predicted_per_second": 347.0378884687899,
+        "ttft_ms": 42.616968,
+        "total_ms": 54.143086999999994,
+        "draft_n": 3,
+        "draft_n_accepted": 3
+      }
+    },
+    "text": "xs[::-1]",
+    "text_sha256": "a13c58d81fea2f9287b432e161f828810ceefccf035f5689daf9beea0b023473"
+  },
+  {
+    "request": {
+      "model": "Qwen3.8-Flash-Next",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Sort these integers ascending and reply with only a comma-separated list: 9, 1, 5, 3."
+        }
+      ],
+      "temperature": 0,
+      "seed": 9700,
+      "max_tokens": 128,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "response": {
+      "id": "chatcmpl-e828e31d375691da864a5d2d",
+      "object": "chat.completion",
+      "created": 1792459031,
+      "model": "Qwen3.8-Flash-Next",
+      "system_fingerprint": "radiance-1.6.0",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "1, 3, 5, 9"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 37,
+        "completion_tokens": 11,
+        "total_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 37,
+        "prompt_ms": 29.278803,
+        "prompt_per_token_ms": 0.791319,
+        "prompt_per_second": 1263.7128642178438,
+        "predicted_n": 11,
+        "predicted_ms": 35.119602,
+        "predicted_per_token_ms": 3.5119602,
+        "predicted_per_second": 284.7412678537758,
+        "ttft_ms": 52.372499999999995,
+        "total_ms": 87.492102,
+        "draft_n": 9,
+        "draft_n_accepted": 7
+      }
+    },
+    "text": "1, 3, 5, 9",
+    "text_sha256": "a061e3d9cdb0d22e0c8ff7c4933472da89808c5b353c61298a419d5828e62bd4"
+  },
+  {
+    "request": {
+      "model": "Qwen3.8-Flash-Next",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Reply with only the capital city of Australia."
+        }
+      ],
+      "temperature": 0,
+      "seed": 9700,
+      "max_tokens": 128,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "response": {
+      "id": "chatcmpl-80efdfa0d2f1548415e43669",
+      "object": "chat.completion",
+      "created": 1792459031,
+      "model": "Qwen3.8-Flash-Next",
+      "system_fingerprint": "radiance-1.6.0",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Canberra"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 21,
+        "completion_tokens": 3,
+        "total_tokens": 24,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 21.911334999999998,
+        "prompt_per_token_ms": 1.0433969047619047,
+        "prompt_per_second": 958.4080568345106,
+        "predicted_n": 3,
+        "predicted_ms": 11.757817,
+        "predicted_per_token_ms": 5.8789085,
+        "predicted_per_second": 170.0996026728431,
+        "ttft_ms": 39.911426999999996,
+        "total_ms": 51.669244,
+        "draft_n": 3,
+        "draft_n_accepted": 1
+      }
+    },
+    "text": "Canberra",
+    "text_sha256": "b36f06bee2e4f5485ff63ddc504a3f130d3bd06ec15693e8318babdc06e778ee"
+  },
+  {
+    "request": {
+      "model": "Qwen3.8-Flash-Next",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Translate \"good morning\" into French. Reply with only the translation."
+        }
+      ],
+      "temperature": 0,
+      "seed": 9700,
+      "max_tokens": 128,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "response": {
+      "id": "chatcmpl-6e8d3bd6d0cd86a22e14ecbc",
+      "object": "chat.completion",
+      "created": 1792459031,
+      "model": "Qwen3.8-Flash-Next",
+      "system_fingerprint": "radiance-1.6.0",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Bonjour"
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 26,
+        "completion_tokens": 2,
+        "total_tokens": 28,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 26,
+        "prompt_ms": 23.514333,
+        "prompt_per_token_ms": 0.9043974230769231,
+        "prompt_per_second": 1105.7085905860056,
+        "predicted_n": 2,
+        "predicted_ms": 12.270774,
+        "predicted_per_token_ms": 12.270774,
+        "predicted_per_second": 81.49445177622863,
+        "ttft_ms": 52.669207,
+        "total_ms": 64.939981,
+        "draft_n": 3,
+        "draft_n_accepted": 0
+      }
+    },
+    "text": "Bonjour",
+    "text_sha256": "9172e8eec99f144f72eca9a568759580edadb2cfd154857f07e657569493bc44"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "source": "tools/check_repository.py",
+  "markdown_files": 44,
+  "local_links": 419,
+  "broken_local_links": 0,
+  "chapters": 11,
+  "chapters_linked_in_readme": 11,
+  "csv_files": 8,
+  "cards": 1,
+  "roms": 3,
+  "vendor_artifacts": 3,
+  "test_log_rows": 17,
+  "preserved_sources": 3
+}

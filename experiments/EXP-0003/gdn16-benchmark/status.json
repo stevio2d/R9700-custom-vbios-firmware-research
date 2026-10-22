@@ -1,0 +1,10 @@
+{
+  "completed_repeats": 0,
+  "deadline_seconds": 1440,
+  "elapsed_seconds": 125.58251506799934,
+  "error": "BetterBench child exited 1; see EXTERNAL_WORKTREE/trials/EXP-0003/gdn16-benchmark/repeat-1/betterbench.log",
+  "started_utc": "2026-10-20T02:41:45Z",
+  "status": "incomplete",
+  "supervisor_error": "BetterBench child exited 1; see EXTERNAL_WORKTREE/trials/EXP-0003/gdn16-benchmark/supervisor.log",
+  "version_expected": "1.9.0"
+}

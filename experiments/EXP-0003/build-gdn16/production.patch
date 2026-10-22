@@ -1,0 +1,79 @@
+--- a/libr4d/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip
++++ b/libr4d/r4d_gdn_chunk_scan_k128_v128_c64_bf16.hip
+@@ -36,12 +36,13 @@
+ #define WP  AP
+ // Waves per workgroup. The [4 token][4 v] tile grid is fixed by BT and BV, so 8 waves carry two
+ // tiles each. The kernel is at 242 VGPRs; one more live address spills.
+-#define NW    8
++// NW is a kernel template parameter: retain the stock eight-wave fallback.
+ #define NTHR (NW * 32)
+-#define NTV   2                 // n tiles per wave in the main / V' / O loops
++#define NTV (16 / NW)
+ // A wave's slice of the 8 k-tile x 4 v-tile state grid is 2 x 2. 1 x 4 halves the transposed-K
+ // reads (fragT) but is ~20% slower: holding four V' fragments live costs more than they save.
+-#define SKT   2
++#define SKT (16 / NW)
++//
+ #define SVT   2
+ #define NST (SKT * SVT)         // state tiles per wave
+ 
+@@ -86,7 +87,7 @@
+ // H0 / HT: whether the optional initial and final state operands are present (template parameters,
+ // so the common both-present form has no runtime test). As in libref, no initial state starts from
+ // zero and no final state stores nothing.
+-template <int SDT, bool H0 = true, bool HT = true>
++template <int NW, int SDT, bool H0 = true, bool HT = true>
+ __global__ __launch_bounds__(NTHR) void r4d_gdn_chunk_scan_kernel(
+     const unsigned short* __restrict__ q, const unsigned short* __restrict__ k,
+     const unsigned short* __restrict__ v, const unsigned short* __restrict__ Amat,
+@@ -110,11 +111,11 @@
+   const int nchunk = (te - tb + BT - 1) / BT;
+   const int lo = lane & 15, hi = lane >> 4;
+ 
+-  const int mt = w >> 1, ntb = (w & 1) * 2;                 // [BT][BV]: 2 tiles/wave
++  const int mt = w / (NW / 4), ntb = (w % (NW / 4)) * NTV;
+   // The state accumulator is held transposed, C[m=k-dim][n=v]. A and B fragments share a lane
+   // layout, so swapping the state update's operands is free, and k-dim becomes the per-lane
+   // contiguous axis: the per-chunk writeback to s.S is four 8-short stores instead of 32 scalar.
+-  const int kt0 = (w >> 1) * 2, vt0 = (w & 1) * 2;           // 2 x 2
++  const int kt0 = (w >> 1) * SKT, vt0 = (w & 1) * SVT;
+ 
+ #define PFW 8                   // shorts staged per lane per step
+ #define PFZERO make_uint4(0u, 0u, 0u, 0u)
+@@ -480,21 +481,27 @@
+   if (Hg <= 0 || H % Hg) return -2;
+   const long st_head = state_head_stride > 0 ? state_head_stride : (long)VD * KD;
+   const long st_slot = state_slot_stride > 0 ? state_slot_stride : (long)H * VD * KD;
+-  dim3 grid(V / BV, H, N), blk(NTHR);
+-#define CS_LAUNCH(SDTC, H0C, HTC)                                                          \
+-  hipLaunchKernelGGL((r4d_gdn_chunk_scan_kernel<SDTC, H0C, HTC>), grid, blk, 0,            \
++  dim3 grid(V / BV, H, N);
++#define CS_LAUNCH(NWC, SDTC, H0C, HTC)                                                          \
++  hipLaunchKernelGGL((r4d_gdn_chunk_scan_kernel<NWC, SDTC, H0C, HTC>), grid, dim3(NWC * 32), 0,            \
+       (hipStream_t)stream,                                                                 \
+       (const unsigned short*)q, (const unsigned short*)k, (const unsigned short*)v,        \
+       (const unsigned short*)A, (const float*)g, (const float*)beta,                       \
+       (const cs_state<SDTC>::T*)h0, (unsigned short*)o, (cs_state<SDTC>::T*)ht,            \
+       (const int*)cu, (const int*)ssm_state_indices, (indices_stride > 0 ? indices_stride : 1),  \
+       st_slot, st_head, H, Hg, scale)
+-#define CS_PICK(SDTC)                                                                      \
+-  do { if (h0 && ht) CS_LAUNCH(SDTC, true, true);                                          \
+-       else if (h0)  CS_LAUNCH(SDTC, true, false);                                         \
+-       else if (ht)  CS_LAUNCH(SDTC, false, true);                                         \
+-       else          CS_LAUNCH(SDTC, false, false); } while (0)
+-  if (state_fp16) CS_PICK(1); else CS_PICK(0);
++#define CS_PICK(NWC, SDTC)                                                                      \
++  do { if (h0 && ht) CS_LAUNCH(NWC, SDTC, true, true);                                          \
++       else if (h0)  CS_LAUNCH(NWC, SDTC, true, false);                                         \
++       else if (ht)  CS_LAUNCH(NWC, SDTC, false, true);                                         \
++       else          CS_LAUNCH(NWC, SDTC, false, false); } while (0)
++  // Measured on TP4 Flash-Next: one sequence, twelve value/four key heads,
++  // with retained state. Preserve the stock schedule for every other geometry.
++  if (N == 1 && H == 12 && Hg == 4 && h0 && ht) {
++    if (state_fp16) CS_PICK(16, 1); else CS_PICK(16, 0);
++  } else {
++    if (state_fp16) CS_PICK(8, 1); else CS_PICK(8, 0);
++  }
+ #undef CS_PICK
+ #undef CS_LAUNCH
+   return (int)hipGetLastError();

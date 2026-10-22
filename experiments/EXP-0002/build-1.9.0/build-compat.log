@@ -1,0 +1,370 @@
+[0/2] Re-checking globbed directories...
+[1/323] Linking CXX executable bin/r4d_selftest
+[2/323] Linking HIP shared module radiance_home/kernels/libr4d.so
+[3/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_table.cpp.o
+[4/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_planes.cpp.o
+[5/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_mla.cpp.o
+[6/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_support.cpp.o
+[7/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_lora.cpp.o
+[8/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_dsa.cpp.o
+[9/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_norm.cpp.o
+[10/323] Building CXX object libavx/CMakeFiles/libavx.dir/avx_registry.cpp.o
+[11/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_misc.cpp.o
+[12/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_hc.cpp.o
+[13/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_sample.cpp.o
+[14/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_glm.cpp.o
+[15/323] Building CXX object libavx/CMakeFiles/libavx.dir/avx_dispatch.cpp.o
+[16/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gemm_tile.cpp.o
+[17/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_qsa.cpp.o
+[18/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gen_attn.cpp.o
+[19/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_video.cpp.o
+[20/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_vsa.cpp.o
+[21/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_ltx.cpp.o
+[22/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_quant.cpp.o
+[23/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_elementwise.cpp.o
+[24/323] Building CXX object libavx/CMakeFiles/libavx.dir/avx_ngram.cpp.o
+[25/323] Building CXX object libavx/CMakeFiles/rad-avx-check.dir/avx_check_rows.cpp.o
+[26/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gdn.cpp.o
+[27/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gemm.cpp.o
+[28/323] Building CXX object libavx/CMakeFiles/rad-avx-check.dir/__/core/format/encoding.cpp.o
+[29/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_gen.cpp.o
+[30/323] Building CXX object libavx/CMakeFiles/rad-avx-check.dir/avx_check.cpp.o
+[31/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_attn.cpp.o
+[32/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_moe.cpp.o
+[33/323] Building CXX object arch/embgemma2/CMakeFiles/embgemma2.dir/embgemma2.cpp.o
+[34/323] Linking CXX shared module radiance_home/architectures/embgemma2.so
+[35/323] Building CXX object libavx/CMakeFiles/avx_lvl3.dir/avx_audio.cpp.o
+[36/323] Linking CXX shared module radiance_home/kernels/libavx.so
+[37/323] Building CXX object arch/breeze/CMakeFiles/breeze.dir/breeze.cpp.o
+[38/323] Linking CXX shared module radiance_home/architectures/breeze.so
+[39/323] Building CXX object arch/lfm2_bf16/CMakeFiles/lfm2_bf16.dir/lfm2_bf16.cpp.o
+[40/323] Linking CXX shared module radiance_home/architectures/lfm2_bf16.so
+[41/323] Building CXX object arch/gemma4_bf16/CMakeFiles/gemma4_bf16.dir/gemma4_bf16.cpp.o
+[42/323] Linking CXX shared module radiance_home/architectures/gemma4_bf16.so
+[43/323] Building CXX object arch/gemma4/CMakeFiles/gemma4.dir/gemma4.cpp.o
+[44/323] Linking CXX shared module radiance_home/architectures/gemma4.so
+[45/323] Building CXX object arch/flux3/CMakeFiles/flux3.dir/flux3.cpp.o
+[46/323] Building CXX object arch/flux3distilled/CMakeFiles/flux3distilled.dir/flux3distilled.cpp.o
+[47/323] Linking CXX shared module radiance_home/architectures/flux3.so
+[48/323] Building CXX object arch/qwen35_bf16/CMakeFiles/qwen35_bf16.dir/qwen35_bf16.cpp.o
+[49/323] Linking CXX shared module radiance_home/architectures/flux3distilled.so
+[50/323] Linking CXX shared module radiance_home/architectures/qwen35_bf16.so
+[51/323] Building CXX object arch/llama_dense_fp8/CMakeFiles/llama_dense_fp8.dir/llama_dense_fp8.cpp.o
+[52/323] Linking CXX shared module radiance_home/architectures/llama_dense_fp8.so
+[53/323] Building CXX object arch/llama_fp8/CMakeFiles/llama_fp8.dir/llama_fp8.cpp.o
+[54/323] Linking CXX shared module radiance_home/architectures/llama_fp8.so
+[55/323] Building CXX object arch/qwen3asr_bf16/CMakeFiles/qwen3asr_bf16.dir/qwen3asr_bf16.cpp.o
+[56/323] Building CXX object arch/gemma3/CMakeFiles/gemma3.dir/gemma3.cpp.o
+[57/323] Building CXX object arch/krea2/CMakeFiles/krea2.dir/krea2.cpp.o
+[58/323] Linking CXX shared module radiance_home/architectures/qwen3asr_bf16.so
+[59/323] Linking CXX shared module radiance_home/architectures/gemma3.so
+[60/323] Linking CXX shared module radiance_home/architectures/krea2.so
+[61/323] Building CXX object libavx/CMakeFiles/rad-avx-bench.dir/avx_bench.cpp.o
+[62/323] Building CXX object tools/CMakeFiles/rad-info.dir/iface.cpp.o
+[63/323] Building CXX object arch/glm5next/CMakeFiles/glm5next.dir/glm5next.cpp.o
+[64/323] Linking CXX shared module radiance_home/architectures/glm5next.so
+[65/323] Building CXX object libavx/CMakeFiles/rad-avx-check.dir/avx_cases.cpp.o
+[66/323] Building CXX object tools/CMakeFiles/rad-info.dir/rad_info.cpp.o
+[67/323] Building CXX object tools/CMakeFiles/rad-schemas.dir/rad_schemas.cpp.o
+[68/323] Linking CXX executable bin/rad-schemas
+[69/323] Building CXX object tools/CMakeFiles/rad-tokcheck.dir/iface.cpp.o
+[70/323] Building CXX object arch/minimaxh3/CMakeFiles/minimaxh3.dir/minimaxh3.cpp.o
+[71/323] Linking CXX shared module radiance_home/architectures/minimaxh3.so
+[72/323] Building CXX object libavx/CMakeFiles/rad-avx-bench.dir/avx_cases.cpp.o
+[73/323] Linking CXX executable radiance_home/kernels/rad-avx-bench
+[74/323] Building CXX object tools/CMakeFiles/rad-convert.dir/iface.cpp.o
+[75/323] Building CXX object tools/CMakeFiles/rad-info.dir/opshapes.cpp.o
+[76/323] Building CXX object arch/qwen35_fp8/CMakeFiles/qwen35_fp8.dir/qwen35_fp8.cpp.o
+[77/323] Linking CXX shared module radiance_home/architectures/qwen35_fp8.so
+[78/323] Building CXX object arch/qwen35_w8a8/CMakeFiles/qwen35_w8a8.dir/qwen35_w8a8.cpp.o
+[79/323] Building CXX object arch/minimaxmusic3/CMakeFiles/minimaxmusic3.dir/minimaxmusic3.cpp.o
+[80/323] Linking CXX shared module radiance_home/architectures/qwen35_w8a8.so
+[81/323] Linking CXX shared module radiance_home/architectures/minimaxmusic3.so
+[82/323] Building CXX object tools/CMakeFiles/rad-kbench.dir/iface.cpp.o
+[83/323] Building CXX object arch/qwenimage21/CMakeFiles/qwenimage21.dir/qwenimage21.cpp.o
+[84/323] Linking CXX shared module radiance_home/architectures/qwenimage21.so
+[85/323] Building CXX object tools/CMakeFiles/rad-convert.dir/opshapes.cpp.o
+[86/323] Building CXX object tools/CMakeFiles/rad-tokcheck.dir/rad_tokcheck.cpp.o
+[87/323] Building CXX object tools/CMakeFiles/rad-info.dir/kfixture.cpp.o
+[88/323] Building CXX object tools/CMakeFiles/rad-tune.dir/iface.cpp.o
+[89/323] Building CXX object arch/qwen35moe_fp8/CMakeFiles/qwen35moe_fp8.dir/qwen35moe_fp8.cpp.o
+[90/323] Linking CXX shared module radiance_home/architectures/qwen35moe_fp8.so
+[91/323] Building CXX object arch/ltx2/CMakeFiles/ltx2.dir/ltx2.cpp.o
+[92/323] Building CXX object tools/CMakeFiles/rad-kbench.dir/opshapes.cpp.o
+[93/323] Linking CXX shared module radiance_home/architectures/ltx2.so
+[94/323] Building CXX object tools/CMakeFiles/rad-convert.dir/kfixture.cpp.o
+[95/323] Building C object tests/CMakeFiles/abi_layout_test.dir/abi_c_test.c.o
+[96/323] Building CXX object tools/CMakeFiles/rad-gbnf-check.dir/iface.cpp.o
+[97/323] Building CXX object arch/qwen4exp_fp8/CMakeFiles/qwen4exp_fp8.dir/qwen4exp_fp8.cpp.o
+[98/323] Linking CXX shared module radiance_home/architectures/qwen4exp_fp8.so
+[99/323] Building CXX object tools/CMakeFiles/rad-gbnf-check.dir/__/tests/gbnf_oracle.cpp.o
+[100/323] Building CXX object tools/CMakeFiles/rad-chatparse.dir/iface.cpp.o
+[101/323] Building CXX object tools/CMakeFiles/rad-tune.dir/opshapes.cpp.o
+[102/323] Building CXX object tools/CMakeFiles/rad-kbench.dir/kfixture.cpp.o
+[103/323] Building CXX object tools/CMakeFiles/rad-info.dir/kbench_core.cpp.o
+[104/323] Linking HIP executable bin/rad-info
+[105/323] Building CXX object tools/CMakeFiles/rad-tune.dir/kfixture.cpp.o
+[106/323] Building CXX object tools/CMakeFiles/rad_tokref.dir/tokref.cpp.o
+[107/323] Linking HIP static library tools/librad_tokref.a
+[108/323] Linking HIP executable bin/rad-tokcheck
+[109/323] Building CXX object tools/CMakeFiles/rad-convert.dir/kbench_core.cpp.o
+[110/323] Building CXX object tools/CMakeFiles/rad-tune.dir/rad_tune.cpp.o
+[111/323] Building CXX object tools/CMakeFiles/rad-kbench.dir/kbench_timer.cpp.o
+[112/323] Building CXX object tests/CMakeFiles/harness_fixture.dir/harness_fixture.cpp.o
+[113/323] Linking CXX executable tests/harness_fixture
+[114/323] Building CXX object tests/CMakeFiles/arch_test.dir/__/core/util/rad_util.cpp.o
+[115/323] Building CXX object tools/CMakeFiles/rad-convert.dir/rad_convert.cpp.o
+[116/323] Linking HIP executable bin/rad-convert
+[117/323] Building CXX object tools/CMakeFiles/rad-kbench.dir/kbench_core.cpp.o
+[118/323] Building CXX object tests/CMakeFiles/advance_test.dir/advance_test.cpp.o
+[119/323] Linking HIP executable tests/advance_test
+[120/323] Building CXX object tools/CMakeFiles/rad-tune.dir/kbench_core.cpp.o
+[121/323] Linking HIP executable bin/rad-tune
+[122/323] Building CXX object tests/CMakeFiles/audio_gen_test.dir/audio_gen_test.cpp.o
+[123/323] Linking HIP executable tests/audio_gen_test
+[124/323] Building CXX object tests/CMakeFiles/fixture_test.dir/__/tools/opshapes.cpp.o
+[125/323] Building CXX object tests/CMakeFiles/rad_legacy_toolparse.dir/legacy/toolparse_legacy.cpp.o
+[126/323] Building CXX object tests/CMakeFiles/fixture_test.dir/__/tools/kfixture.cpp.o
+[127/323] Building CXX object tests/CMakeFiles/encoding_test.dir/encoding_test.cpp.o
+[128/323] Linking HIP executable tests/encoding_test
+[129/323] Building CXX object tools/CMakeFiles/rad-gbnf-check.dir/rad_gbnf_check.cpp.o
+[130/323] Linking HIP executable bin/rad-gbnf-check
+[131/323] Building CXX object tests/CMakeFiles/abi_layout_test.dir/abi_layout_test.cpp.o
+[132/323] Linking HIP executable tests/abi_layout_test
+[133/323] Building CXX object tools/CMakeFiles/rad-chatparse.dir/rad_chatparse.cpp.o
+[134/323] Building CXX object tests/CMakeFiles/gbnf_test.dir/gbnf_oracle.cpp.o
+[135/323] Building CXX object libavx/CMakeFiles/rad-avx-check.dir/avx_check_hand.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_check_hand.cpp:680:49: warning: lambda capture 'n' is not required to be captured for this use [-Wunused-lambda-capture]
+  680 |             h.dense(RAD_F32, { 1, len }, [&big, n](int64_t i) { return big[i % n]; })
+      |                                               ~~^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_check_hand.cpp:689:37: warning: lambda capture 'w' is not required to be captured for this use [-Wunused-lambda-capture]
+  689 |         s.dense(RAD_F32, { 3, w }, [w](int64_t i) {
+      |                                     ^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_check_hand.cpp:852:42: warning: lambda capture 'K' is not required to be captured for this use [-Wunused-lambda-capture]
+  852 |          .dense(RAD_F32, { NV, K }, [hw, K](int64_t i) {
+      |                                        ~~^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_check_hand.cpp:1072:36: warning: lambda capture 'H' is not required to be captured for this use [-Wunused-lambda-capture]
+ 1072 |     auto state_fill = [stamp, rnd, H, L](int64_t i) {
+      |                                  ~~^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_check_hand.cpp:1999:25: warning: lambda capture 'M' is not required to be captured for this use [-Wunused-lambda-capture]
+ 1999 |             auto pos = [M](int64_t i) {
+      |                         ^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libavx/avx_check_hand.cpp:3760:36: warning: lambda capture 'n' is not required to be captured for this use [-Wunused-lambda-capture]
+ 3760 |             h.dense(dt, { 5, n }, [n](int64_t i) {
+      |                                    ^
+6 warnings generated.
+[136/323] Linking CXX executable radiance_home/kernels/rad-avx-check
+[137/323] Building CXX object tests/CMakeFiles/device_test.dir/device_test.cpp.o
+[138/323] Linking HIP executable tests/device_test
+[139/323] Building CXX object tests/CMakeFiles/rad_legacy_toolparse.dir/legacy/chatdiff.cpp.o
+[140/323] Linking HIP static library tests/librad_legacy_toolparse.a
+[141/323] Linking HIP executable bin/rad-chatparse
+[142/323] Building CXX object tests/CMakeFiles/gen_config_test.dir/gen_config_test.cpp.o
+[143/323] Linking HIP executable tests/gen_config_test
+[144/323] Building CXX object tools/CMakeFiles/rad-kbench.dir/rad_kbench.cpp.o
+[145/323] Building CXX object tests/CMakeFiles/diag_test.dir/diag_test.cpp.o
+[146/323] Linking HIP executable bin/rad-kbench
+[147/323] Linking HIP executable tests/diag_test
+[148/323] Building CXX object tests/CMakeFiles/fixture_test.dir/__/tools/kbench_core.cpp.o
+[149/323] Building CXX object tests/CMakeFiles/chat_test.dir/chat_test.cpp.o
+[150/323] Linking HIP executable tests/chat_test
+[151/323] Building CXX object tests/CMakeFiles/harness_test.dir/harness_test.cpp.o
+[152/323] Linking CXX executable tests/harness_test
+[153/323] Building CXX object tests/CMakeFiles/dashboard_test.dir/dashboard_test.cpp.o
+[154/323] Building CXX object tests/CMakeFiles/hf_model_test.dir/hf_model_test.cpp.o
+[155/323] Linking HIP executable tests/dashboard_test
+[156/323] Linking HIP executable tests/hf_model_test
+[157/323] Building CXX object tests/CMakeFiles/hostmem_test.dir/hostmem_test.cpp.o
+[158/323] Linking HIP executable tests/hostmem_test
+[159/323] Building CXX object tests/CMakeFiles/fixture_test.dir/fixture_test.cpp.o
+[160/323] Linking HIP executable tests/fixture_test
+[161/323] Building CXX object tests/CMakeFiles/config_test.dir/config_test.cpp.o
+[162/323] Linking HIP executable tests/config_test
+[163/323] Building CXX object tests/CMakeFiles/kbench_mutant_test.dir/__/tools/opshapes.cpp.o
+[164/323] Building CXX object tests/CMakeFiles/gen_test.dir/gen_test.cpp.o
+[165/323] Linking HIP executable tests/gen_test
+[166/323] Building CXX object tests/CMakeFiles/build_test.dir/build_test.cpp.o
+[167/323] Linking HIP executable tests/build_test
+[168/323] Building CXX object tests/CMakeFiles/kbench_mutant_test.dir/__/tools/kfixture.cpp.o
+[169/323] Building CXX object tests/CMakeFiles/host_experts_test.dir/host_experts_test.cpp.o
+[170/323] Linking HIP executable tests/host_experts_test
+[171/323] Building CXX object tests/CMakeFiles/issue_div_test.dir/issue_div_test.cpp.o
+[172/323] Linking HIP executable tests/issue_div_test
+[173/323] Building CXX object tests/CMakeFiles/convert_test.dir/convert_test.cpp.o
+[174/323] Linking HIP executable tests/convert_test
+[175/323] Building CXX object tests/CMakeFiles/kbench_test.dir/__/tools/opshapes.cpp.o
+[176/323] Building CXX object tests/CMakeFiles/checkpoint_test.dir/checkpoint_test.cpp.o
+[177/323] Linking HIP executable tests/checkpoint_test
+[178/323] Building CXX object tests/CMakeFiles/kbench_test.dir/__/tools/kfixture.cpp.o
+[179/323] Building CXX object tests/CMakeFiles/lora_ops_test.dir/lora_ops_test.cpp.o
+[180/323] Building CXX object tests/CMakeFiles/format_test.dir/format_test.cpp.o
+[181/323] Linking HIP executable tests/lora_ops_test
+[182/323] Linking HIP executable tests/format_test
+[183/323] Building CXX object tests/CMakeFiles/r4d_ar_links_test.dir/__/libr4d/r4d_layout.cpp.o
+[184/323] Building CXX object tests/CMakeFiles/kbench_mutant_test.dir/__/tools/kbench_core.cpp.o
+[185/323] Building CXX object tests/CMakeFiles/r4d_ar_links_test.dir/__/libr4d/r4d_fp8_layout.cpp.o
+[186/323] Building CXX object tests/CMakeFiles/chatparse_gemma4_test.dir/chatparse_gemma4_test.cpp.o
+[187/323] Building CXX object tests/CMakeFiles/kbench_mutant_test.dir/kbench_mutant_test.cpp.o
+[188/323] Linking HIP executable tests/chatparse_gemma4_test
+[189/323] Linking HIP executable tests/kbench_mutant_test
+[190/323] Building CXX object tests/CMakeFiles/kbench_test.dir/__/tools/kbench_core.cpp.o
+[191/323] Building CXX object tests/CMakeFiles/kbench_test.dir/kbench_test.cpp.o
+[192/323] Linking HIP executable tests/kbench_test
+[193/323] Building CXX object tests/CMakeFiles/r4d_ar_links_test.dir/r4d_ar_links_test.cpp.o
+[194/323] Linking HIP executable tests/r4d_ar_links_test
+[195/323] Building CXX object tests/CMakeFiles/relayout_parity_test.dir/__/libr4d/r4d_fp8_layout.cpp.o
+[196/323] Building CXX object tests/CMakeFiles/quant_ggml_test.dir/quant_ggml_test.cpp.o
+[197/323] Linking HIP executable tests/quant_ggml_test
+[198/323] Building CXX object tests/CMakeFiles/kld_test.dir/kld_test.cpp.o
+[199/323] Linking HIP executable tests/kld_test
+[200/323] Building CXX object tests/CMakeFiles/relayout_parity_test.dir/__/libr4d/r4d_layout.cpp.o
+[201/323] Building CXX object tests/CMakeFiles/sample_test.dir/gbnf_oracle.cpp.o
+[202/323] Building CXX object tests/CMakeFiles/quant_algo_test.dir/quant_algo_test.cpp.o
+[203/323] Linking HIP executable tests/quant_algo_test
+[204/323] Building CXX object tests/CMakeFiles/recipe_test.dir/recipe_test.cpp.o
+[205/323] Linking HIP executable tests/recipe_test
+[206/323] Building CXX object tests/CMakeFiles/mm_test.dir/mm_test.cpp.o
+[207/323] Linking HIP executable tests/mm_test
+[208/323] Building CXX object tests/CMakeFiles/chatparse_test.dir/chatparse_test.cpp.o
+[209/323] Linking HIP executable tests/chatparse_test
+[210/323] Building CXX object tests/CMakeFiles/images_test.dir/images_test.cpp.o
+[211/323] Linking HIP executable tests/images_test
+[212/323] Building CXX object tests/CMakeFiles/quant_test.dir/quant_test.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/quant_test.cpp:525:21: warning: lambda capture 'K' is not required to be captured for this use [-Wunused-lambda-capture]
+  525 |         return [&q, K](int64_t r, int64_t j) {
+      |                   ~~^
+1 warning generated.
+[213/323] Linking HIP executable tests/quant_test
+[214/323] Building CXX object tests/CMakeFiles/gbnf_test.dir/gbnf_test.cpp.o
+[215/323] Linking HIP executable tests/gbnf_test
+[216/323] Building CXX object tests/CMakeFiles/share_test.dir/share_test.cpp.o
+[217/323] Linking HIP executable tests/share_test
+[218/323] Building CXX object tests/CMakeFiles/shipped_plugins_test.dir/shipped_plugins_test.cpp.o
+[219/323] Linking HIP executable tests/shipped_plugins_test
+[220/323] Building CXX object tests/CMakeFiles/engine_e2e_test.dir/engine_e2e_test.cpp.o
+[221/323] Linking HIP executable tests/engine_e2e_test
+[222/323] Building CXX object tests/CMakeFiles/lifecycle_test.dir/lifecycle_test.cpp.o
+[223/323] Linking HIP executable tests/lifecycle_test
+[224/323] Building CXX object tests/CMakeFiles/text_split_test.dir/text_split_test.cpp.o
+[225/323] Linking HIP executable tests/text_split_test
+[226/323] Building CXX object tests/CMakeFiles/plugin_test.dir/plugin_test.cpp.o
+[227/323] Linking HIP executable tests/plugin_test
+[228/323] Building CXX object tests/CMakeFiles/relayout_parity_test.dir/relayout_parity_test.cpp.o
+[229/323] Linking HIP executable tests/relayout_parity_test
+[230/323] Building CXX object tests/CMakeFiles/tools_test.dir/__/tools/iface.cpp.o
+[231/323] Building CXX object tests/CMakeFiles/tokenizer_regex_test.dir/tokenizer_regex_test.cpp.o
+[232/323] Linking HIP executable tests/tokenizer_regex_test
+[233/323] Building CXX object tests/CMakeFiles/tokenizer_perf_test.dir/tokenizer_perf_test.cpp.o
+[234/323] Linking HIP executable tests/tokenizer_perf_test
+[235/323] Building CXX object tests/CMakeFiles/tools_test.dir/tools_test.cpp.o
+[236/323] Linking HIP executable tests/tools_test
+[237/323] Building CXX object tests/CMakeFiles/avx_subset_plugin.dir/avx_subset_plugin.cpp.o
+[238/323] Linking CXX shared module tests/libavx_subset_plugin.so
+[239/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_pair_argmax_f32.hip.o
+[240/323] Building CXX object tests/CMakeFiles/lora_test.dir/lora_test.cpp.o
+[241/323] Linking HIP executable tests/lora_test
+[242/323] Building CXX object tests/CMakeFiles/runtime_test.dir/runtime_test.cpp.o
+[243/323] Linking HIP executable tests/runtime_test
+[244/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_expert_scale_bf16.hip.o
+[245/323] Building CXX object tests/CMakeFiles/util_test.dir/util_test.cpp.o
+[246/323] Building CXX object tests/CMakeFiles/trigger_test.dir/trigger_test.cpp.o
+[247/323] Linking HIP executable tests/util_test
+[248/323] Linking HIP executable tests/trigger_test
+[249/323] Building CXX object tests/CMakeFiles/systemone_test.dir/systemone_test.cpp.o
+[250/323] Linking HIP executable tests/systemone_test
+[251/323] Building CXX object tests/CMakeFiles/place_test.dir/place_test.cpp.o
+[252/323] Linking HIP executable tests/place_test
+[253/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_norm_join_bf16.hip.o
+[254/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_kda.hip.o
+[255/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_qsa_select_bf16.hip.o
+[256/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_fp8_f32scale.hip.o
+[257/323] Building CXX object tests/CMakeFiles/sample_test.dir/sample_test.cpp.o
+[258/323] Linking HIP executable tests/sample_test
+[259/323] Building CXX object tests/CMakeFiles/tokenizer_test.dir/tokenizer_test.cpp.o
+[260/323] Building CXX object tests/CMakeFiles/yarn_test.dir/yarn_test.cpp.o
+[261/323] Linking HIP executable tests/tokenizer_test
+[262/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_glm.hip.o
+[263/323] Linking HIP executable tests/yarn_test
+[264/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_mhc.hip.o
+[265/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_quant_act_fp8.hip.o
+[266/323] Building CXX object tests/CMakeFiles/video_gen_test.dir/video_gen_test.cpp.o
+[267/323] Linking HIP executable tests/video_gen_test
+[268/323] Building CXX object tests/CMakeFiles/speech_stream_test.dir/speech_stream_test.cpp.o
+[269/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/r4d_emu/ref_host.cpp.o
+[270/323] Linking HIP executable tests/speech_stream_test
+[271/323] Building CXX object tests/CMakeFiles/speech_test.dir/speech_test.cpp.o
+[272/323] Building CXX object tests/CMakeFiles/r4d_emu_pick.dir/r4d_emu/test_pick.cpp.o
+[273/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/r4d_emu/emu/emu.cpp.o
+[274/323] Linking HIP executable tests/speech_test
+[275/323] Building CXX object tests/CMakeFiles/r4d_emu_escale.dir/r4d_emu/test_escale.cpp.o
+[276/323] Building CXX object tests/CMakeFiles/r4d_emu_norm.dir/r4d_emu/test_norm.cpp.o
+[277/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_moe_mxfp4.hip.o
+[278/323] Building CXX object tests/CMakeFiles/r4d_emu_f32.dir/r4d_emu/test_f32.cpp.o
+[279/323] Building CXX object tests/CMakeFiles/r4d_emu_mhc.dir/r4d_emu/test_mhc.cpp.o
+[280/323] Building CXX object tests/CMakeFiles/r4d_emu_attn.dir/r4d_emu/test_attn.cpp.o
+[281/323] Building CXX object tests/CMakeFiles/r4d_emu_fp8f32.dir/r4d_emu/test_fp8f32.cpp.o
+[282/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_lora_bf16.hip.o
+[283/323] Building CXX object tests/CMakeFiles/r4d_emu_kda.dir/r4d_emu/test_kda.cpp.o
+[284/323] Building CXX object tests/CMakeFiles/text_test.dir/text_test.cpp.o
+[285/323] Linking HIP executable tests/text_test
+[286/323] Building CXX object tests/CMakeFiles/r4d_emu_moemx.dir/r4d_emu/test_moemx.cpp.o
+[287/323] Building CXX object tests/CMakeFiles/r4d_emu_lora.dir/r4d_emu/test_lora.cpp.o
+[288/323] Building CXX object tests/CMakeFiles/sched_test.dir/sched_test.cpp.o
+[289/323] Linking HIP executable tests/sched_test
+[290/323] Building CXX object tests/CMakeFiles/r4d_emu_mla.dir/r4d_emu/test_mla.cpp.o
+[291/323] Building CXX object tests/CMakeFiles/stream_test.dir/stream_test.cpp.o
+[292/323] Building CXX object tests/CMakeFiles/wire_test.dir/wire_test.cpp.o
+[293/323] Linking HIP executable tests/stream_test
+[294/323] Linking HIP executable tests/wire_test
+[295/323] Building CXX object tests/CMakeFiles/r4d_emu_moefuse.dir/r4d_emu/test_moefuse.cpp.o
+[296/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_mla.hip.o
+[297/323] Building CXX object tests/CMakeFiles/r4d_emu_qsa.dir/r4d_emu/test_qsa.cpp.o
+[298/323] Building CXX object tests/CMakeFiles/transport_test.dir/transport_test.cpp.o
+[299/323] Linking HIP executable tests/transport_test
+[300/323] Building CXX object tests/CMakeFiles/mem_test.dir/mem_test.cpp.o
+[301/323] Linking HIP executable tests/mem_test
+[302/323] Building CXX object tests/CMakeFiles/videos_test.dir/videos_test.cpp.o
+[303/323] Linking HIP executable tests/videos_test
+[304/323] Building CXX object tests/CMakeFiles/server_test.dir/server_test.cpp.o
+[305/323] Linking HIP executable tests/server_test
+[306/323] Building CXX object tests/CMakeFiles/arch_test.dir/arch_test.cpp.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/arch_test.cpp:2199:5: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+ 2198 |     "linear_attention linear_attention linear_attention full_attention "
+      |                                                                         
+      |                                                                         ,
+ 2199 |     "linear_attention linear_attention linear_attention full_attention",
+      |     ^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/arch_test.cpp:2198:5: note: place parentheses around the string literal to silence warning
+ 2198 |     "linear_attention linear_attention linear_attention full_attention "
+      |     ^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/arch_test.cpp:5918:5: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+ 5917 |     "[\"sliding_attention\", \"sliding_attention\", \"sliding_attention\", \"sliding_attention\", "
+      |                                                                                                    
+      |                                                                                                    ,
+ 5918 |     "\"sliding_attention\", \"full_attention\"]",
+      |     ^
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/arch_test.cpp:5917:5: note: place parentheses around the string literal to silence warning
+ 5917 |     "[\"sliding_attention\", \"sliding_attention\", \"sliding_attention\", \"sliding_attention\", "
+      |     ^
+2 warnings generated.
+[307/323] Linking CXX executable tests/arch_test
+[308/323] Building CXX object tests/CMakeFiles/r4d_emu_kernels.dir/__/libr4d/r4d_attn_paged_window.hip.o
+EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/libr4d/r4d_attn_paged_window.hip:1086:17: warning: unused variable 's' [-Wunused-variable]
+ 1086 |     hipStream_t s = (hipStream_t)stream;
+      |                 ^
+1 warning generated.
+[309/323] Linking CXX executable tests/r4d_emu_norm
+[310/323] Linking CXX executable tests/r4d_emu_pick
+[311/323] Linking CXX executable tests/r4d_emu_attn
+[312/323] Linking CXX executable tests/r4d_emu_f32
+[313/323] Linking CXX executable tests/r4d_emu_mla
+[314/323] Linking CXX executable tests/r4d_emu_escale
+[315/323] Linking CXX executable tests/r4d_emu_lora
+[316/323] Linking CXX executable tests/r4d_emu_mhc
+[317/323] Linking CXX executable tests/r4d_emu_fp8f32
+[318/323] Linking CXX executable tests/r4d_emu_kda
+[319/323] Linking CXX executable tests/r4d_emu_moemx
+[320/323] Linking CXX executable tests/r4d_emu_qsa
+[321/323] Linking CXX executable tests/r4d_emu_moefuse
+[322/323] Building CXX object tests/CMakeFiles/ref_test.dir/ref_test.cpp.o
+[323/323] Linking HIP executable tests/ref_test

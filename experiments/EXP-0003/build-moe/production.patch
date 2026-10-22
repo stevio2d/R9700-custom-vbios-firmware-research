@@ -1,0 +1,43 @@
+--- a/libr4d/r4d_moe.hip
++++ b/libr4d/r4d_moe.hip
+@@ -2741,7 +2741,22 @@
+     /* The band: a decode step takes the (tile, run) form (the kernel's ES note) and runs of several
+      * rows take the aligned 32-row form; r4d_moe_decode_band has the crossover. */
+     const uint32_t ny = (uint32_t)(N / 64);
+-    const int form = g_moe_prefill_form;
++    // EXP-0003: resident Flash-Next TP4, compact regular expert classes.
++    bool tp4_shape = W4 == 2 && ncls == 4 && top_k == 10 &&
++                     (n_expert == 512 || n_expert == 510 || n_expert == 508) &&
++                     wdt && !std::strcmp(wdt, "w4nl64a8h");
++    int wide_classes = 0;
++    for (int q = 0; q < ncls; ++q) {
++        const bool wide = a_sorted ? Kc[q] == 256 : Nc[q] == 512;
++        wide_classes += wide;
++        tp4_shape = tp4_shape && (a_sorted ? Nc[q] == 2560 && (Kc[q] == 128 || wide)
++                                                        : Kc[q] == 2560 && (Nc[q] == 256 || wide));
++    }
++    tp4_shape = tp4_shape && wide_classes == 1 && parts == (a_sorted ? 1 : 2);
++    const bool tp4_group8 = tp4_shape && a_sorted && T >= 5120 && T <= 20480 &&
++                           g_moe_prefill_form == 0 && g_moe_down_dec_pin == 0 &&
++                           g_moe_down_tile_pin == 0;
++    const int form = tp4_group8 ? 2 : g_moe_prefill_form;
+     if ((form == 0 && r4d_moe_decode_band(T, n_expert)) || form == 2) {
+         /* The decode grid is (tile, run) wide (the kernel's ES note); decode has one tile of rows,
+          * which alone would give only N/64 workgroups. */
+@@ -2750,7 +2765,7 @@
+          * the run tiles' upper bound (one per run plus one per 16 rows) plus one tail block, by
+          * column groups. */
+         const bool dn_dec = a_sorted && parts == 1 && n_expert <= (long long)kMaxExpert;
+-        const long long g2 = r4d_moe_down_dec_g(T);
++        const long long g2 = tp4_group8 ? 8 : r4d_moe_down_dec_g(T);
+         if (!dn_dec && g_moe_down_dec_pin > 0) return R4D_NO(RAD_E_UNSUPPORTED);
+         if (dn_dec && g2 > 0) {
+             const unsigned slots  = (unsigned)(std::min(T, n_expert) + (T + 15) / 16);
+@@ -2778,6 +2793,7 @@
+         auto kern = pick(std::integral_constant<uint32_t, kFK>{});
+         if constexpr (W4 >= 2) {
+             bool fk2 = r4d_moe_gu_fk256<W4>(T, a_sorted);
++            if (tp4_shape && !a_sorted && T <= 650 && g_moe_fk_pin == 0) fk2 = true;
+             for (int q = 0; q < ncls; ++q) fk2 = fk2 && Kc[q] % (2 * (long long)kBlock) == 0;
+             if (fk2) kern = pick(std::integral_constant<uint32_t, 2 * kFK>{});
+         }

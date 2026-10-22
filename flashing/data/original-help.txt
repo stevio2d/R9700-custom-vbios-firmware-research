@@ -1,0 +1,352 @@
+AMD IFWI Flasher Tool Version 5.0.879.0-Moded_v2. Copyright© 2020-2025 Advanced Micro Devices, Inc. All rights reserved.
+
+
+Debug logging related options:
+  --debug-log-status arg         (Optional)This switch enables debug logging. 
+                                 By default debug logging is enabled.
+                                 Usage:
+                                     Enable Debug Logging:
+                                         --debug-log-status=true
+                                     Disable Debug Logging:
+                                         --debug-log-status=false
+                                         
+  --debug-log-options            Lists the debug logging options for the tool.
+                                 Usage:
+                                     --debug-log-options
+                                         
+  --debug-log-filename arg       (Optional) Specifies the name of the debug log
+                                 file name. The tool shall use this name 
+                                 suffixed with a number, where the number 
+                                 indicates an incrementing number indicating 
+                                 each instance of the binary. Be default the 
+                                 help file name starts with the name of 
+                                 process.
+                                 Usage:
+                                     --debug-log-filename=[Filename]
+                                         
+  --debug-log-filepath arg       (Optional) Specifies the location of the debug
+                                 log file path. If this is empty or not 
+                                 specified then the following folders shall be 
+                                 used for generating debug log files:
+                                        Windows: %APPDATA%\\AMD folder
+                                        ESXi:    <datastore>/AMD/Logs/
+                                        Linux:   /var/log/AMD
+                                 Usage:
+                                     --debug-log-filepath=[Filepath]
+                                         
+  --debug-log-filesize arg       (Optional)Specify the size of the Log file in 
+                                 MegaBytes (MB). 1 to 50. Defaults to 40 MB.
+                                 Usage:
+                                     --debug-log-filesize=[Size in MB]
+                                         
+  --debug-log-filepolicy arg     (Optional)Specify the policy to use when the 
+                                 log file size hits the size limit.
+                                 Valid values are NEWLOG and REUSE. Defaults to
+                                 NEWLOG
+                                     NEWLOG(1): Generates a new log file
+                                     REUSE(2): Continues using the same file 
+                                          (will start writing from the 
+                                          begining)
+                                 Usage:
+                                     --debug-log-filepolicy=NEWLOG
+                                     --debug-log-filepolicy=REUSE
+                                         
+
+Generic options:
+  --version                      Show the version of the binary.
+                                 Usage:
+                                     --version
+                                         
+  -h [ --help ] [=arg(=ALL)]     Displays this help text if no argument is 
+                                 specified. If an argument is specified then 
+                                 the help for the specified command is shown.
+                                 Usage:
+                                     --help/h/?
+                                     --help/h/? <command>: --help 
+                                 debug-log-filepolicy
+                                         
+  --? [=arg(=ALL)]               Displays this help text if no argument is 
+                                 specified. If an argument is specified then 
+                                 the help for the specified command is shown.
+                                 Usage:
+                                     --help/h/?
+                                     --help/h/? <command>: --help 
+                                 debug-log-filepolicy
+                                         
+  --show-progress                Shows progress for any long activity the tool 
+                                 does. Can be used along with any command.
+                                 Usage:
+                                     --show-progress
+                                         
+  --silent                       
+                                         The tool operates silently without 
+                                 displaying any noticeable output except for 
+                                 the primary outcome. Can be used along with 
+                                 any command.
+                                 Usage:
+                                     --silent
+                                       
+  --accept-EULA                  Accept the EULA agreement. You can see the 
+                                 EULA by --show-EULA.
+                                 Usage:
+                                     --accept-EULA
+                                         
+  -e [ --show-EULA ]             Shows the EULA for the tool
+                                 Usage:
+                                     --show-EULA
+                                         
+
+Options related to the console:
+  --cls                          Clear the screen
+                                 Usage:
+                                     cls
+  --exe arg                      Load and execute macro file (db32 script)
+                                 Usage:
+                                     exe [ScriptName]
+  --open arg                     Open a file to log the session activities 
+                                 until the close command. Additionally multiple
+                                 open commands will redirect the console 
+                                 activity to the last opened file.
+                                 Usage:
+                                     open [File]
+                                         
+  --close                        Closes the last opened session log file.
+                                 Usage:
+                                     close
+                                         
+  --flush                        Flushes the text to the last opened session 
+                                 log file.
+                                 Usage:
+                                     flush
+                                         
+
+Common tool ptions:
+  -i [ --device ] [=arg(=-132)]  ASIC on which the operation has to be 
+                                 performed. This is a 0 based index.
+                                 Usage:
+                                     --device/-i=0
+                                         : Specifies ASIC at index 0
+                                     --device/-i=0,1
+                                         : Specifies ASICs at index 0 and 1
+                                     --device/-i=-1
+                                         : Specifies to work on all ASICs 
+                                 detected
+                                     --device/-i
+                                         : Same as above i.e., specifies to 
+                                 work all ASICs detected
+                                         
+  -a [ --advanced ]              When this flag is specified, it tells the tool
+                                 to work in advanced mode. The work will depend
+                                 on the tool. This has to be used along-with -i
+                                 option
+                                 Usage:
+                                     --advanced/-a
+                                         : Work to show/perform advanced 
+                                 operations
+                                     --advanced --device/-ai:
+                                         : Work to show/perform advanced 
+                                 operations
+  --show                         This flag instructs the tool to show 
+                                 information. What information is to be shown 
+                                 is specified by the other switches.
+                                 Usage:
+                                     --show --device
+                                         : Show device inforamtion
+                                     --show --device --advanced
+                                         : Show advanced device inforamtion
+
+Command line switches for the flash capability:
+  -s [ --save ] arg              This flag instructs the tool to save the VBIOS
+                                 image. This has to be used along-with the 
+                                 --device switch and the --vbios-info. If 
+                                 --vbios-file is not specified then the file 
+                                 name is constructed at run time with the 
+                                 following format [ASIC]_[BDF]_[Index].rom
+  -p [ --flash ] arg             Write VBIOS image in file <file> to flash ROM 
+                                 in ASIC <Num>.
+                                 Usage:
+                                     -p <Num> <File>, or
+                                     --flash --device [Num] --vbios-file <File>
+  --vbios-info                   This flag when used along with --show flag 
+                                 instructs the tool to show the VBIOS 
+                                 Information from the file specified by using 
+                                 the --vbios-file option
+  --vbios-file arg               Specify the VBIOS file to work with. This 
+                                 option can be used to save the VBIOS image to 
+                                 this file as well as to read VBIOS image from 
+                                 this file
+  --bios-file-info arg           Display the BIOS info in the given file
+  --ifwi-version                 This flag when used along with --show flag 
+                                 instructs the tool to show the version of the 
+                                 IFWI. This flag should always be used with 
+                                 --device command.
+                                 Usage:
+                                     --show --ifwi-version --device [Num] 
+  --pspbl-version                This flag when used along with --show flag 
+                                 instructs the tool to show the version of the 
+                                 PSP Boot Loader Version. This flag should 
+                                 always be used with --device command.
+                                 Usage:
+                                     --show --pspbl-version --device [Num] 
+  --savefile-at-end              This flag instructs the tool to save the whole
+                                 VBIOS content read from the ROM Controller at 
+                                 the end of read operation. This should always 
+                                 be used only with --save flag. If not used, by
+                                 default the tool keeps writing ROM contents 
+                                 read in each iteration to the file.
+  --save-flashed-bytes           This flag instructs the tool to save the bytes
+                                 being flashed to the SPIROM to a file for 
+                                 debugging purpose. This will enable the user 
+                                 to additionaly verify what and how many bytes 
+                                 have been written to the SPIROM at the end of 
+                                 flash operation. This flag should always be 
+                                 used with --flash command only. If not used, 
+                                 by default the bytes won't be additionally 
+                                 saved to a file.
+  --active                       This flag is used along with -ai command to 
+                                 show the ACTIVE partition details i.e. 
+                                 Partition where dGPU is booted from.
+                                 Usage:
+                                     -ai [Num] --active, or
+                                     --advanced --device [Num] --active
+  --inactive                     This flag is used along with -ai command to 
+                                 show the INACTIVE partition details i.e. 
+                                 Partition which would be targeted to be 
+                                 flashed.
+                                 Usage:
+                                     -ai [Num] --inactive, or
+                                     --advanced --device [Num] --inactive
+  --fa                           This flag enables force flashing the same IFWI
+                                 version. Should be used with the --flash 
+                                 switch.
+                                 Usage:
+                                     -p <Num> <File> -fa, or
+                                     --flash --device [Num] --vbios-file <File>
+                                 --fa
+  --fp                           This flag instructs the tool to bypass BIOS 
+                                 part number check and perform a force flash. 
+                                 This flag should always be used with --flash 
+                                 command only.
+                                 Usage:
+                                     -p <Num> <File> -fp, or
+                                     --flash --device [Num] --vbios-file <File>
+                                 --fp
+  --fv                           This flag enables downgrading the IFWI by 
+                                 performing a force flash. This bypasses 
+                                 checking the VBIOS/IFWI version. This flag 
+                                 should always be used with --flash command.
+                                 Usage:
+                                     -p <Num> <File> -fv, or
+                                     --flash --device [Num] --vbios-file <File>
+                                 --fv
+  --checkpn arg                  Compare Part Number of the current IFWI in the
+                                 device with the Part Number in the IFWI image 
+                                 specified.
+                                 Usage:
+                                     --/-checkpn <Num> <File>, or
+                                     --/-checkpn --device <DeviceIndex> 
+                                 --vbios-file <IFWI Image>
+                                         
+  --cr arg                       Calculates the 16-bit ROM checksum for device 
+                                 <Index> of size if size is specified and 
+                                 compare with sum if expected sum is specified.
+                                 Usage:
+                                     -cr <Num> <size> <sum>, or
+                                     --cr --device [Num] <size> <sum>
+                                         
+  --complete                     This flag instructs the tool to calculate 
+                                 checksum of Complete IFWI.This flag should be 
+                                 used with --cr/--cf command only.
+                                 Usage:
+                                     -cr <Num> <size> <sum> -complete, or
+                                     --cr --device [Num] <size> <sum> 
+                                 --complete
+                                         
+  --biosimage                    This flag instructs the tool to calculate 
+                                 checksum of VBIOS image in IFWI.This flag 
+                                 should be used with --cr command only.
+                                 Usage:
+                                     -cr <Num> <size> <sum> -biosimage, or
+                                     --cr --device [Num] <size> <sum> 
+                                 --biosimage
+                                         
+  --cf arg                       Calculate 16-bit checksum for file <File> and 
+                                 if expected checksum has been specified then 
+                                 compare the calculated checksum with the 
+                                 specified checksum.
+                                 Usage:
+                                     -cf <file> <sum>, or
+                                     --cf --vbios-file <File> <sum>
+                                         
+  --pa arg                       Write the VBIOS image in the given image file 
+                                 to all applicable ASICs.>.
+                                 Usage:
+                                     -pa <file> or
+                                     --pa --vbios-file <File>
+                                         
+  --padevid arg                  Flash the VBIOS Image to ASIC which matches 
+                                 the specific Device ID. This command should be
+                                 used along-with the -pa switch and also can be
+                                 used along-with other -pa switches like 
+                                 (-pasvid, -pavbpn -passid).>
+                                 Usage:
+                                     -pa <file> padevid <id>
+                                     -pa <file> padevid <id> passid <id>
+                                     --pa --vbios-file <File> padevid <id>
+                                         
+  --passid arg                   Flash the VBIOS Image to ASIC which matches 
+                                 the specific Subsystem ID. This flag should be
+                                 used with --pa switch and also can be used 
+                                 along-with other -pa switches like (-padevid, 
+                                 -pasvid, -pavbpn).>
+                                 Usage:
+                                     -pa <file> passid <id>
+                                     -pa <file> passid <id> padevid <id>
+                                     --pa --vbios-file <File> passid <id> 
+                                 padevid <id>
+                                         
+  --pasvid arg                   Flash the VBIOS Image to ASIC which matches 
+                                 the specific  Subsystem Vendor ID. This flag 
+                                 should be used with --pa switch and also can 
+                                 be used along-with other -pa switches like 
+                                 (-padevid, -passid, -pavbpn).>
+                                 Usage:
+                                     -pa <file> pasvid <id>
+                                     -pa <file> pasvid <id> padevid <id>
+                                     --pa --vbios-file <File> pasvid <id>  
+                                 padevid <id>
+                                         
+  --pavbpn arg                   Flash the VBIOS Image to ASIC which matches 
+                                 the specific PartNumber. This flag should be 
+                                 used with --pa switch and also can be used 
+                                 along-with other -pa switches like (-padevid, 
+                                 -pasvid, -passid).>
+                                 Usage:
+                                     -pa <file> pavbpn <part number>
+                                     -pa <file> pavbpn <part number> pasvid 
+                                 <id> padevid <id>
+                                     --pa --vbios-file <File> pavbpn <part 
+                                 number>
+                                         
+  --checkifwi arg                Compare SHA256 hash value of active partition 
+                                 of the specified device with the SHA256 hash 
+                                 value of the partition in the IFWI image 
+                                 specified.
+                                 Usage:
+                                     --/-checkifwi --device <DeviceIndex> 
+                                 --vbios-file <IFWI Image>, or
+                                     --/-checkifwi --device <DeviceIndex> 
+                                 --vbios-file <IFWI Image> --inactive
+                                         
+
+Common tool Options:
+  --no-workload-execution        This flag instructs the tool not to execute 
+                                 workloads to prevent the GPU from going to a 
+                                 Low Power State. When specified, the tool will
+                                 perform operations without running any 
+                                 workload. This can be useful in scenarios 
+                                 where running workloads is not desired or 
+                                 required for example collecting PM Logs when a
+                                 GPU related benchmark/stress application is 
+                                 also running.
+

@@ -1,0 +1,35 @@
+{
+  "scope": "Conservative active testing accounting; excludes build time and time spent on the other candidate. Common selection, full shared AR validation and original-service restoration are charged to each candidate where applicable. Shutdown/context initialization allowance60s is added per candidate.",
+  "original_service_restoration_seconds": 66.0,
+  "candidates": {
+    "GDN": {
+      "components_seconds": {
+        "common_selection": 127.63653129600061,
+        "production_validation_and_ar_repeats": 50.62430663100167,
+        "exact_fallback": 16.106780774996878,
+        "sensor_preflight_failed_attempt": 0.3064689160019043,
+        "client_failed_attempt": 125.58251506799934,
+        "completed_benchmark": 1090.4609465409994,
+        "server_startup_and_preflight_interval": 131.0,
+        "restore_original": 66.0,
+        "shutdown_and_context_allowance": 60
+      },
+      "total_seconds": 1667.7175492269998,
+      "total_minutes": 27.795292487116665,
+      "under30minutes": true
+    },
+    "MoE": {
+      "components_seconds": {
+        "common_selection": 127.63653129600061,
+        "production_validation": 101.69016487200133,
+        "completed_benchmark": 1122.6379857409993,
+        "server_startup_and_preflight_interval": 84.0,
+        "restore_original": 66.0,
+        "shutdown_and_context_allowance": 60
+      },
+      "total_seconds": 1561.9646819090012,
+      "total_minutes": 26.032744698483352,
+      "under30minutes": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "host": "capture-host",
+  "observed_date": "2026-10-18",
+  "source": "inventory/host_checks.md",
+  "source_sha256": "acd4ae0100bcb301452aacc344f8213c41bf620904eaca2b47d8dd36deff5029",
+  "devices": [
+    {
+      "bdf": "0000:03:00.0",
+      "pci": "1002:7551/1eae:9801/c0",
+      "market_name": "AMD Radeon AI PRO R9700",
+      "asic_serial": "REDACTED_ASIC_ID"
+    },
+    {
+      "bdf": "0000:06:00.0",
+      "pci": "1002:7551/1eae:9801/c0",
+      "market_name": "AMD Radeon AI PRO R9700",
+      "asic_serial": "REDACTED_ASIC_ID"
+    },
+    {
+      "bdf": "0000:83:00.0",
+      "pci": "1002:7551/1eae:9801/c0",
+      "market_name": "AMD Radeon AI PRO R9700",
+      "asic_serial": "REDACTED_ASIC_ID"
+    },
+    {
+      "bdf": "0000:86:00.0",
+      "pci": "1002:7551/1eae:9801/c0",
+      "market_name": "AMD Radeon AI PRO R9700",
+      "asic_serial": "REDACTED_ASIC_ID"
+    }
+  ]
+}

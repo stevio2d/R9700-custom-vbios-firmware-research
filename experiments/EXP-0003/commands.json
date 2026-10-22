@@ -1,0 +1,162 @@
+{
+  "build_environment": {
+    "source": "$HOME/.config/rocm/env.sh",
+    "LD_LIBRARY_PATH": "/opt/rocm/core-10.1/lib/llvm/lib:/opt/rocm/core-10.1/lib"
+  },
+  "builds": {
+    "gdn16": {
+      "configure": [
+        "cmake",
+        "-S",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/gdn16/source",
+        "-B",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/gdn16/build",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRAD_WITH_HIP=ON",
+        "-DRAD_GPU_TARGETS=gfx1201",
+        "-DRAD_HIP_VOPD_REPEATABLE=OFF",
+        "-DCMAKE_C_COMPILER=/opt/rocm/core-10.1/lib/llvm/bin/clang",
+        "-DCMAKE_CXX_COMPILER=/opt/rocm/core-10.1/lib/llvm/bin/clang++",
+        "-DRAD_HIPCC=/opt/rocm/core-10.1/bin/hipcc",
+        "-DRAD_HIP_RUNTIME=/opt/rocm/core-10.1/lib/libamdhip64.so",
+        "-DRAD_HSA_RUNTIME=/opt/rocm/core-10.1/lib/libhsa-runtime64.so"
+      ],
+      "build": [
+        "cmake",
+        "--build",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/gdn16/build",
+        "--target",
+        "libr4d",
+        "--parallel",
+        "16"
+      ]
+    },
+    "moe": {
+      "configure": [
+        "cmake",
+        "-S",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/source",
+        "-B",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRAD_WITH_HIP=ON",
+        "-DRAD_GPU_TARGETS=gfx1201",
+        "-DRAD_HIP_VOPD_REPEATABLE=OFF",
+        "-DCMAKE_C_COMPILER=/opt/rocm/core-10.1/lib/llvm/bin/clang",
+        "-DCMAKE_CXX_COMPILER=/opt/rocm/core-10.1/lib/llvm/bin/clang++",
+        "-DRAD_HIPCC=/opt/rocm/core-10.1/bin/hipcc",
+        "-DRAD_HIP_RUNTIME=/opt/rocm/core-10.1/lib/libamdhip64.so",
+        "-DRAD_HSA_RUNTIME=/opt/rocm/core-10.1/lib/libhsa-runtime64.so"
+      ],
+      "build": [
+        "cmake",
+        "--build",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build",
+        "--target",
+        "libr4d",
+        "--parallel",
+        "16"
+      ],
+      "review_fix_rebuild": [
+        "cmake",
+        "--build",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/moe/build",
+        "--target",
+        "libr4d",
+        "--parallel",
+        "16"
+      ]
+    },
+    "fallback": {
+      "configure": [
+        "cmake",
+        "-S",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/fallback/source",
+        "-B",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/fallback/build",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRAD_WITH_HIP=ON",
+        "-DRAD_GPU_TARGETS=gfx1201",
+        "-DRAD_HIP_VOPD_REPEATABLE=OFF",
+        "-DCMAKE_C_COMPILER=/opt/rocm/core-10.1/lib/llvm/bin/clang",
+        "-DCMAKE_CXX_COMPILER=/opt/rocm/core-10.1/lib/llvm/bin/clang++",
+        "-DRAD_HIPCC=/opt/rocm/core-10.1/bin/hipcc",
+        "-DRAD_HIP_RUNTIME=/opt/rocm/core-10.1/lib/libamdhip64.so",
+        "-DRAD_HSA_RUNTIME=/opt/rocm/core-10.1/lib/libhsa-runtime64.so"
+      ],
+      "build": [
+        "cmake",
+        "--build",
+        "EXTERNAL_WORKTREE/trials/EXP-0003/fallback/build",
+        "--target",
+        "r4d_selftest",
+        "--parallel",
+        "8"
+      ]
+    }
+  },
+  "serving_benchmark_commands": [
+    [
+      "python3",
+      "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_version_trial.py",
+      "run",
+      "--version",
+      "1.9.0",
+      "--pid",
+      "117549",
+      "--corpus",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1",
+      "--betterbench-root",
+      "EXTERNAL_WORKTREE/BetterBench",
+      "--out",
+      "EXTERNAL_WORKTREE/trials/EXP-0003/gdn16-benchmark",
+      "--seconds",
+      "1440",
+      "--exclusive-window-confirmed"
+    ],
+    [
+      "EXTERNAL_WORKTREE/.venv/bin/python",
+      "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_version_trial.py",
+      "run",
+      "--version",
+      "1.9.0",
+      "--pid",
+      "117549",
+      "--corpus",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1",
+      "--betterbench-root",
+      "EXTERNAL_WORKTREE/BetterBench",
+      "--out",
+      "EXTERNAL_WORKTREE/trials/EXP-0003/gdn16-benchmark-r2",
+      "--seconds",
+      "1380",
+      "--exclusive-window-confirmed"
+    ],
+    [
+      "EXTERNAL_WORKTREE/.venv/bin/python",
+      "EXTERNAL_WORKTREE/trials/EXP-0003/tools/radiance_version_trial.py",
+      "run",
+      "--version",
+      "1.9.0",
+      "--pid",
+      "128434",
+      "--corpus",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1",
+      "--betterbench-root",
+      "EXTERNAL_WORKTREE/BetterBench",
+      "--out",
+      "EXTERNAL_WORKTREE/trials/EXP-0003/moe-benchmark",
+      "--seconds",
+      "1320",
+      "--exclusive-window-confirmed"
+    ]
+  ],
+  "kernel_commands": "Each retained manifest.json records exact self-test argv and pinned input hashes; status.json records the enforced deadline.",
+  "normal_context_hold": "The validation parent called native hipSetDevice, hipMalloc(4096) on each UUID-visible device, waited for the supervised manifest child, then hipFree on each device. No kernel or power-setting operation was issued by this parent."
+}

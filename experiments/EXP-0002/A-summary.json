@@ -1,0 +1,614 @@
+{
+  "baseline": {
+    "benchmark_inputs": {
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/__init__.py": "c53c4fbba8eaab49f004dc82fd8773b9e73c7880bdaec5e76a5a11f006f1bb94",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/cli.py": "11511bb6803fa1f7a6462b872561ac0acc8f8cd0b5a6b3d50fb5753850df864c",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/client.py": "362c57f767e8bfaddf7d8eb508b1860aa49eaa53adb383a93e918ab8f909629a",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/config.py": "9700ea1619988f423f52e34645b5a036c816a0c67eb61c0f69ae1b382a285f86",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/corpus.py": "e0cfb2b1a111ba03d44123f30ffb4c54d78b2d53c8733d99ba27d4690d3dd4d3",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/env.py": "454b0996c4647a8e837b67da1e9cc352687b626cec2ab13a03f006f95ee5d6aa",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/gallery.py": "fbf1a705096c3c2e47de5b0cd12699992d5ee772c42eb8fc23c3fb244a9fb566",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/html_report.py": "fdda7ca386f20379be1a3ee50363bdf664874bc2516dac044153f902eb7d7d8a",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/metrics.py": "5dcece3cef1364f8800b8a87230912e027b3f301a17836df5eff6ff95bf0348d",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/prefill.py": "5fc78c6181863401ea828801fd0219c8265625f299385448a7a5a3abdae807d9",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/report.py": "e29dba5b1df011c567adac38410ccb2bddf858b64222c7c659e98eea7db1b96f",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/runner.py": "70cf2587f74f0392423132c3e430dbdbd6235257f1926b208294468b36aece7b",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/runs.py": "e580e6923fdb1b1d0b32256be4efc40c263fac96c54a5f82707cfb045d61691b",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/session.py": "382b2f9c7c1f241dc120263dfbc000c3f06893b2529260b31a2a85ecc3036caa",
+      "EXTERNAL_WORKTREE/BetterBench/betterbench/update.py": "548ba7844465c12b4641cb07a19a2d8382994da0ceb94f5143ff1941f957d0fc",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/chat.jsonl": "6adc21235fd04c32c235d0f61faeb95ed439fedb85b1813d17b006b41fe141f4",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/code.jsonl": "0ba162ffabf02068b75795c3a9cd34d24c46e62b647f4d06768ef5673154e7d1",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/file_edit.jsonl": "1705dbceab532263c92c0868f31c1219a7cc2e1cd6e2f5b2d990590719f158d0",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/json.jsonl": "8115eb2db822c99e8c604efd36b2ed3fa5614337c39e2972539d5ec59e091608",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/math.jsonl": "c6b6d54c20b4878528ada3b280bf421b3a153843391b298351cd3b97cec8713b",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/prose.jsonl": "df44c33ed8a9e4f122cadd344b0b30dd53c2d63459cbe41e48546d6635501c38",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/reasoning.jsonl": "bad636d9f5f43f6f0dddade46f15937952982dbe8b253b38800f28d65ed460e7",
+      "EXTERNAL_WORKTREE/BetterBench/corpus/v1/summarization.jsonl": "a0755899e91385cf99ccb6eb2d89967f523e3946bc5cd548114c6761e809a15e",
+      "EXTERNAL_WORKTREE/BetterBench/pyproject.toml": "c707953946dc5c4cf841dbef0c45566e6053c1d7e10f7a0feaf9e343ceb0ca63"
+    },
+    "config": {
+      "concurrency_levels": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "concurrency_requests": 32,
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "greedy": true,
+      "max_model_len": 262144,
+      "prefill_depths": [
+        2000,
+        8000,
+        16000,
+        32000,
+        64000
+      ],
+      "prefill_max_tokens": 16,
+      "prefill_runs": 6,
+      "prefill_warmup": 2,
+      "run_concurrency": true,
+      "run_prefill": true,
+      "run_single_stream": true,
+      "runs_per_category": 12,
+      "seed": 9700,
+      "temperature": 0.0,
+      "timeout_s": 120,
+      "unique_nonce": true,
+      "warmup": 2
+    },
+    "effective_repeat_configs": [
+      {
+        "ab_max_pairs": 200,
+        "ab_min_pairs": 12,
+        "concurrency_levels": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "concurrency_requests": 32,
+        "conf": 0.95,
+        "extra_body": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "greedy": true,
+        "max_model_len": 262144,
+        "prefill_ctx_margin": 256,
+        "prefill_depths": [
+          2000,
+          8000,
+          16000,
+          32000,
+          64000
+        ],
+        "prefill_max_tokens": 16,
+        "prefill_runs": 6,
+        "prefill_warmup": 2,
+        "run_concurrency": true,
+        "run_prefill": true,
+        "run_single_stream": true,
+        "runs_per_category": 12,
+        "seed": 9700,
+        "target_mde_pct": 1.0,
+        "temperature": 0.0,
+        "timeout_s": 120,
+        "top_k": 20,
+        "top_p": 0.95,
+        "unique_nonce": true,
+        "warmup": 2,
+        "weights": {
+          "code": 0.3,
+          "file_edit": 0.1,
+          "json": 0.15,
+          "prose": 0.15,
+          "reasoning": 0.2,
+          "summarization": 0.1
+        }
+      },
+      {
+        "ab_max_pairs": 200,
+        "ab_min_pairs": 12,
+        "concurrency_levels": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "concurrency_requests": 32,
+        "conf": 0.95,
+        "extra_body": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "greedy": true,
+        "max_model_len": 262144,
+        "prefill_ctx_margin": 256,
+        "prefill_depths": [
+          2000,
+          8000,
+          16000,
+          32000,
+          64000
+        ],
+        "prefill_max_tokens": 16,
+        "prefill_runs": 6,
+        "prefill_warmup": 2,
+        "run_concurrency": true,
+        "run_prefill": true,
+        "run_single_stream": true,
+        "runs_per_category": 12,
+        "seed": 9700,
+        "target_mde_pct": 1.0,
+        "temperature": 0.0,
+        "timeout_s": 120,
+        "top_k": 20,
+        "top_p": 0.95,
+        "unique_nonce": true,
+        "warmup": 2,
+        "weights": {
+          "code": 0.3,
+          "file_edit": 0.1,
+          "json": 0.15,
+          "prose": 0.15,
+          "reasoning": 0.2,
+          "summarization": 0.1
+        }
+      },
+      {
+        "ab_max_pairs": 200,
+        "ab_min_pairs": 12,
+        "concurrency_levels": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "concurrency_requests": 32,
+        "conf": 0.95,
+        "extra_body": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "greedy": true,
+        "max_model_len": 262144,
+        "prefill_ctx_margin": 256,
+        "prefill_depths": [
+          2000,
+          8000,
+          16000,
+          32000,
+          64000
+        ],
+        "prefill_max_tokens": 16,
+        "prefill_runs": 6,
+        "prefill_warmup": 2,
+        "run_concurrency": true,
+        "run_prefill": true,
+        "run_single_stream": true,
+        "runs_per_category": 12,
+        "seed": 9700,
+        "target_mde_pct": 1.0,
+        "temperature": 0.0,
+        "timeout_s": 120,
+        "top_k": 20,
+        "top_p": 0.95,
+        "unique_nonce": true,
+        "warmup": 2,
+        "weights": {
+          "code": 0.3,
+          "file_edit": 0.1,
+          "json": 0.15,
+          "prose": 0.15,
+          "reasoning": 0.2,
+          "summarization": 0.1
+        }
+      }
+    ],
+    "evidence_sha256": {
+      "benchmark-inputs.json": "48aa39737755edbced822b121c5aa32d45363447e672ab8d48ed780c9e188f15",
+      "config.json": "ea9fc4e3332e1feeb9caac7abb59bd239bba955cea625c5ba7eae9db5651c26c",
+      "health-after.json": "6fd9babb52b74d5b1807a654d4cf6e2101af62c7cc1bb720f1ae80a2d1ec983f",
+      "health-before.json": "6fd9babb52b74d5b1807a654d4cf6e2101af62c7cc1bb720f1ae80a2d1ec983f",
+      "kernel-window.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "model.json": "3deb12724834e247ca9b62e08d300889b2d5cf425feb27020aeeb92c668aebde",
+      "props-during.json": "2a3d8fd4465af902b45419a1541246690487357709ae243862a143b9f4ef194c",
+      "quality-after.json": "7ee3002744396d51fe59cb74e34001158ec8fc88af6c52921336e8135c1899e0",
+      "quality-before.json": "7e31c91f63480bd0bbcd41a2f74ae88aa78fb6d2e34b612eea10998d8259dabf",
+      "repeat-1/betterbench.log": "c4ce0fd9e0fe4314690dd8418464b295e0d4d6def599eb1618d646920f4e375a",
+      "repeat-1/requests.jsonl": "021aa6ffd4d25cea95770d5f22cafe881084a50f7f44355a1b82870048776738",
+      "repeat-1/results.html": "6ce6dcee5881a3d8294fdf1fd8449f99afaa27dd1be7625ac7170d9c841fd97f",
+      "repeat-1/results.json": "c60f1574f456bab1b05bb72e4984c06bb2fa9021234e7e9f6bd5f17ea60c83ee",
+      "repeat-2/betterbench.log": "6f858a7bfc5b8584a06e8cf813cf6a6acc2813bf2e2122d10ecf2760cccdc347",
+      "repeat-2/requests.jsonl": "ea0ca051f897c41fa4a9cba0c33ab728f971bd21512f64e7276b111e28db06a3",
+      "repeat-2/results.html": "4acab3a5fc6f06c80268c3d13656f5b65a26a6b3b738f47f31ea19f3818a0e5b",
+      "repeat-2/results.json": "9dbad35b3e9eb850f60ce9eeccdf0fb53361caedfb6bbfe914092144a6333245",
+      "repeat-3/betterbench.log": "a86a1e2d47693422d9e056ca4926bdea2b9d69a8f69e519895aebbf7a36dbb6d",
+      "repeat-3/requests.jsonl": "67ebfdf9ece91daba736b4d9d0f5ee31b71da6e714866c25d59d3b8be4c74ed2",
+      "repeat-3/results.html": "91df1ea051973856114e568534d1a26f946a3949784d0e1e69d5c56724e840bc",
+      "repeat-3/results.json": "b418301539490fa6c2b5392e0e90a44112a18b18fff1281680b94ef15988a2d4",
+      "server-after.json": "4794cd0f9730776a24657c36afae22cecd2886023483c57e7d23f37b0b4e9d58",
+      "server-before.json": "4794cd0f9730776a24657c36afae22cecd2886023483c57e7d23f37b0b4e9d58",
+      "server_info-during.json": "9f0290776d4fc87c3bd44da493387bc089d5e2ff2326cbbeba051dcad1338f66",
+      "status.json": "2936993042d786e69d5afacf564b373ddf2c64e482be65fb149cfd38fba58b3c",
+      "supervisor.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "telemetry.jsonl": "8f79c0b17fbdda4ac4386aa26578cbcbd27f80cf438e0de2182b400f35b51153",
+      "version.json": "14b7789b09093d69018b253fd442af8e5ade8d9ea8e1bdc535bcec29f8e092a9"
+    },
+    "fan_rpm_range": {
+      "0000:03:00.0": [
+        888,
+        4501
+      ],
+      "0000:06:00.0": [
+        889,
+        4605
+      ],
+      "0000:83:00.0": [
+        889,
+        4831
+      ],
+      "0000:86:00.0": [
+        889,
+        5115
+      ]
+    },
+    "kernel_window_log_empty": true,
+    "max_temperatures_c": {
+      "0000:03:00.0/edge": 70.0,
+      "0000:03:00.0/junction": 92.0,
+      "0000:03:00.0/mem": 85.0,
+      "0000:06:00.0/edge": 74.0,
+      "0000:06:00.0/junction": 94.0,
+      "0000:06:00.0/mem": 87.0,
+      "0000:83:00.0/edge": 76.0,
+      "0000:83:00.0/junction": 96.0,
+      "0000:83:00.0/mem": 91.0,
+      "0000:86:00.0/edge": 76.0,
+      "0000:86:00.0/junction": 100.0,
+      "0000:86:00.0/mem": 92.0
+    },
+    "metrics": {
+      "concurrency_1": {
+        "max": 239.16864660558565,
+        "median": 238.58615469646497,
+        "min": 236.96023316916524,
+        "values": [
+          239.16864660558565,
+          238.58615469646497,
+          236.96023316916524
+        ]
+      },
+      "concurrency_2": {
+        "max": 376.95233715430817,
+        "median": 375.39958307014007,
+        "min": 374.28715973324773,
+        "values": [
+          374.28715973324773,
+          376.95233715430817,
+          375.39958307014007
+        ]
+      },
+      "concurrency_4": {
+        "max": 538.0232069024578,
+        "median": 533.5942285052514,
+        "min": 526.0550221428165,
+        "values": [
+          526.0550221428165,
+          538.0232069024578,
+          533.5942285052514
+        ]
+      },
+      "concurrency_8": {
+        "max": 672.4334381516823,
+        "median": 668.3663506824759,
+        "min": 660.6704814839196,
+        "values": [
+          672.4334381516823,
+          660.6704814839196,
+          668.3663506824759
+        ]
+      },
+      "prefill_16000": {
+        "max": 7192.548829873023,
+        "median": 7149.939314742738,
+        "min": 7134.057527347628,
+        "values": [
+          7192.548829873023,
+          7149.939314742738,
+          7134.057527347628
+        ]
+      },
+      "prefill_2000": {
+        "max": 5625.356399302735,
+        "median": 5585.5799152839645,
+        "min": 5536.634445765045,
+        "values": [
+          5625.356399302735,
+          5585.5799152839645,
+          5536.634445765045
+        ]
+      },
+      "prefill_32000": {
+        "max": 7260.701575875904,
+        "median": 7239.9148694070755,
+        "min": 7222.653870697458,
+        "values": [
+          7260.701575875904,
+          7239.9148694070755,
+          7222.653870697458
+        ]
+      },
+      "prefill_64000": {
+        "max": 7279.15543817903,
+        "median": 7259.368782946886,
+        "min": 7255.3771525268385,
+        "values": [
+          7279.15543817903,
+          7255.3771525268385,
+          7259.368782946886
+        ]
+      },
+      "prefill_8000": {
+        "max": 6971.296192070129,
+        "median": 6955.472918128883,
+        "min": 6915.1743252253555,
+        "values": [
+          6971.296192070129,
+          6955.472918128883,
+          6915.1743252253555
+        ]
+      },
+      "weighted_decode": {
+        "max": 274.28228968909167,
+        "median": 272.4957833980027,
+        "min": 271.236965333126,
+        "values": [
+          271.236965333126,
+          274.28228968909167,
+          272.4957833980027
+        ]
+      }
+    },
+    "model": {
+      "bytes": 121969901568,
+      "device": 66306,
+      "inode": 13770743,
+      "mtime_ns": 1792130831304330372,
+      "path": "EXTERNAL_WORKTREE/models/radiance/qwen3.8-next-flash-fp8-iq4r-moe.rad",
+      "sha256": "0af5e96244e80c21ac8edca1719dae49b8a201b94a2f3994c3e24026ceaa4d20"
+    },
+    "probe_texts_after": [
+      "42",
+      "{\n  \"name\": \"r9700\",\n  \"count\": 4\n}",
+      "xs[::-1]",
+      "1, 3, 5, 9",
+      "Canberra",
+      "Bonjour"
+    ],
+    "probe_texts_before": [
+      "42",
+      "{\n  \"name\": \"r9700\",\n  \"count\": 4\n}",
+      "xs[::-1]",
+      "1, 3, 5, 9",
+      "Canberra",
+      "Bonjour"
+    ],
+    "probe_usage_after": [
+      {
+        "completion_tokens": 3,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 27,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 30
+      },
+      {
+        "completion_tokens": 23,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 61
+      },
+      {
+        "completion_tokens": 5,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33
+      },
+      {
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 48
+      },
+      {
+        "completion_tokens": 3,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 24
+      },
+      {
+        "completion_tokens": 2,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 26,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 28
+      }
+    ],
+    "probe_usage_before": [
+      {
+        "completion_tokens": 3,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 27,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 30
+      },
+      {
+        "completion_tokens": 23,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 61
+      },
+      {
+        "completion_tokens": 5,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 33
+      },
+      {
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 48
+      },
+      {
+        "completion_tokens": 3,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 24
+      },
+      {
+        "completion_tokens": 2,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 26,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 28
+      }
+    ],
+    "repeats": [
+      {
+        "elapsed_seconds_from_retained_mtime": 342.0,
+        "finished_epoch": 1792452371.0,
+        "metrics": {
+          "concurrency_1": 239.16864660558565,
+          "concurrency_2": 374.28715973324773,
+          "concurrency_4": 526.0550221428165,
+          "concurrency_8": 672.4334381516823,
+          "prefill_16000": 7192.548829873023,
+          "prefill_2000": 5625.356399302735,
+          "prefill_32000": 7260.701575875904,
+          "prefill_64000": 7279.15543817903,
+          "prefill_8000": 6971.296192070129,
+          "weighted_decode": 271.236965333126
+        },
+        "recorded_requests_including_warmups": 280,
+        "repeat": 1,
+        "started_epoch": 1792452029.0
+      },
+      {
+        "elapsed_seconds_from_retained_mtime": 343.0,
+        "finished_epoch": 1792452714.0,
+        "metrics": {
+          "concurrency_1": 238.58615469646497,
+          "concurrency_2": 376.95233715430817,
+          "concurrency_4": 538.0232069024578,
+          "concurrency_8": 660.6704814839196,
+          "prefill_16000": 7149.939314742738,
+          "prefill_2000": 5585.5799152839645,
+          "prefill_32000": 7239.9148694070755,
+          "prefill_64000": 7255.3771525268385,
+          "prefill_8000": 6955.472918128883,
+          "weighted_decode": 274.28228968909167
+        },
+        "recorded_requests_including_warmups": 280,
+        "repeat": 2,
+        "started_epoch": 1792452371.0
+      },
+      {
+        "elapsed_seconds_from_retained_mtime": 342.0,
+        "finished_epoch": 1792453056.0,
+        "metrics": {
+          "concurrency_1": 236.96023316916524,
+          "concurrency_2": 375.39958307014007,
+          "concurrency_4": 533.5942285052514,
+          "concurrency_8": 668.3663506824759,
+          "prefill_16000": 7134.057527347628,
+          "prefill_2000": 5536.634445765045,
+          "prefill_32000": 7222.653870697458,
+          "prefill_64000": 7259.368782946886,
+          "prefill_8000": 6915.1743252253555,
+          "weighted_decode": 272.4957833980027
+        },
+        "recorded_requests_including_warmups": 280,
+        "repeat": 3,
+        "started_epoch": 1792452714.0
+      }
+    ],
+    "status": {
+      "completed_repeats": 3,
+      "deadline_seconds": 1680,
+      "elapsed_seconds": 1152.2496434719997,
+      "started_utc": "2026-10-19T23:18:25Z",
+      "status": "completed",
+      "version_expected": "1.6.0"
+    },
+    "version": {
+      "abi_version": 16,
+      "engine": "radiance",
+      "version": "1.6.0"
+    }
+  }
+}

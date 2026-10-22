@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "counts": {
+    "markdown_files": 44,
+    "local_links": 419,
+    "markdown_fragments": 0,
+    "chapters": 11,
+    "csv_files": 8,
+    "cards": 1,
+    "roms": 3,
+    "vendor_artifacts": 3,
+    "preserved_sources": 3
+  },
+  "errors": []
+}

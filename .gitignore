@@ -1,0 +1,30 @@
+# Editor and operating-system clutter
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Temporary work and caches (firmware files and vendor archives remain trackable)
+/tmp/
+/temp/
+.cache/
+tools/static-analysis-work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.tmp
+*.temp
+
+# Native build products and generated CMake state. Keep source and retained
+# build logs/provenance; do not commit local compiler output or build caches.
+flashing/build/
+**/CMakeCache.txt
+**/CMakeFiles/
+**/cmake_install.cmake
+*.o
+*.a

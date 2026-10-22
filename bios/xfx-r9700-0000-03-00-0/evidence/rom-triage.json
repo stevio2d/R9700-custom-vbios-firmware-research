@@ -1,0 +1,253 @@
+{
+  "atom_tables": [
+    {
+      "content_revision": 3,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 404,
+      "kind": "rom_header",
+      "length": 44,
+      "offset": 404,
+      "table_id": "ATOM_ROM_HEADER"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 768,
+      "kind": "master_data_table",
+      "length": 74,
+      "offset": 768,
+      "table_id": "MASTER_DATA_TABLE"
+    },
+    {
+      "content_revision": 0,
+      "format_revision": 6,
+      "image_index": 0,
+      "image_relative_offset": 9248,
+      "index": 2,
+      "kind": "data_table",
+      "length": 532,
+      "offset": 9248,
+      "table_id": "smc_dpm_info"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 7368,
+      "index": 3,
+      "kind": "data_table",
+      "length": 368,
+      "offset": 7368,
+      "table_id": "unclassified_table_03"
+    },
+    {
+      "content_revision": 5,
+      "format_revision": 3,
+      "image_index": 0,
+      "image_relative_offset": 9076,
+      "index": 4,
+      "kind": "data_table",
+      "length": 172,
+      "offset": 9076,
+      "table_id": "firmware_info"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 7736,
+      "index": 5,
+      "kind": "data_table",
+      "length": 52,
+      "offset": 7736,
+      "table_id": "unclassified_table_05"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 3,
+      "image_index": 0,
+      "image_relative_offset": 6500,
+      "index": 6,
+      "kind": "data_table",
+      "length": 80,
+      "offset": 6500,
+      "table_id": "lcd_info"
+    },
+    {
+      "content_revision": 3,
+      "format_revision": 3,
+      "image_index": 0,
+      "image_relative_offset": 7976,
+      "index": 9,
+      "kind": "data_table",
+      "length": 852,
+      "offset": 7976,
+      "table_id": "unclassified_table_09"
+    },
+    {
+      "content_revision": 2,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 8828,
+      "index": 11,
+      "kind": "data_table",
+      "length": 48,
+      "offset": 8828,
+      "table_id": "vram_usage_by_firmware"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 6792,
+      "index": 12,
+      "kind": "data_table",
+      "length": 164,
+      "offset": 6792,
+      "table_id": "gpio_pin_lut"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 1,
+      "image_index": 0,
+      "image_relative_offset": 7788,
+      "index": 13,
+      "kind": "data_table",
+      "length": 164,
+      "offset": 7788,
+      "table_id": "unclassified_table_13"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 3,
+      "image_index": 0,
+      "image_relative_offset": 9780,
+      "index": 14,
+      "kind": "data_table",
+      "length": 136,
+      "offset": 9780,
+      "table_id": "gfx_info"
+    },
+    {
+      "content_revision": 2,
+      "format_revision": 2,
+      "image_index": 0,
+      "image_relative_offset": 7952,
+      "index": 17,
+      "kind": "data_table",
+      "length": 24,
+      "offset": 7952,
+      "table_id": "unclassified_table_17"
+    },
+    {
+      "content_revision": 5,
+      "format_revision": 1,
+      "image_index": 0,
+      "image_relative_offset": 8876,
+      "index": 22,
+      "kind": "data_table",
+      "length": 200,
+      "offset": 8876,
+      "table_id": "display_object_info"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 1,
+      "image_index": 0,
+      "image_relative_offset": 7360,
+      "index": 23,
+      "kind": "data_table",
+      "length": 8,
+      "offset": 7360,
+      "table_id": "indirect_io_access"
+    },
+    {
+      "content_revision": 0,
+      "format_revision": 4,
+      "image_index": 0,
+      "image_relative_offset": 9916,
+      "index": 24,
+      "kind": "data_table",
+      "length": 84,
+      "offset": 9916,
+      "table_id": "umc_info"
+    },
+    {
+      "content_revision": 2,
+      "format_revision": 1,
+      "image_index": 0,
+      "image_relative_offset": 844,
+      "index": 25,
+      "kind": "data_table",
+      "length": 5656,
+      "offset": 844,
+      "table_id": "unclassified_table_25"
+    },
+    {
+      "content_revision": 1,
+      "format_revision": 3,
+      "image_index": 0,
+      "image_relative_offset": 6956,
+      "index": 26,
+      "kind": "data_table",
+      "length": 204,
+      "offset": 6956,
+      "table_id": "unclassified_table_26"
+    },
+    {
+      "content_revision": 5,
+      "format_revision": 4,
+      "image_index": 0,
+      "image_relative_offset": 6580,
+      "index": 27,
+      "kind": "data_table",
+      "length": 212,
+      "offset": 6580,
+      "table_id": "dce_info"
+    }
+  ],
+  "input_path": "bios/xfx-r9700-0000-03-00-0/original/stock-software-read1.rom",
+  "pcir_images": [
+    {
+      "available_length_bytes": 58880,
+      "chain_image_index": 0,
+      "chain_index": 0,
+      "checksum": {
+        "algorithm": "8_bit_byte_sum",
+        "legacy_header_checksum": {
+          "length_bytes": 58880,
+          "sum_mod_256": 0,
+          "valid": true
+        },
+        "pcir_image_sum_mod_256": 0
+      },
+      "code_type": 0,
+      "complete": true,
+      "declared_length_bytes": 58880,
+      "device_id": 30033,
+      "header_length_512_byte_units": 115,
+      "header_length_bytes": 58880,
+      "image_length_512_byte_units": 115,
+      "index": 0,
+      "indicator": 0,
+      "is_last_image": false,
+      "offset": 0,
+      "pcir_bounds_valid": true,
+      "pcir_offset": 448,
+      "pcir_structure_length": 24,
+      "vendor_id": 4098
+    }
+  ],
+  "schema_version": 1,
+  "sha256": "aad3d6957f284a0cce130f8e106ea7a1118ba9bf1bf86b26d86a28ca11d0bc8d",
+  "size_bytes": 58880,
+  "warnings": [
+    {
+      "code": "rom_chain_missing_last_indicator",
+      "message": "Image is not marked as the last ROM image, but no bytes remain for another image.",
+      "offset": 469
+    }
+  ]
+}

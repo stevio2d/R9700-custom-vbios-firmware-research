@@ -1,0 +1,239 @@
+{
+  "server": {
+    "model": "Qwen3.8-Flash-Next",
+    "version": "1.6.0",
+    "max_model_len": 262144,
+    "max_num_seqs": 8,
+    "queue_cap": 64,
+    "default_max_tokens": null,
+    "max_tokens_cap": null,
+    "max_n": 8,
+    "max_stop_strings": 64,
+    "max_stop_bytes": 4096,
+    "uptime_s": 1,
+    "in_flight": 0
+  },
+  "request_defaults": {
+    "temperature": 1.0,
+    "top_k": 20,
+    "top_p": 0.949999988079071,
+    "min_p": 0.0,
+    "typical_p": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "repeat_last_n": 64,
+    "dry_multiplier": 0.0,
+    "dry_base": 1.75,
+    "dry_allowed_length": 2,
+    "dry_penalty_last_n": -1,
+    "dry_sequence_breakers": [
+      "\n",
+      ":",
+      "\"",
+      "*"
+    ],
+    "xtc_probability": 0.0,
+    "xtc_threshold": 0.10000000149011612,
+    "max_tokens": null,
+    "reasoning_effort": null,
+    "reasoning_effort_map": {},
+    "thinking_token_budget": null,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "reasoning_format": "auto"
+  },
+  "capabilities": {
+    "chat": true,
+    "tools": true,
+    "reasoning": true,
+    "grammar": true,
+    "embedding": false,
+    "image": false,
+    "video": false,
+    "audio": false,
+    "logprobs": true,
+    "image_generation": false,
+    "image_edit": false,
+    "reasoning_efforts": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "xhigh"
+    ]
+  },
+  "endpoints": [
+    "POST /v1/chat/completions",
+    "POST /v1/completions",
+    "POST /v1/embeddings",
+    "POST /v1/images/generations",
+    "POST /v1/images/edits",
+    "POST /v1/systemone",
+    "GET /v1/models",
+    "GET /v1/models/:id",
+    "POST /chat/completions",
+    "POST /completion",
+    "POST /completions",
+    "POST /infill",
+    "POST /embeddings",
+    "POST /images/generations",
+    "POST /images/edits",
+    "GET /models",
+    "POST /apply-template",
+    "POST /v1/chat/completions/input_tokens",
+    "POST /chat/completions/input_tokens",
+    "POST /v1/messages",
+    "POST /v1/messages/count_tokens",
+    "POST /v1/responses",
+    "POST /responses",
+    "POST /v1/responses/input_tokens",
+    "POST /responses/input_tokens",
+    "GET /metrics",
+    "GET /health",
+    "GET /v1/health",
+    "GET /ping",
+    "POST /ping",
+    "GET /load",
+    "GET /version",
+    "GET /server_info",
+    "GET /props",
+    "GET /diagnostics",
+    "POST /tokenize",
+    "POST /detokenize",
+    "GET /get_tokenizer_info",
+    "POST /reset_prefix_cache",
+    "GET /",
+    "GET /dashboard",
+    "GET /stats",
+    "GET /graph",
+    "GET /sessions"
+  ],
+  "engine": {
+    "arch": "qwen4exp",
+    "quant": "",
+    "n_layers": 48,
+    "n_embd": 2560,
+    "n_vocab": 248320,
+    "n_ctx_train": 262144,
+    "container": "EXTERNAL_WORKTREE/models/radiance/qwen3.8-next-flash-fp8-iq4r-moe.rad",
+    "tensor_parallel": 4,
+    "tp_wire": "exact",
+    "tp_wire_min_kb": 0,
+    "max_num_batched_tokens": 2048,
+    "placement": "expert_tiered",
+    "embedding_placement": {
+      "asked": "ram",
+      "resolved": "ram"
+    },
+    "ngram_placement": {
+      "asked": "ram",
+      "resolved": "ram"
+    },
+    "vision_tower_placement": {
+      "asked": "vram",
+      "resolved": "vram"
+    },
+    "prefix_cache": true,
+    "checkpoint_slots": 8,
+    "deterministic": false,
+    "devices": [
+      {
+        "rank": 0,
+        "device": 0,
+        "name": "AMD Radeon AI PRO R9700",
+        "arch": "gfx1201",
+        "vram_bytes": 34208743424,
+        "vram_free": 175869952
+      },
+      {
+        "rank": 1,
+        "device": 1,
+        "name": "AMD Radeon AI PRO R9700",
+        "arch": "gfx1201",
+        "vram_bytes": 34208743424,
+        "vram_free": 175865856
+      },
+      {
+        "rank": 2,
+        "device": 2,
+        "name": "AMD Radeon AI PRO R9700",
+        "arch": "gfx1201",
+        "vram_bytes": 34208743424,
+        "vram_free": 182149120
+      },
+      {
+        "rank": 3,
+        "device": 3,
+        "name": "AMD Radeon AI PRO R9700",
+        "arch": "gfx1201",
+        "vram_bytes": 34208743424,
+        "vram_free": 184262656
+      }
+    ],
+    "ops": 2054,
+    "weights": 101869,
+    "kv_groups": [
+      {
+        "name": "kv_attn",
+        "kind": "full",
+        "n_layers": 13,
+        "bytes": 11689347072,
+        "block_size": 4,
+        "blocks": 439053,
+        "tokens": 1756212
+      },
+      {
+        "name": "kv_gdn_state",
+        "kind": "linear",
+        "n_layers": 36,
+        "bytes": 452984832,
+        "states": 8
+      },
+      {
+        "name": "kv_gdn_conv",
+        "kind": "conv",
+        "n_layers": 36,
+        "bytes": 8847360,
+        "states": 8
+      },
+      {
+        "name": "kv_qsa_tail",
+        "kind": "linear",
+        "n_layers": 13,
+        "bytes": 372736,
+        "states": 8
+      },
+      {
+        "name": "kv_ple_tok",
+        "kind": "conv",
+        "n_layers": 1,
+        "bytes": 160,
+        "states": 8
+      },
+      {
+        "name": "kv_ple_conv",
+        "kind": "conv",
+        "n_layers": 1,
+        "bytes": 1966080,
+        "states": 8
+      },
+      {
+        "name": "kv_qsa_bkey",
+        "kind": "full",
+        "n_layers": 13,
+        "bytes": 1461168384,
+        "block_size": 4,
+        "blocks": 439053,
+        "tokens": 1756212
+      }
+    ],
+    "speculation": {
+      "enabled": true,
+      "drafter": "mtp",
+      "kind": "serial",
+      "depth": 3
+    }
+  }
+}

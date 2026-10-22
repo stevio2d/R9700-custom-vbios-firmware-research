@@ -1,0 +1,3 @@
+[0/2] Re-checking globbed directories...
+[1/2] Building HIP object libr4d/CMakeFiles/libr4d.dir/r4d_moe.hip.o
+[2/2] Linking HIP shared module radiance_home/kernels/libr4d.so

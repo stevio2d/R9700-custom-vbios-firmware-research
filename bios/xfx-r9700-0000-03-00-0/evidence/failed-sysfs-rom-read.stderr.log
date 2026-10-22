@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/usr/lib/python3.12/pathlib.py", line 1022, in read_bytes
+    return f.read()
+           ^^^^^^^^
+OSError: [Errno 5] Input/output error

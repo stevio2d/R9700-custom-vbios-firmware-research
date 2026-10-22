@@ -1,0 +1,1296 @@
+Internal ctest changing into directory: EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build
+Test project EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build
+      Start  95: r4d_emu_attn_shard0
+      Start  97: r4d_emu_attn_shard2
+      Start   5: abi_layout_test
+      Start   6: advance_test
+      Start   7: arch_test
+      Start   8: audio_gen_test
+      Start   9: build_test
+      Start  10: chat_test
+ 1/88 Test   #5: abi_layout_test ..................   Passed    0.03 sec
+      Start  11: chatparse_gemma4_test
+ 2/88 Test   #6: advance_test .....................   Passed    0.03 sec
+      Start  12: chatparse_test
+ 3/88 Test   #8: audio_gen_test ...................   Passed    0.03 sec
+      Start  13: checkpoint_test
+ 4/88 Test  #13: checkpoint_test ..................   Passed    0.06 sec
+      Start  14: config_test
+ 5/88 Test  #14: config_test ......................   Passed    0.05 sec
+      Start  15: convert_test
+ 6/88 Test   #9: build_test .......................   Passed    0.24 sec
+      Start  16: dashboard_test
+ 7/88 Test  #16: dashboard_test ...................   Passed    0.03 sec
+      Start  17: device_test
+ 8/88 Test  #10: chat_test ........................   Passed    0.50 sec
+      Start  18: diag_test
+ 9/88 Test  #11: chatparse_gemma4_test ............   Passed    0.48 sec
+      Start  19: encoding_test
+10/88 Test  #19: encoding_test ....................   Passed    0.08 sec
+      Start  21: fixture_test
+11/88 Test  #18: diag_test ........................   Passed    0.21 sec
+      Start  22: format_test
+12/88 Test  #17: device_test ......................   Passed    0.66 sec
+      Start  23: gbnf_test_shard0
+13/88 Test  #21: fixture_test .....................   Passed    0.42 sec
+      Start  24: gbnf_test_shard1
+14/88 Test  #22: format_test ......................   Passed    0.51 sec
+      Start  25: gbnf_test_shard2
+15/88 Test  #15: convert_test .....................   Passed    3.02 sec
+      Start  26: gbnf_test_shard3
+16/88 Test  #24: gbnf_test_shard1 .................   Passed    3.17 sec
+      Start  27: gen_config_test
+17/88 Test  #27: gen_config_test ..................   Passed    0.03 sec
+      Start  28: gen_test
+18/88 Test  #28: gen_test .........................   Passed    0.04 sec
+      Start  29: harness_test
+19/88 Test  #29: harness_test .....................   Passed    0.56 sec
+      Start  30: hf_model_test
+20/88 Test  #30: hf_model_test ....................   Passed    0.10 sec
+      Start  31: host_experts_test
+21/88 Test  #31: host_experts_test ................   Passed    0.09 sec
+      Start  32: hostmem_test
+22/88 Test  #32: hostmem_test .....................   Passed    0.03 sec
+      Start  33: images_test
+23/88 Test  #33: images_test ......................***Failed    0.03 sec
+I req refused -> 400 invalid_request_error: wobble: 'wobble' is not a field of /v1/images/generations
+I req refused -> 400 invalid_request_error: prompt: the prompt is required
+I req refused -> 400 invalid_request_error: prompt: expected a string
+I req refused -> 400 invalid_request_error: n: expected an integer in 1..4
+I req refused -> 400 invalid_request_error: n: expected an integer in 1..4
+I req refused -> 400 invalid_request_error: response_format: url is not served: this server keeps no image to serve later; ask for b64_json
+I req refused -> 400 invalid_request_error: background: jpeg has no transparency; ask for png or webp
+I req refused -> 400 invalid_request_error: partial_images: partial images are sent on a stream; set stream
+I req refused -> 400 invalid_request_error: num_inference_steps: this model samples on its own 8-step schedule and takes no other
+I req refused -> 400 invalid_request_error: height: width and height go together
+I req refused -> 400 invalid_request_error: width: width and height go together
+I req refused -> 400 invalid_request_error: size: expected "WxH" or "auto"
+I req refused -> 400 invalid_request_error: size: 2048x2048 is larger than this model makes (1048576 pixels)
+I req refused -> 400 invalid_request_error: true_cfg_scale: guidance needs a negative_prompt
+I req refused -> 400 invalid_request_error: image: pictures go to /v1/images/edits
+I req refused -> 400 invalid_request_error: response_format: url is not served: this server keeps no image to serve later; ask for b64_json
+I req refused -> 400 invalid_request_error: image: an edit needs at least one picture
+W req refused -> 501 not_implemented_error: this model makes images from text only
+  ok   an_images_request_that_cannot_be_served_names_its_field
+W req refused -> 501 not_implemented_error: this is an image model: it serves /v1/images/generations and /v1/images/edits and generates no text
+W req refused -> 501 not_implemented_error: this is an image model: it serves /v1/images/generations and /v1/images/edits and generates no text
+  ok   an_image_model_names_the_images_endpoints_and_its_capabilities
+  ok   the_generator_gets_rounded_sizes_quality_steps_and_a_readable_seed
+  ok   usage_counts_each_pictures_tokens_in_every_branch
+I images: generation 256x128 n=1 steps=0 seed=4473949536937071 guided
+W req refused -> 500 server_error: the picture could not be encoded: this build has no media decoder: it was configured without libavformat / libavcodec / libswscale (RAD_WITH_FFMPEG)
+  FAIL guidance_follows_the_model_cards_terms_and_its_default_negative
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/images_test.cpp:29: CHECK_EQ(r.status, status): 500 vs 200
+I images: generation 256x128 n=1 steps=0 seed=3042563308892837 guided
+W req refused -> 500 server_error: the picture could not be encoded: this build has no media decoder: it was configured without libavformat / libavcodec / libswscale (RAD_WITH_FFMPEG)
+  FAIL guidance_follows_the_model_cards_terms_and_its_default_negative
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/images_test.cpp:29: CHECK_EQ(r.status, status): 500 vs 200
+I images: generation 256x128 n=1 steps=0 seed=2221517939169888
+W req refused -> 500 server_error: the picture could not be encoded: this build has no media decoder: it was configured without libavformat / libavcodec / libswscale (RAD_WITH_FFMPEG)
+  FAIL guidance_follows_the_model_cards_terms_and_its_default_negative
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/images_test.cpp:29: CHECK_EQ(r.status, status): 500 vs 200
+I req refused -> 400 invalid_request_error: guidance_scale: true_cfg_scale and guidance_scale are the same field; name one
+I req refused -> 400 invalid_request_error: background: this model makes opaque images
+  ok   an_auto_background_follows_the_pictures_alpha
+  ok   a_generators_failure_is_a_400_or_a_500_streamed_or_not
+  ok   a_multipart_edit_reads_text_fields_and_picture_parts
+  ok   a_streamed_generation_sends_previews_then_the_image
+3 failure(s)
+
+      Start  34: issue_div_test
+24/88 Test  #34: issue_div_test ...................   Passed    0.08 sec
+      Start  35: kbench_mutant_test
+25/88 Test  #23: gbnf_test_shard0 .................   Passed    4.38 sec
+      Start  36: kbench_test
+26/88 Test  #36: kbench_test ......................***Failed    0.11 sec
+  ok   a_nan_error_stays_the_worst
+  ok   the_worst_operand_is_a_failing_one_then_the_largest
+  ok   an_elementwise_comparison_counts_finiteness_disagreements_apart
+  ok   the_tolerance_reads_the_attention_and_cache_dtypes
+  ok   a_copy_is_judged_exactly
+  ok   every_op_in_the_checked_in_fixtures_has_a_tolerance_row_of_its_own
+  ok   an_id_off_by_one_fails_at_any_tolerance
+  ok   a_tie_is_judged_by_the_value_the_id_indexes
+  ok   an_index_norm_is_exact_unless_the_op_allows_ties
+  ok   a_correct_output_passes_and_one_past_its_tolerance_fails
+  ok   an_unwritten_tail_fails_by_the_norm
+  ok   a_flipped_tile_no_sample_sees_fails_by_the_sketch
+  ok   the_sketch_estimates_the_full_tensor_error
+  ok   a_zero_reference_against_a_zero_output_is_vacuous
+  ok   the_reference_is_judged_exactly_against_its_own_recording
+  ok   a_nan_against_a_number_fails_at_any_tolerance
+  ok   the_cap_key_keeps_cases_whose_operand_shapes_differ
+  ok   weight_cache_keys_separate_encodings_and_selections
+  ok   the_default_budget_is_half_of_the_available_memory
+  ok   a_case_size_that_cannot_be_represented_is_refused
+  ok   a_margin_overrun_is_measured_from_the_buffer
+  ok   an_overrun_a_fusion_mismatch_or_a_written_input_fails_the_run
+  ok   the_phase_line_names_each_phase_and_library
+  ok   the_hash_is_xxh64
+  ok   a_fingerprint_does_not_depend_on_the_thread_count
+  ok   the_reference_cache_key_changes_with_everything_the_answer_depends_on
+  ok   a_cached_reference_round_trips_and_a_damaged_entry_is_a_miss
+  ok   the_cache_keeps_only_recent_identities
+  FAIL the_code_identity_follows_build_ids
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/kbench_test.cpp:638: CHECK(kb::build_id_of(ref).size() >= 16)
+  FAIL the_code_identity_follows_build_ids
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/kbench_test.cpp:640: CHECK(id != 0)
+  ok   a_lost_row_fails_the_ratchet_unless_a_memory_skip_kept_it_from_running
+  ok   a_rows_file_round_trips_and_ignores_comments
+  ok   a_geometry_is_moved_into_a_rows_constraints
+  ok   a_skeleton_container_keeps_every_table_and_drops_the_data
+  ok   the_median_and_its_interval_are_order_statistics
+  ok   the_interval_is_the_range_up_to_ten_samples_and_ignores_an_outlier_from_eleven
+  ok   timing_stops_at_a_tight_interval_or_at_the_cap
+  ok   a_batch_lasts_a_millisecond_and_fifty_floors_within_its_room
+  ok   a_restore_dominated_or_sub_floor_time_is_an_order_of_magnitude
+  ok   rotated_copies_put_the_footprint_between_two_uses_of_one
+  ok   weights_and_big_inputs_rotate_and_written_operands_do_not
+  ok   a_weight_tables_slots_are_permuted_differently_for_each_launch
+  ok   a_weight_tables_pointers_name_every_slot_of_one_copy
+  ok   skewed_routing_places_every_row_within_the_cap
+  ok   timing_inputs_skew_routing_and_permute_block_tables_and_leave_the_rest
+  ok   a_v1_3_metrics_table_reads_clock_temperature_and_throttlers
+  ok   another_metrics_layout_is_refused_not_misread
+  ok   the_calibration_refuses_a_cold_probe_served_from_a_cache
+2 failure(s)
+kept EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/tmp/radtest-kbench_test-EQKgkd
+
+      Start  37: kld_test
+27/88 Test  #37: kld_test .........................   Passed    0.14 sec
+      Start  38: lifecycle_test
+28/88 Test  #38: lifecycle_test ...................   Passed    0.21 sec
+      Start  39: lora_ops_test
+29/88 Test  #26: gbnf_test_shard3 .................***Failed    2.67 sec
+I gbnf: compiled a grammar of 28 rules in 3.3 ms: 45 mask keys (1 dense, 1 deep at most), 48650 remainder nodes, 1.3 MiB
+E gbnf: the string "{"context": "x", "model": "y"}" is not admitted by the grammar
+E gbnf: the string "{"model": "y", "context": "x"}" is not admitted by the grammar
+E gbnf: the string "{"context": "x", "model": "y"}" is not admitted by the grammar
+E gbnf: the string "{"model": "y", "context": "x"}" is not admitted by the grammar
+I gbnf: compiled a grammar of 99 rules in 4.2 ms: 88 mask keys (6 dense, 1 deep at most), 52188 remainder nodes, 1.4 MiB
+E gbnf: the string "{"model": 1}" is not admitted by the grammar
+I gbnf: compiled a grammar of 27 rules in 0.5 ms: 33 mask keys (1 dense, 1 deep at most), 4767 remainder nodes, 0.1 MiB
+E gbnf: the string "1" is not admitted by the grammar
+I chat: template loaded (8952 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I chat: template loaded (7764 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I chat: template loaded (9060 bytes); tools=1 tool_calls=1 system=1 thinking=1
+  ok   gbnf_a_property_no_value_satisfies_is_a_key_never_written
+I chat: template loaded (8952 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I chat: template loaded (7764 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I chat: template loaded (9060 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I gbnf: compiled a grammar of 172 rules in 17.9 ms: 543 mask keys (13 dense, 2 deep at most), 128569 remainder nodes, 3.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the string "<|tool_call>call:bash{command:<|"|>cd /repo && go test ./... 2>&1 | head -50<|"|>,description:<|"|>Run the test suite<|"|>}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:edit_file{new_string:<|"|>for s.ll.Len() >= s.cap { // café<|"|>,old_string:<|"|>if s.ll.Len() >= s.cap {<|"|>,path:<|"|>/repo/日本/lru.go<|"|>,replace_all:false}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:read_file{limit:200,path:<|"|>/repo/cache/lru.go<|"|>}<tool_call|>" is not admitted by the grammar
+I gbnf: compiled a grammar of 175 rules in 18.7 ms: 567 mask keys (13 dense, 2 deep at most), 128572 remainder nodes, 3.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the string "<|tool_call>call:bash{command:<|"|>cd /repo && go test ./... 2>&1 | head -50<|"|>,description:<|"|>Run the test suite<|"|>}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:edit_file{new_string:<|"|>for s.ll.Len() >= s.cap { // café<|"|>,old_string:<|"|>if s.ll.Len() >= s.cap {<|"|>,path:<|"|>/repo/日本/lru.go<|"|>,replace_all:false}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:read_file{limit:200,path:<|"|>/repo/cache/lru.go<|"|>}<tool_call|>" is not admitted by the grammar
+    qwen3.6: 10 grammars, 5517 masks compared (11 at a split character, 16 dead), 8326 accepts; 0 beyond the oracle's bound, 0 beyond the engine's
+  ok   gbnf_qwen3_6_tool_call_grammars_agree_with_the_oracle (1.30 s)
+I gbnf: compiled a grammar of 20 rules in 0.4 ms: 3 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 14 rules in 0.1 ms: 6 mask keys (0 dense, 1 deep at most), 46 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 11 rules in 0.1 ms: 2 mask keys (0 dense, 1 deep at most), 14 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 46 rules in 1.1 ms: 36 mask keys (7 dense, 1 deep at most), 13542 remainder nodes, 0.4 MiB
+I gbnf: compiled a grammar of 20 rules in 1.2 ms: 48 mask keys (3 dense, 1 deep at most), 6606 remainder nodes, 0.2 MiB
+I gbnf: compiled a grammar of 19 rules in 0.7 ms: 40 mask keys (1 dense, 1 deep at most), 8707 remainder nodes, 0.2 MiB
+I gbnf: compiled a grammar of 14 rules in 0.3 ms: 7 mask keys (1 dense, 1 deep at most), 892 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 50 rules in 1.4 ms: 88 mask keys (8 dense, 1 deep at most), 13255 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 86 rules in 0.8 ms: 16 mask keys (2 dense, 1 deep at most), 14301 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 28 rules in 1.0 ms: 43 mask keys (6 dense, 1 deep at most), 14651 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 5 rules in 0.0 ms: 1 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 27 rules in 0.4 ms: 3 mask keys (2 dense, 1 deep at most), 7094 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 13 rules in 0.0 ms: 1 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 39 rules in 2.3 ms: 60 mask keys (11 dense, 1 deep at most), 37494 remainder nodes, 1.0 MiB
+I gbnf: compiled a grammar of 40 rules in 0.7 ms: 86 mask keys (1 dense, 1 deep at most), 9378 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 45 rules in 0.3 ms: 7 mask keys (0 dense, 1 deep at most), 2367 remainder nodes, 0.1 MiB
+I gbnf: compiled a grammar of 60 rules in 5.0 ms: 118 mask keys (14 dense, 3 deep at most), 28275 remainder nodes, 0.8 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 11 rules in 0.2 ms: 8 mask keys (1 dense, 1 deep at most), 4117 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 23 rules in 1.1 ms: 37 mask keys (8 dense, 1 deep at most), 16151 remainder nodes, 0.4 MiB
+I gbnf: compiled a grammar of 32 rules in 0.1 ms: 3 mask keys (2 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 58 rules in 1.9 ms: 116 mask keys (12 dense, 1 deep at most), 27809 remainder nodes, 0.8 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 10 rules in 0.2 ms: 17 mask keys (0 dense, 1 deep at most), 2187 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 19 rules in 0.7 ms: 9 mask keys (4 dense, 1 deep at most), 15454 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 5 rules in 0.1 ms: 3 mask keys (0 dense, 1 deep at most), 230 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 39 rules in 0.9 ms: 60 mask keys (7 dense, 1 deep at most), 11212 remainder nodes, 0.3 MiB
+E gbnf: no mask for this position: the grammar's parse forks into more than 16384 stacks or 262144 stack elements at one position; the request cannot be continued
+E gbnf: no mask for this position: the grammar's parse forks into more than 16384 stacks or 262144 stack elements at one position; the request cannot be continued
+I gbnf: compiled a grammar of 21 rules in 0.2 ms: 2 mask keys (1 dense, 1 deep at most), 3917 remainder nodes, 0.1 MiB
+I gbnf: compiled a grammar of 29 rules in 0.6 ms: 46 mask keys (4 dense, 1 deep at most), 7207 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 22 rules in 0.3 ms: 9 mask keys (1 dense, 1 deep at most), 6265 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 56 rules in 1.4 ms: 107 mask keys (8 dense, 1 deep at most), 19529 remainder nodes, 0.5 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 17 rules in 0.6 ms: 33 mask keys (4 dense, 1 deep at most), 9220 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 8 rules in 0.4 ms: 13 mask keys (2 dense, 1 deep at most), 8379 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 32 rules in 0.7 ms: 8 mask keys (4 dense, 1 deep at most), 13793 remainder nodes, 0.4 MiB
+    random: 32 grammars, 1507 masks compared (74 at a split character, 50 dead), 2110 accepts; 0 beyond the oracle's bound, 2 beyond the engine's
+      refused 4: left recursion through rule 'r1'
+      refused 4: left recursion through rule 'r2'
+      refused 5: left recursion through rule 'r3'
+      refused 2: left recursion through rule 'r4'
+      refused 1: left recursion through rule 'r4_74'
+      refused 1: left recursion through rule 'r5_42'
+      refused 1: the grammar cannot be run within its bounds
+    32 of 50 random grammars compiled
+  ok   gbnf_random_grammars_51_to_100_agree_with_the_oracle (0.96 s)
+I gbnf: compiled a grammar of 2 rules in 0.9 ms: 1 mask keys (1 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 4 rules in 0.1 ms: 4 mask keys (0 dense, 1 deep at most), 579 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 3 rules in 1.0 ms: 6 mask keys (1 dense, 3 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 2 rules in 0.4 ms: 3 mask keys (1 dense, 1 deep at most), 300 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 2 rules in 0.6 ms: 3 mask keys (1 dense, 1 deep at most), 2278 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+    split characters: 5 grammars, 1861 masks compared (364 at a split character, 178 dead), 2164 accepts; 0 beyond the oracle's bound, 0 beyond the engine's
+  ok   gbnf_masks_after_a_split_character_agree_with_the_oracle (0.16 s)
+I gbnf: compiled a grammar of 201 rules in 20.5 ms: 143 mask keys (129 dense, 2 deep at most), 70376 remainder nodes, 1.9 MiB
+I gbnf: compiled a grammar of 401 rules in 20.1 ms: 143 mask keys (129 dense, 2 deep at most), 70376 remainder nodes, 2.0 MiB
+I gbnf: compiled a grammar of 1601 rules in 24.4 ms: 143 mask keys (129 dense, 2 deep at most), 70376 remainder nodes, 2.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+    long repetitions: 1 grammars, 271 masks compared (0 at a split character, 14 dead), 390 accepts; 0 beyond the oracle's bound, 0 beyond the engine's
+  ok   gbnf_a_repetition_longer_than_any_token_costs_what_the_token_does (0.11 s)
+I gbnf: compiled a grammar of 1 rules in 0.0 ms: 1 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 1 rules in 0.0 ms: 1 mask keys (1 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+  ok   gbnf_a_rule_that_can_never_match_is_refused
+I gbnf: compiled a grammar of 49 rules in 2.2 ms: 68 mask keys (1 dense, 1 deep at most), 45268 remainder nodes, 1.2 MiB
+  FAIL json_schema_walks_write_only_valid_instances
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/gbnf_test.cpp:1857: CHECK(ok)
+    seed 69 wrote {"n":\x0a            91,"s":"bion\xf0\x85\xaa\x8d","t":\x0a[] }
+1 failure(s)
+slowest: gbnf_qwen3_6_tool_call_grammars_agree_with_the_oracle 1.30 s, gbnf_random_grammars_51_to_100_agree_with_the_oracle 0.96 s, gbnf_masks_after_a_split_character_agree_with_the_oracle 0.16 s
+
+      Start  40: lora_test
+30/88 Test  #97: r4d_emu_attn_shard2 ..............   Passed    6.43 sec
+      Start  41: mem_test
+31/88 Test  #95: r4d_emu_attn_shard0 ..............   Passed    6.51 sec
+      Start  42: mm_test
+32/88 Test  #12: chatparse_test ...................   Passed    6.78 sec
+      Start  43: place_test
+33/88 Test  #42: mm_test ..........................   Passed    0.40 sec
+      Start  44: plugin_test
+34/88 Test  #41: mem_test .........................   Passed    0.55 sec
+      Start  45: quant_algo_test
+35/88 Test  #44: plugin_test ......................   Passed    0.14 sec
+      Start  47: quant_test
+36/88 Test  #47: quant_test .......................   Passed    0.51 sec
+      Start  48: r4d_ar_links_test
+37/88 Test  #48: r4d_ar_links_test ................   Passed    0.07 sec
+      Start  49: recipe_test
+38/88 Test  #49: recipe_test ......................   Passed    0.03 sec
+      Start  50: ref_test
+39/88 Test  #45: quant_algo_test ..................   Passed    1.04 sec
+      Start  52: runtime_test
+40/88 Test   #7: arch_test ........................   Passed    8.14 sec
+      Start  53: sample_test
+41/88 Test  #40: lora_test ........................   Passed    2.33 sec
+      Start  54: sched_test
+42/88 Test  #54: sched_test .......................   Passed    0.06 sec
+      Start  55: server_test
+43/88 Test  #52: runtime_test .....................   Passed    0.22 sec
+      Start  56: share_test
+44/88 Test  #56: share_test .......................   Passed    0.03 sec
+      Start  57: shipped_plugins_test
+45/88 Test  #57: shipped_plugins_test .............   Passed    0.10 sec
+      Start  58: speech_stream_test
+46/88 Test  #50: ref_test .........................   Passed    0.84 sec
+      Start  59: speech_test
+47/88 Test  #58: speech_stream_test ...............   Passed    0.15 sec
+      Start  60: stream_test
+48/88 Test  #59: speech_test ......................   Passed    0.03 sec
+      Start  61: systemone_test
+49/88 Test  #61: systemone_test ...................   Passed    0.03 sec
+      Start  62: text_split_test
+50/88 Test  #62: text_split_test ..................   Passed    0.03 sec
+      Start  63: text_test
+51/88 Test  #43: place_test .......................   Passed    1.81 sec
+      Start  64: tokenizer_perf_test
+52/88 Test  #63: text_test ........................   Passed    0.36 sec
+      Start  65: tokenizer_regex_test
+53/88 Test  #60: stream_test ......................   Passed    0.45 sec
+      Start  66: tokenizer_test
+54/88 Test  #65: tokenizer_regex_test .............   Passed    0.08 sec
+      Start  67: tools_test
+55/88 Test  #67: tools_test .......................   Passed    0.03 sec
+      Start  68: transport_test
+56/88 Test  #68: transport_test ...................   Passed    0.29 sec
+      Start  69: trigger_test
+57/88 Test  #53: sample_test ......................   Passed    1.27 sec
+      Start  70: util_test
+58/88 Test  #69: trigger_test .....................   Passed    0.25 sec
+      Start  71: video_gen_test
+59/88 Test  #71: video_gen_test ...................   Passed    0.03 sec
+      Start  72: videos_test
+60/88 Test  #64: tokenizer_perf_test ..............   Passed    1.06 sec
+      Start  73: wire_test
+61/88 Test  #73: wire_test ........................   Passed    0.10 sec
+      Start  74: yarn_test
+62/88 Test  #74: yarn_test ........................   Passed    0.03 sec
+      Start  81: avx_check
+63/88 Test  #70: util_test ........................   Passed    0.41 sec
+      Start  82: avx_check_general
+64/88 Test  #72: videos_test ......................***Failed    0.24 sec
+I req refused -> 400 invalid_request_error: temperature: 'temperature' is not a field of /v1/videos
+I req refused -> 400 invalid_request_error: prompt: the prompt is required, as a non-empty string
+I req refused -> 400 invalid_request_error: prompt: the prompt is required, as a non-empty string
+I req refused -> 400 invalid_request_error: size: 250x256 is not a size this model makes: sides are multiples of 32 from 256, at most 1032192 pixels and 4:1; its canvas at that ratio is 768x800
+I req refused -> 400 invalid_request_error: size: expected WIDTHxHEIGHT, e.g. 1344x768
+I req refused -> 400 invalid_request_error: size: 4096x4096 is not a size this model makes: sides are multiples of 32 from 256, at most 1032192 pixels and 4:1; its canvas at that ratio is 768x768
+I req refused -> 400 invalid_request_error: seconds: this model makes 5.17 to 14.38 seconds
+I req refused -> 400 invalid_request_error: seconds: the length is a positive number of seconds
+I req refused -> 400 invalid_request_error: num_inference_steps: expected an integer in 2..65 (sigma grid points, the last one 0)
+I req refused -> 400 invalid_request_error: num_inference_steps: expected an integer in 2..65 (sigma grid points, the last one 0)
+I req refused -> 400 invalid_request_error: input_reference: only data: URLs are accepted; the server does not fetch remote URLs on a request's behalf
+I req refused -> 400 invalid_request_error: task: this request makes video from text: t2va
+I req refused -> 400 invalid_request_error: conditions: this server makes video from text only; conditions must be empty
+I req refused -> 400 invalid_request_error: target: aspect_ratio must be w:h (16:9) or auto
+I req refused -> 400 invalid_request_error: size: give size or target's aspect_ratio and short_edge, not both
+I req refused -> 400 invalid_request_error: seconds: give seconds or target's duration_seconds, not both
+  ok   a_video_request_that_cannot_be_served_names_its_field
+I video video_2761fe92478dbf1ee733b89749377771: 256x256, 192 frames (8.00 s), 20 prompt tokens, 20 steps, seed=11
+W video video_2761fe92478dbf1ee733b89749377771: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_6a6fb0d3773594373f7b7b5161ba1e92: 1344x768, 124 frames (5.17 s), 4 prompt tokens, 2 steps, seed=7764288489035744
+W video video_6a6fb0d3773594373f7b7b5161ba1e92: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_c62ea5e35abe2669382ed0e7db8943c0: 768x1344, 243 frames (10.12 s), 4 prompt tokens, 2 steps, seed=6797361141300883
+W video video_c62ea5e35abe2669382ed0e7db8943c0: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  ok   the_generator_gets_the_size_the_chunks_and_the_steps
+I video video_03c51ae60d2a8678d326e54920e76abc: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=1339900362134136
+W video video_03c51ae60d2a8678d326e54920e76abc: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_e79bbb716c822e504e9f5c604a957b23: 256x256, the length the model chooses, 20 prompt tokens, 2 steps, seed=4416378808661896
+W video video_e79bbb716c822e504e9f5c604a957b23: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  FAIL a_length_head_chooses_the_length_of_a_request_that_names_none
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:238: CHECK_EQ(str_at(o, "status"), std::string("completed")): "failed" vs "completed"
+  FAIL a_length_head_chooses_the_length_of_a_request_that_names_none
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:239: CHECK_EQ(str_at(o, "seconds"), std::string("0.12")): "auto" vs "0.12"
+I video video_6c05986ef9008282c3dee925ea9af77d: 256x256, the length the model chooses, 20 prompt tokens, 2 steps, seed=3507516297917443
+W video video_6c05986ef9008282c3dee925ea9af77d: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  FAIL a_length_head_chooses_the_length_of_a_request_that_names_none
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:238: CHECK_EQ(str_at(o, "status"), std::string("completed")): "failed" vs "completed"
+  FAIL a_length_head_chooses_the_length_of_a_request_that_names_none
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:239: CHECK_EQ(str_at(o, "seconds"), std::string("0.12")): "auto" vs "0.12"
+I video video_2b960d39af098857bb81e52fbd34f38c: 256x256, 192 frames (8.00 s), 20 prompt tokens, 2 steps, seed=4340678898433598
+W video video_2b960d39af098857bb81e52fbd34f38c: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I req refused -> 400 invalid_request_error: decoder: this model has one decoder and takes no name
+I video video_5d599025ca3fdc7c1438dd08918b9d32: 512x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=147960470321585
+W video video_5d599025ca3fdc7c1438dd08918b9d32: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_926931575a1fcb9c9d0c09048ff0d3ca: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=8191093480472123
+W video video_926931575a1fcb9c9d0c09048ff0d3ca: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I req refused -> 400 invalid_request_error: decoder: this model decodes with vae, diffusion
+I req refused -> 400 invalid_request_error: decoder: the diffusion decoder makes frames of 131072 pixels at most
+  ok   a_decoder_is_named_and_held_to_its_area
+I req refused -> 400 invalid_request_error: latent_upscale: this model has no latent upscaler
+I req refused -> 400 invalid_request_error: latent_upscale: expected a factor from 1 to 4
+I req refused -> 400 invalid_request_error: latent_upscale: expected a factor from 1 to 4
+I req refused -> 400 invalid_request_error: upscale_refine_steps: counts the steps after a latent upscale; give latent_upscale above 1 with it
+I req refused -> 400 invalid_request_error: upscale_refine_steps: expected a positive integer
+I video video_7ece0b97d7fc890b3e35c2be023857a6: 512x512, 124 frames (5.17 s), 20 prompt tokens, 2 steps (the first -2 at 256x256, upscaled for the last 4), seed=4620130961828644
+W video video_7ece0b97d7fc890b3e35c2be023857a6: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_4d500f3aa7ef46b70b0aedeee9c0c39b: 512x512, 124 frames (5.17 s), 20 prompt tokens, 2 steps (the first -1 at 256x256, upscaled for the last 3), seed=8585664638195560
+W video video_4d500f3aa7ef46b70b0aedeee9c0c39b: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_8f67f045056f71258872ea3cbd0154be: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=7487469706335908
+W video video_8f67f045056f71258872ea3cbd0154be: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  ok   latent_upscale_reaches_the_generator_where_the_model_has_an_upscaler
+I video video_06a8ed9aed0c059618be7450654dc37f: 512x256, 158 frames (6.58 s), 9 prompt tokens, 2 steps, seed=748278474450694
+W video video_06a8ed9aed0c059618be7450654dc37f: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I req refused -> 400 invalid_request_error: input_reference: this model makes video from text only
+  ok   a_form_creates_a_video_too
+I video video_9f007a0792a8d31e6044ee4eb63b419a: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=7928462969055193
+W video video_9f007a0792a8d31e6044ee4eb63b419a: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  SKIP a_video_job_completes_and_serves_its_file: this build has no libavcodec to write the MP4 with
+  ok   a_video_job_completes_and_serves_its_file
+I video video_2fa0601a51b5a773f7b838fa83674c89: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=81158886355725
+W video video_2fa0601a51b5a773f7b838fa83674c89: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  FAIL a_failed_generation_is_a_failed_job_with_its_reason
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:391: CHECK_EQ(str_at(o["error"], "code"), std::string("generation_failed")): "encoding_failed" vs "generation_failed"
+  FAIL a_failed_generation_is_a_failed_job_with_its_reason
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:392: CHECK(has(str_at(o["error"], "message"), "the engine stopped"))
+W req refused -> 501 not_implemented_error: /v1/videos requires a video generation model; this one does not make video
+W req refused -> 501 not_implemented_error: /v1/videos requires a video generation model
+  ok   the_video_routes_are_501_without_a_video_model
+I req refused -> 400 invalid_request_error: negative_prompt: this model takes no guidance
+I req refused -> 400 invalid_request_error: stg_scale: this model takes no guidance
+I req refused -> 400 invalid_request_error: guidance_rescale: expected a number from 0 to 1
+I req refused -> 400 invalid_request_error: audio_guidance_scale: expected a number from 0 to 100
+I req refused -> 400 invalid_request_error: negative_prompt: expected a string
+I video video_a3b57d5b92000a5883ce10da75ced98b: 256x256, 124 frames (5.17 s), 20 prompt tokens, 1 steps, seed=6624835320235245
+W video video_a3b57d5b92000a5883ce10da75ced98b: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_4a42d52c0aa1af66af4cdb1a02aee8d0: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=1459912035832974
+W video video_4a42d52c0aa1af66af4cdb1a02aee8d0: failed: the video could not be written: this build has no libavcodec, so it writes no video
+I video video_abed644998977f0c683053a8594d38cf: 256x256, 124 frames (5.17 s), 20 prompt tokens, 2 steps, seed=3536900714235983
+W video video_abed644998977f0c683053a8594d38cf: failed: the video could not be written: this build has no libavcodec, so it writes no video
+  ok   guidance_and_the_negative_prompt_reach_a_guided_model
+I req refused -> 400 invalid_request_error: input_reference: this model makes video from text only
+I req refused -> 400 invalid_request_error: input_reference: the picture could not be read: this build has no media decoder: it was configured without libavformat / libavcodec / libswscale (RAD_WITH_FFMPEG)
+I req refused -> 400 invalid_request_error: task: a video from a picture is i2va
+I req refused -> 400 invalid_request_error: input_reference: the picture could not be read: this build has no media decoder: it was configured without libavformat / libavcodec / libswscale (RAD_WITH_FFMPEG)
+  FAIL input_reference_becomes_the_first_frame_at_the_first_steps_size
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:508: REQUIRE_EQ(r.status, 200): 400 vs 200
+I req refused -> 400 invalid_request_error: input_reference: the picture could not be read: this build has no media decoder: it was configured without libavformat / libavcodec / libswscale (RAD_WITH_FFMPEG)
+  FAIL input_reference_takes_the_models_h264_round_trip
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/videos_test.cpp:543: REQUIRE_EQ(r.status, 200): 400 vs 200
+8 failure(s)
+
+      Start  83: r4d_emu_pick
+65/88 Test  #83: r4d_emu_pick .....................   Passed    0.22 sec
+      Start  84: r4d_emu_norm
+66/88 Test  #84: r4d_emu_norm .....................   Passed    0.41 sec
+      Start  85: r4d_emu_escale
+67/88 Test  #85: r4d_emu_escale ...................   Passed    0.01 sec
+      Start  86: r4d_emu_qsa
+68/88 Test  #35: kbench_mutant_test ...............***Failed    5.72 sec
+I device: built with HIP but no device is visible -- using the host backend
+I device: host backend, 1 device(s) [0:host]
+  FAIL the_reference_replays_its_recording_exactly_and_again_from_its_cache
+    EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/source/tests/kbench_mutant_test.cpp:274: CHECK(_ok)
+    exit 0
+D hip.cpp:380  device: hipGetDeviceCount -> hipErrorNoDevice, 0 device(s)
+I device: built with HIP but no device is visible -- using the host backend
+I device: host backend, 1 device(s) [0:host]
+I kernel libraries on the search path that --kernels (or RADIANCE_KERNELS) does not name, and so not loaded: kbm_argmax, kbm_enc, kbm_half, kbm_inwrite, kbm_nan, kbm_ok, kbm_overrun, kbm_refuse, kbm_scale, kbm_shape
+D loader.cpp:475  plugin 0: libref 0.1.0 (EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/tmp/radtest-kbench_mutant_test-EUZwER/home/kernels/libref.so) -- 196 kernels, 196 schemas, 0 fat binaries, host
+D loader.cpp:475  plugin 1: radtest_kbarch 0.1 (EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/tmp/radtest-kbench_mutant_test-EUZwER/home/architectures/radtest_kbarch.so) -- 0 kernels, 0 schemas, 0 fat binaries, host
+W rad-kbench: libref has no build-id, so its results are not cached
+rad-kbench EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/tmp/radtest-kbench_mutant_test-EUZwER/fx.rkb
+  fixture      EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/tmp/radtest-kbench_mutant_test-EUZwER/fx.rkb: 5 case(s), version 6, recorded 2026-10-19 from kbench_mutant_test
+  reference    libref, 1024 sampled position(s) an operand plus the full norm
+  libraries    libref@0.1.0 (under test: libref)
+
+  add                    M=8 n=512 dtype=bf16                         host     ref_add                      rel=0.000e+00 max_abs=0.000e+00 max_rel=0.000e+00 tol=0.0e+00 ok (exact)
+  gather_rows            M=4 n=32 dtype=bf16                          host     ref_gather_rows              rel=0.000e+00 max_abs=0.000e+00 max_rel=0.000e+00 tol=0.0e+00 ok (exact)
+  sample_argmax          M=3 n_vocab=500                              host     ref_sample_argmax            rel=0.000e+00 max_abs=0.000e+00 max_rel=0.000e+00 tol=1.0e-06 ok (exact)
+  rmsnorm                M=4 n=64 eps=1e-06 dtype=bf16                host     ref_rmsnorm                  rel=0.000e+00 max_abs=0.000e+00 max_rel=0.000e+00 tol=0.0e+00 ok (exact)
+  add                    M=8 n=32768 dtype=bf16                       host     ref_add                      rel=0.000e+00 max_abs=0.000e+00 max_rel=0.000e+00 tol=0.0e+00 ok (exact)
+
+5 checked, 5 passed, 0 failed, 0 skipped, 0 diverged, 0 capped. worst rel_l2 = 0.000e+00
+memory: 0 case(s) ran inside guarded allocations, 0 wrote outside one
+4 of 196 declared kernel row(s) ran; not reached: libref 192 (--report names them)
+time: load 0.05 s, draw 0.01 s, launch 0.01 s (libref 0.01 s), compare 0.01 s; 0.07 s wall
+
+  ok   one_ulp_in_the_recording_fails_the_reference_and_no_other_library (0.21 s)
+  ok   a_correct_library_passes_on_both_domains (0.11 s)
+  ok   an_output_past_its_tolerance_fails (0.11 s)
+  ok   a_nan_output_fails_as_a_finiteness_disagreement (0.12 s)
+  ok   an_unwritten_half_fails
+  ok   a_write_past_an_output_fails_the_run (0.11 s)
+  ok   a_refused_geometry_its_constraints_accept_fails
+  ok   an_output_described_differently_is_a_divergence
+  ok   an_id_off_by_one_fails
+  ok   a_host_kernel_that_writes_its_input_fails (0.10 s)
+  ok   a_row_that_cannot_read_the_weights_encoding_is_not_the_one_run
+  ok   a_case_over_the_budget_is_skipped_by_name
+  ok   identical_cases_are_capped_at_max_cases_one (0.17 s)
+  ok   a_case_no_library_under_test_serves_is_named
+  ok   a_stale_case_fails_only_under_strict (0.17 s)
+  ok   the_coverage_ratchet_fails_when_a_row_is_no_longer_reached (0.31 s)
+  ok   a_row_driven_fixture_reaches_a_row_no_recorded_case_selects (0.29 s)
+  ok   the_host_library_agrees_with_the_reference_on_drawn_sampler_requests (0.53 s)
+  ok   device_rows_are_timed_after_the_checks_and_host_rows_where_checked (0.22 s)
+  ok   an_in_place_operand_is_restored_before_every_timed_launch (0.26 s)
+  ok   warm_timing_rereads_one_set_of_operands (0.52 s)
+  ok   a_weight_table_is_timed_through_rotated_pointer_tables (0.19 s)
+  ok   the_container_pass_times_its_cases_too (0.18 s)
+  ok   cases_that_differ_only_in_depth_are_reported_apart (0.20 s)
+  ok   a_failing_case_is_not_timed (0.29 s)
+  ok   timing_only_times_device_rows_and_checks_nothing (0.19 s)
+  ok   a_fixture_is_recorded_on_the_host_from_a_container_or_its_skeleton (0.33 s)
+  ok   select_in_answers_as_the_engine_does_for_one_library
+1 failure(s)
+slowest: the_host_library_agrees_with_the_reference_on_drawn_sampler_requests 0.53 s, warm_timing_rereads_one_set_of_operands 0.52 s, the_reference_replays_its_recording_exactly_and_again_from_its_cache 0.45 s
+kept EXTERNAL_WORKTREE/trials/EXP-0002/radiance-v1.9.0-685ec5b/build/tmp/radtest-kbench_mutant_test-EUZwER
+
+      Start  87: r4d_emu_lora
+69/88 Test  #39: lora_ops_test ....................   Passed    5.13 sec
+      Start  88: r4d_emu_f32
+70/88 Test  #88: r4d_emu_f32 ......................   Passed    0.17 sec
+      Start  89: r4d_emu_mhc
+71/88 Test  #55: server_test ......................   Passed    3.85 sec
+      Start  90: r4d_emu_fp8f32
+72/88 Test  #90: r4d_emu_fp8f32 ...................   Passed    3.66 sec
+      Start  91: r4d_emu_kda
+73/88 Test  #91: r4d_emu_kda ......................   Passed    0.49 sec
+      Start  92: r4d_emu_moemx
+74/88 Test  #82: avx_check_general ................   Passed    8.56 sec
+      Start  93: r4d_emu_mla
+75/88 Test  #89: r4d_emu_mhc ......................   Passed    7.34 sec
+      Start  94: r4d_emu_moefuse
+76/88 Test  #94: r4d_emu_moefuse ..................   Passed    0.74 sec
+      Start  96: r4d_emu_attn_shard1
+77/88 Test  #86: r4d_emu_qsa ......................   Passed    9.44 sec
+      Start 100: ops_doc
+78/88 Test #100: ops_doc ..........................   Passed    0.07 sec
+      Start 101: rad_export_test
+79/88 Test #101: rad_export_test ..................   Passed    0.06 sec
+80/88 Test  #96: r4d_emu_attn_shard1 ..............   Passed    2.31 sec
+81/88 Test  #93: r4d_emu_mla ......................   Passed    3.12 sec
+82/88 Test  #25: gbnf_test_shard2 .................***Failed   22.37 sec
+I gbnf: compiled a grammar of 61 rules in 9.5 ms: 84 mask keys (1 dense, 2 deep at most), 128721 remainder nodes, 3.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 95 rules in 7.4 ms: 128 mask keys (1 dense, 2 deep at most), 128783 remainder nodes, 3.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 108 rules in 24.9 ms: 139 mask keys (13 dense, 3 deep at most), 129038 remainder nodes, 3.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 43 rules in 6.3 ms: 65 mask keys (0 dense, 1 deep at most), 127688 remainder nodes, 3.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 54 rules in 6.6 ms: 58 mask keys (0 dense, 1 deep at most), 123445 remainder nodes, 3.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 230 rules in 75.9 ms: 193 mask keys (132 dense, 3 deep at most), 251206 remainder nodes, 6.7 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+    json schema: 6 grammars, 1792 masks compared (17 at a split character, 134 dead), 2429 accepts; 0 beyond the oracle's bound, 0 beyond the engine's
+  ok   gbnf_json_schema_grammars_agree_with_the_oracle (0.61 s)
+I chat: template loaded (8952 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I chat: template loaded (7764 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I chat: template loaded (9060 bytes); tools=1 tool_calls=1 system=1 thinking=1
+I gbnf: compiled a grammar of 172 rules in 16.5 ms: 543 mask keys (13 dense, 2 deep at most), 128569 remainder nodes, 3.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the string "<|tool_call>call:bash{command:<|"|>cd /repo && go test ./... 2>&1 | head -50<|"|>,description:<|"|>Run the test suite<|"|>}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:edit_file{new_string:<|"|>for s.ll.Len() >= s.cap { // café<|"|>,old_string:<|"|>if s.ll.Len() >= s.cap {<|"|>,path:<|"|>/repo/日本/lru.go<|"|>,replace_all:false}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:read_file{limit:200,path:<|"|>/repo/cache/lru.go<|"|>}<tool_call|>" is not admitted by the grammar
+I gbnf: compiled a grammar of 175 rules in 16.0 ms: 567 mask keys (13 dense, 2 deep at most), 128572 remainder nodes, 3.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the string "<|tool_call>call:bash{command:<|"|>cd /repo && go test ./... 2>&1 | head -50<|"|>,description:<|"|>Run the test suite<|"|>}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:edit_file{new_string:<|"|>for s.ll.Len() >= s.cap { // café<|"|>,old_string:<|"|>if s.ll.Len() >= s.cap {<|"|>,path:<|"|>/repo/日本/lru.go<|"|>,replace_all:false}<tool_call|>" is not admitted by the grammar
+E gbnf: the string "<|tool_call>call:read_file{limit:200,path:<|"|>/repo/cache/lru.go<|"|>}<tool_call|>" is not admitted by the grammar
+    qwen3.8: 10 grammars, 5416 masks compared (14 at a split character, 19 dead), 8157 accepts; 0 beyond the oracle's bound, 0 beyond the engine's
+  ok   gbnf_qwen3_8_tool_call_grammars_agree_with_the_oracle (1.30 s)
+I gbnf: compiled a grammar of 28 rules in 2.3 ms: 37 mask keys (9 dense, 2 deep at most), 25152 remainder nodes, 0.7 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 34 rules in 0.2 ms: 20 mask keys (1 dense, 1 deep at most), 43 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 21 rules in 0.3 ms: 23 mask keys (1 dense, 1 deep at most), 4132 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 43 rules in 4.7 ms: 48 mask keys (6 dense, 1 deep at most), 7939 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 23 rules in 0.2 ms: 14 mask keys (0 dense, 1 deep at most), 801 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 39 rules in 0.5 ms: 48 mask keys (3 dense, 1 deep at most), 6585 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 29 rules in 0.7 ms: 77 mask keys (9 dense, 1 deep at most), 6849 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 7 rules in 0.2 ms: 2 mask keys (1 dense, 1 deep at most), 3917 remainder nodes, 0.1 MiB
+I gbnf: compiled a grammar of 74 rules in 0.4 ms: 16 mask keys (3 dense, 1 deep at most), 438 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 5 rules in 0.1 ms: 3 mask keys (0 dense, 1 deep at most), 127 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 11 rules in 0.1 ms: 1 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 57 rules in 0.3 ms: 23 mask keys (4 dense, 1 deep at most), 553 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 6 rules in 0.1 ms: 9 mask keys (0 dense, 1 deep at most), 623 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 8 rules in 0.1 ms: 1 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 35 rules in 0.3 ms: 27 mask keys (1 dense, 1 deep at most), 2955 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 11 rules in 0.1 ms: 5 mask keys (0 dense, 1 deep at most), 53 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 30 rules in 1.1 ms: 48 mask keys (3 dense, 1 deep at most), 15606 remainder nodes, 0.4 MiB
+W gbnf: token 362 cannot be accepted: the grammar's parse forks into more than 16384 stacks or 262144 stack elements at one position; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 31 rules in 1.2 ms: 39 mask keys (6 dense, 1 deep at most), 20413 remainder nodes, 0.6 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 8 rules in 0.4 ms: 16 mask keys (1 dense, 1 deep at most), 6739 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 33 rules in 0.3 ms: 2 mask keys (1 dense, 1 deep at most), 3917 remainder nodes, 0.1 MiB
+I gbnf: compiled a grammar of 21 rules in 0.5 ms: 11 mask keys (3 dense, 1 deep at most), 7244 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 17 rules in 0.8 ms: 41 mask keys (5 dense, 1 deep at most), 13053 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 35 rules in 2.4 ms: 68 mask keys (8 dense, 2 deep at most), 11225 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 39 rules in 1.4 ms: 31 mask keys (4 dense, 1 deep at most), 18698 remainder nodes, 0.5 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 11 rules in 0.5 ms: 12 mask keys (3 dense, 1 deep at most), 11015 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 33 rules in 0.1 ms: 9 mask keys (1 dense, 1 deep at most), 232 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 8 rules in 0.1 ms: 23 mask keys (0 dense, 1 deep at most), 170 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 36 rules in 1.2 ms: 87 mask keys (7 dense, 1 deep at most), 11994 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 9 rules in 0.2 ms: 2 mask keys (1 dense, 1 deep at most), 286 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 31 rules in 0.9 ms: 57 mask keys (2 dense, 1 deep at most), 13228 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 29 rules in 0.4 ms: 13 mask keys (1 dense, 1 deep at most), 6679 remainder nodes, 0.2 MiB
+I gbnf: compiled a grammar of 6 rules in 0.1 ms: 12 mask keys (1 dense, 1 deep at most), 36 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 35 rules in 0.5 ms: 35 mask keys (2 dense, 1 deep at most), 7871 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 98 rules in 0.4 ms: 35 mask keys (1 dense, 1 deep at most), 2978 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+    random: 34 grammars, 1104 masks compared (79 at a split character, 69 dead), 1536 accepts; 101 beyond the oracle's bound, 0 beyond the engine's
+      refused 2: left recursion through rule 'r0'
+      refused 3: left recursion through rule 'r1'
+      refused 4: left recursion through rule 'r2'
+      refused 1: left recursion through rule 'r3'
+      refused 5: left recursion through rule 'r4'
+      refused 1: left recursion through rule 'r5'
+    34 of 50 random grammars compiled
+  ok   gbnf_random_grammars_1_to_50_agree_with_the_oracle (2.75 s)
+I gbnf: compiled a grammar of 51 rules in 0.9 ms: 11 mask keys (3 dense, 1 deep at most), 14280 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 40 rules in 0.1 ms: 4 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 14 rules in 0.5 ms: 27 mask keys (2 dense, 1 deep at most), 10336 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 106 rules in 3.0 ms: 156 mask keys (22 dense, 1 deep at most), 46978 remainder nodes, 1.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 30 rules in 0.4 ms: 29 mask keys (1 dense, 1 deep at most), 4234 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 18 rules in 0.5 ms: 38 mask keys (1 dense, 1 deep at most), 13110 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 16 rules in 0.2 ms: 3 mask keys (1 dense, 1 deep at most), 851 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 52 rules in 1.5 ms: 79 mask keys (5 dense, 1 deep at most), 19925 remainder nodes, 0.5 MiB
+I gbnf: compiled a grammar of 37 rules in 0.2 ms: 8 mask keys (0 dense, 1 deep at most), 9 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 71 rules in 1.7 ms: 105 mask keys (10 dense, 1 deep at most), 11771 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 62 rules in 2.2 ms: 113 mask keys (11 dense, 1 deep at most), 27692 remainder nodes, 0.8 MiB
+I gbnf: compiled a grammar of 19 rules in 0.1 ms: 2 mask keys (0 dense, 1 deep at most), 2 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 44 rules in 1.5 ms: 58 mask keys (7 dense, 1 deep at most), 21682 remainder nodes, 0.6 MiB
+I gbnf: compiled a grammar of 86 rules in 4.7 ms: 123 mask keys (9 dense, 1 deep at most), 36719 remainder nodes, 1.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 39 rules in 1.1 ms: 78 mask keys (5 dense, 1 deep at most), 13837 remainder nodes, 0.4 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 22 rules in 0.1 ms: 5 mask keys (0 dense, 1 deep at most), 116 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 65 rules in 1.6 ms: 25 mask keys (8 dense, 1 deep at most), 29999 remainder nodes, 0.8 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 5 rules in 0.1 ms: 5 mask keys (1 dense, 1 deep at most), 174 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 17 rules in 0.1 ms: 6 mask keys (0 dense, 1 deep at most), 35 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 42 rules in 49.8 ms: 59 mask keys (11 dense, 1 deep at most), 18587 remainder nodes, 0.5 MiB
+E gbnf: no mask for this position: the grammar's parse forks into more than 16384 stacks or 262144 stack elements at one position; the request cannot be continued
+E gbnf: no mask for this position: the grammar's parse forks into more than 16384 stacks or 262144 stack elements at one position; the request cannot be continued
+E gbnf: no mask for this position: the grammar's parse forks into more than 16384 stacks or 262144 stack elements at one position; the request cannot be continued
+I gbnf: compiled a grammar of 9 rules in 0.4 ms: 12 mask keys (0 dense, 1 deep at most), 24 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 8 rules in 0.0 ms: 4 mask keys (0 dense, 1 deep at most), 52 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 31 rules in 0.4 ms: 20 mask keys (3 dense, 1 deep at most), 4287 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 21 rules in 0.5 ms: 49 mask keys (1 dense, 1 deep at most), 3915 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 14 rules in 0.2 ms: 14 mask keys (0 dense, 1 deep at most), 181 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 40 rules in 1.8 ms: 56 mask keys (14 dense, 1 deep at most), 30945 remainder nodes, 0.8 MiB
+I gbnf: compiled a grammar of 39 rules in 1.1 ms: 42 mask keys (6 dense, 1 deep at most), 21306 remainder nodes, 0.6 MiB
+I gbnf: compiled a grammar of 72 rules in 2.8 ms: 159 mask keys (13 dense, 1 deep at most), 33444 remainder nodes, 0.9 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 11 rules in 0.1 ms: 3 mask keys (0 dense, 1 deep at most), 4 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 7 rules in 0.2 ms: 11 mask keys (3 dense, 1 deep at most), 836 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 6 rules in 0.3 ms: 10 mask keys (1 dense, 1 deep at most), 4066 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 4 rules in 0.2 ms: 5 mask keys (0 dense, 1 deep at most), 2358 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 26 rules in 0.5 ms: 38 mask keys (2 dense, 1 deep at most), 5642 remainder nodes, 0.2 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 65 rules in 0.5 ms: 23 mask keys (3 dense, 1 deep at most), 4707 remainder nodes, 0.1 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 5 rules in 0.0 ms: 6 mask keys (0 dense, 1 deep at most), 69 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+E gbnf: the grammar has no live parse left; the request cannot be continued
+I gbnf: compiled a grammar of 15 rules in 0.1 ms: 1 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+I gbnf: compiled a grammar of 33 rules in 0.6 ms: 33 mask keys (3 dense, 1 deep at most), 11455 remainder nodes, 0.3 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+    random: 37 grammars, 1564 masks compared (115 at a split character, 60 dead), 2456 accepts; 211 beyond the oracle's bound, 0 beyond the engine's
+      refused 2: left recursion through rule 'r1'
+      refused 2: left recursion through rule 'r2'
+      refused 1: left recursion through rule 'r2_32'
+      refused 2: left recursion through rule 'r3'
+      refused 1: left recursion through rule 'r3_27'
+      refused 1: left recursion through rule 'r4'
+      refused 4: left recursion through rule 'r5'
+    37 of 50 random grammars compiled
+  ok   gbnf_random_grammars_201_to_250_agree_with_the_oracle (17.59 s)
+I gbnf: compiled a grammar of 1 rules in 0.4 ms: 3 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+E gbnf: the grammar has no live parse left; the request cannot be continued
+  ok   gbnf_dead_and_complete_states_agree_with_the_oracle
+    refused: the tokens admissible inside rule 'root' depend on more than 12 levels of the parse stack at one position, so its masks cannot be precomputed; restructure it so that what can follow it is decided closer to it
+  ok   gbnf_a_grammar_whose_masks_need_unbounded_context_is_refused
+I gbnf: compiled a grammar of 62 rules in 0.5 ms: 45 mask keys (0 dense, 1 deep at most), 194 remainder nodes, 0.0 MiB
+    SKIP number bounds: the converter does not enforce minimum/maximum on "number"
+I gbnf: compiled a grammar of 24 rules in 0.2 ms: 31 mask keys (0 dense, 1 deep at most), 40 remainder nodes, 0.0 MiB
+E gbnf: the string ""b"" is not admitted by the grammar
+E gbnf: the string "2" is not admitted by the grammar
+E gbnf: the string "true" is not admitted by the grammar
+I gbnf: compiled a grammar of 23 rules in 0.2 ms: 28 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the string ""abd"" is not admitted by the grammar
+E gbnf: the string ""ab"" is not admitted by the grammar
+E gbnf: the string "1" is not admitted by the grammar
+I gbnf: compiled a grammar of 43 rules in 0.3 ms: 45 mask keys (0 dense, 1 deep at most), 148 remainder nodes, 0.0 MiB
+E gbnf: the string "1.5" is not admitted by the grammar
+E gbnf: the string ""x"" is not admitted by the grammar
+E gbnf: the string "true" is not admitted by the grammar
+I gbnf: compiled a grammar of 27 rules in 0.2 ms: 32 mask keys (0 dense, 1 deep at most), 52 remainder nodes, 0.0 MiB
+E gbnf: the string "-6" is not admitted by the grammar
+E gbnf: the string "-10" is not admitted by the grammar
+E gbnf: the string "121" is not admitted by the grammar
+E gbnf: the string "130" is not admitted by the grammar
+E gbnf: the string "1000" is not admitted by the grammar
+E gbnf: the string "1.0" is not admitted by the grammar
+I gbnf: compiled a grammar of 39 rules in 0.2 ms: 39 mask keys (0 dense, 1 deep at most), 102 remainder nodes, 0.0 MiB
+E gbnf: the string "0" is not admitted by the grammar
+E gbnf: the string "-1" is not admitted by the grammar
+I gbnf: compiled a grammar of 27 rules in 0.3 ms: 33 mask keys (4 dense, 1 deep at most), 495 remainder nodes, 0.0 MiB
+E gbnf: the string ""a"" is not admitted by the grammar
+E gbnf: the string ""abcde"" is not admitted by the grammar
+E gbnf: the string """" is not admitted by the grammar
+I gbnf: compiled a grammar of 29 rules in 0.2 ms: 28 mask keys (1 dense, 1 deep at most), 95 remainder nodes, 0.0 MiB
+E gbnf: the string ""a-1"" is not admitted by the grammar
+E gbnf: the string ""ab-"" is not admitted by the grammar
+E gbnf: the string ""abcdef-1"" is not admitted by the grammar
+E gbnf: the string ""AB-1"" is not admitted by the grammar
+E gbnf: the string ""ab1"" is not admitted by the grammar
+I gbnf: compiled a grammar of 31 rules in 0.3 ms: 29 mask keys (2 dense, 1 deep at most), 780 remainder nodes, 0.0 MiB
+E gbnf: the string ""abc"" is not admitted by the grammar
+E gbnf: the string """" is not admitted by the grammar
+I gbnf: compiled a grammar of 28 rules in 0.3 ms: 30 mask keys (2 dense, 1 deep at most), 778 remainder nodes, 0.0 MiB
+E gbnf: the string ""zab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 28 rules in 0.3 ms: 30 mask keys (2 dense, 1 deep at most), 778 remainder nodes, 0.0 MiB
+E gbnf: the string ""abz"" is not admitted by the grammar
+I gbnf: compiled a grammar of 30 rules in 0.3 ms: 30 mask keys (2 dense, 1 deep at most), 776 remainder nodes, 0.0 MiB
+E gbnf: the string ""a"" is not admitted by the grammar
+I gbnf: compiled a grammar of 30 rules in 0.3 ms: 31 mask keys (2 dense, 1 deep at most), 778 remainder nodes, 0.0 MiB
+E gbnf: the string ""y"" is not admitted by the grammar
+I gbnf: compiled a grammar of 36 rules in 0.6 ms: 32 mask keys (2 dense, 1 deep at most), 2936 remainder nodes, 0.1 MiB
+E gbnf: the string "["x"]" is not admitted by the grammar
+E gbnf: the string "["1","x"]" is not admitted by the grammar
+I gbnf: compiled a grammar of 33 rules in 0.4 ms: 33 mask keys (3 dense, 1 deep at most), 1164 remainder nodes, 0.1 MiB
+E gbnf: the string """" is not admitted by the grammar
+E gbnf: the string ""   "" is not admitted by the grammar
+I gbnf: compiled a grammar of 38 rules in 0.7 ms: 36 mask keys (3 dense, 1 deep at most), 3320 remainder nodes, 0.1 MiB
+E gbnf: the string "["  "]" is not admitted by the grammar
+E gbnf: the string "["a","  "]" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 28 mask keys (0 dense, 1 deep at most), 30 remainder nodes, 0.0 MiB
+E gbnf: the string ""2026-1-19"" is not admitted by the grammar
+E gbnf: the string ""20x6-10-19"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 26 mask keys (1 dense, 1 deep at most), 66 remainder nodes, 0.0 MiB
+E gbnf: the string ""a b"" is not admitted by the grammar
+E gbnf: the string """" is not admitted by the grammar
+I gbnf: compiled a grammar of 29 rules in 0.2 ms: 29 mask keys (0 dense, 1 deep at most), 68 remainder nodes, 0.0 MiB
+E gbnf: the string ""3."" is not admitted by the grammar
+E gbnf: the string ""x"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 30 mask keys (0 dense, 1 deep at most), 151 remainder nodes, 0.0 MiB
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 28 rules in 0.2 ms: 30 mask keys (1 dense, 1 deep at most), 482 remainder nodes, 0.0 MiB
+E gbnf: the string ""a"" is not admitted by the grammar
+I gbnf: compiled a grammar of 27 rules in 0.2 ms: 30 mask keys (1 dense, 1 deep at most), 474 remainder nodes, 0.0 MiB
+E gbnf: the string ""7"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.2 ms: 28 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.1 ms: 28 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.2 ms: 26 mask keys (0 dense, 1 deep at most), 82 remainder nodes, 0.0 MiB
+E gbnf: the string ""b"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.1 ms: 26 mask keys (0 dense, 1 deep at most), 41 remainder nodes, 0.0 MiB
+E gbnf: the string ""b"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.1 ms: 26 mask keys (0 dense, 1 deep at most), 41 remainder nodes, 0.0 MiB
+E gbnf: the string ""b"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.2 ms: 26 mask keys (1 dense, 1 deep at most), 306 remainder nodes, 0.0 MiB
+E gbnf: the string ""+"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.1 ms: 26 mask keys (0 dense, 1 deep at most), 24 remainder nodes, 0.0 MiB
+E gbnf: the string ""a"" is not admitted by the grammar
+I gbnf: compiled a grammar of 30 rules in 0.3 ms: 31 mask keys (2 dense, 1 deep at most), 776 remainder nodes, 0.0 MiB
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 27 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the string ""b"" is not admitted by the grammar
+E gbnf: the string ""\\"" is not admitted by the grammar
+I gbnf: compiled a grammar of 26 rules in 0.2 ms: 28 mask keys (0 dense, 1 deep at most), 50 remainder nodes, 0.0 MiB
+E gbnf: the string ""t"" is not admitted by the grammar
+E gbnf: the string ""a b"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 33 mask keys (0 dense, 1 deep at most), 32 remainder nodes, 0.0 MiB
+E gbnf: the string ""f"" is not admitted by the grammar
+E gbnf: the string ""v"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 31 mask keys (0 dense, 1 deep at most), 24 remainder nodes, 0.0 MiB
+E gbnf: the string ""0"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 29 mask keys (0 dense, 1 deep at most), 29 remainder nodes, 0.0 MiB
+E gbnf: the string ""atb"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 26 mask keys (0 dense, 1 deep at most), 60 remainder nodes, 0.0 MiB
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.1 ms: 28 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 25 rules in 0.2 ms: 28 mask keys (0 dense, 1 deep at most), 151 remainder nodes, 0.0 MiB
+E gbnf: the string ""n"" is not admitted by the grammar
+I gbnf: compiled a grammar of 27 rules in 0.2 ms: 30 mask keys (1 dense, 1 deep at most), 474 remainder nodes, 0.0 MiB
+E gbnf: the string """" is not admitted by the grammar
+I gbnf: compiled a grammar of 26 rules in 0.2 ms: 29 mask keys (0 dense, 1 deep at most), 29 remainder nodes, 0.0 MiB
+E gbnf: the string ""a\tttb"" is not admitted by the grammar
+E gbnf: the string ""ab"" is not admitted by the grammar
+I gbnf: compiled a grammar of 26 rules in 0.2 ms: 32 mask keys (0 dense, 1 deep at most), 20 remainder nodes, 0.0 MiB
+E gbnf: the string ""x\u000b"" is not admitted by the grammar
+I gbnf: compiled a grammar of 26 rules in 0.2 ms: 27 mask keys (0 dense, 1 deep at most), 29 remainder nodes, 0.0 MiB
+E gbnf: the string ""\t"" is not admitted by the grammar
+I gbnf: compiled a grammar of 28 rules in 0.2 ms: 30 mask keys (1 dense, 1 deep at most), 477 remainder nodes, 0.0 MiB
+E gbnf: the string ""a\nb"" is not admitted by the grammar
+I gbnf: compiled a grammar of 28 rules in 0.2 ms: 30 mask keys (1 dense, 1 deep at most), 380 remainder nodes, 0.0 MiB
+E gbnf: the string ""\t"" is not admitted by the grammar
+E gbnf: the string ""a b"" is not admitted by the grammar
+I gbnf: compiled a grammar of 33 rules in 0.3 ms: 33 mask keys (6 dense, 1 deep at most), 191 remainder nodes, 0.0 MiB
+E gbnf: the string ""a@b"" is not admitted by the grammar
+E gbnf: the string ""a b@c.io"" is not admitted by the grammar
+I gbnf: compiled a grammar of 45 rules in 0.6 ms: 44 mask keys (0 dense, 1 deep at most), 2290 remainder nodes, 0.1 MiB
+E gbnf: the string "[]" is not admitted by the grammar
+E gbnf: the string "[1,2,3,4]" is not admitted by the grammar
+E gbnf: the string "["a"]" is not admitted by the grammar
+I gbnf: compiled a grammar of 51 rules in 0.8 ms: 62 mask keys (4 dense, 1 deep at most), 2779 remainder nodes, 0.1 MiB
+E gbnf: the string "{"b":"x"}" is not admitted by the grammar
+E gbnf: the string "{}" is not admitted by the grammar
+E gbnf: the string "{"a":"1"}" is not admitted by the grammar
+I gbnf: compiled a grammar of 45 rules in 0.6 ms: 47 mask keys (0 dense, 1 deep at most), 2290 remainder nodes, 0.1 MiB
+E gbnf: the string "{"a":1,"c":2}" is not admitted by the grammar
+E gbnf: the string "{"c":2}" is not admitted by the grammar
+I gbnf: compiled a grammar of 42 rules in 0.6 ms: 46 mask keys (0 dense, 1 deep at most), 2248 remainder nodes, 0.1 MiB
+E gbnf: the string "{"x":-1}" is not admitted by the grammar
+E gbnf: the string "{}" is not admitted by the grammar
+I gbnf: compiled a grammar of 62 rules in 0.3 ms: 45 mask keys (0 dense, 1 deep at most), 194 remainder nodes, 0.0 MiB
+E gbnf: the string ""1"" is not admitted by the grammar
+E gbnf: the string ".5" is not admitted by the grammar
+I gbnf: compiled a grammar of 24 rules in 0.2 ms: 31 mask keys (0 dense, 1 deep at most), 22 remainder nodes, 0.0 MiB
+E gbnf: the string "1" is not admitted by the grammar
+E gbnf: the string "null" is not admitted by the grammar
+E gbnf: the string ""true"" is not admitted by the grammar
+  ok   json_schema_grammars_admit_exactly_their_instances
+41715 check(s) over 7 case(s) in 22.29 s, 22.26 s of CPU
+slowest: gbnf_random_grammars_201_to_250_agree_with_the_oracle 17.59 s, gbnf_random_grammars_1_to_50_agree_with_the_oracle 2.75 s, gbnf_qwen3_8_tool_call_grammars_agree_with_the_oracle 1.30 s
+  FAIL the binary spent 22.26 s of CPU, over its budget of 10 s (RAD_TEST_CPU_BUDGET)
+
+      Start  46: quant_ggml_test
+83/88 Test  #46: quant_ggml_test ..................   Passed    6.17 sec
+      Start  51: relayout_parity_test
+84/88 Test  #51: relayout_parity_test .............   Passed    0.46 sec
+85/88 Test  #66: tokenizer_test ...................***Failed   22.70 sec
+  ok   splits_match_the_reference_splitters (0.76 s)
+  ok   splits_match_the_reference_on_every_digit_run_and_whitespace_run
+  ok   long_s_is_a_contraction_under_case_folding_as_in_huggingface
+  ok   the_category_tables_differ_only_by_what_unicode_16_assigned
+  ok   the_kimi_k2_entry_is_the_real_pattern
+E vocab: the Split pattern '\d{1,3}(?=(?:\d{3})*\b)' is outside the supported regex dialect: a lookaround wider than one codepoint at byte 7 ('(?=(?:\d{3})*\b)'). There is no fallback matcher; a pattern that does not compile does not load.
+  ok   a_wide_lookahead_is_refused_where_the_reference_approximated_it (1.37 s)
+I vocab: end-of-generation also on <|end|>=12 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+W tokenizer: no token for byte-level piece '<'
+W tokenizer: no token for byte-level piece '|'
+W tokenizer: no token for byte-level piece 'e'
+W tokenizer: no token for byte-level piece 'n'
+W tokenizer: no token for byte-level piece 'd'
+W tokenizer: no token for byte-level piece '|'
+W tokenizer: no token for byte-level piece '>'
+W tokenizer: no token for byte-level piece '<'
+W tokenizer: no token for byte-level piece '|'
+W tokenizer: no token for byte-level piece 'e'
+W tokenizer: no token for byte-level piece 'n'
+W tokenizer: no token for byte-level piece 'd'
+W tokenizer: no token for byte-level piece '|'
+W tokenizer: no token for byte-level piece '>'
+  ok   bpe_merges_as_worked_out_by_hand
+  ok   bpe_ignore_merges_takes_a_whole_pretoken
+  ok   bpe_ignore_merges_leaves_unparsed_control_tokens_as_text
+  ok   byte_fallback_and_unk_follow_the_declared_chain
+  ok   linear_and_heap_merges_agree (0.13 s)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+I vocab: end-of-generation also on <|im_end|>=282 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+  ok   the_encoder_matches_the_reference_on_trained_vocabularies (18.89 s)
+I vocab: end-of-generation also on <|end|>=12 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+W tokenizer: no token for byte-level piece '<'
+W tokenizer: no token for byte-level piece '|'
+W tokenizer: no token for byte-level piece 'e'
+W tokenizer: no token for byte-level piece 'n'
+W tokenizer: no token for byte-level piece 'd'
+W tokenizer: no token for byte-level piece '|'
+W tokenizer: no token for byte-level piece '>'
+  ok   a_text_that_opens_with_bos_gets_no_second_one
+  ok   special_tokens_are_claimed_by_priority
+  ok   nfc_between_boundaries_is_the_whole_text_normalised (0.97 s)
+I vocab: end-of-generation also on <|im_end|>=1457 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+  ok   the_cache_returns_what_encoding_returns_cold_warm_and_evicted
+  ok   the_cache_serves_a_growing_conversation_exactly
+  ok   the_cache_is_exact_under_concurrent_encodes
+  ok   character_class_pre_tokenizers_match_the_reference (0.34 s)
+I vocab: end-of-generation also on <|im_end|>=557 (a control token the container declares neither as eos nor eot; without this a turn ending on it runs on)
+    1468 of 2000 streams met their stop string
+  ok   a_stream_emits_well_formed_final_text_and_never_a_stop_string
+  ok   a_byte_fallback_stream_holds_bytes_until_the_character_is_whole
+I gbnf: compiled a grammar of 1 rules in 0.2 ms: 11 mask keys (0 dense, 1 deep at most), 0 remainder nodes, 0.0 MiB
+  ok   the_token_view_gives_grammars_the_decoded_bytes
+  ok   an_added_whitespace_run_decodes_to_spaces_as_huggingface_does
+907 check(s) over 23 case(s) in 22.67 s, 22.74 s of CPU
+slowest: the_encoder_matches_the_reference_on_trained_vocabularies 18.89 s, a_wide_lookahead_is_refused_where_the_reference_approximated_it 1.37 s, nfc_between_boundaries_is_the_whole_text_normalised 0.97 s
+  FAIL the binary spent 22.74 s of CPU, over its budget of 20 s (RAD_TEST_CPU_BUDGET)
+
+86/88 Test  #81: avx_check ........................   Passed   22.15 sec
+87/88 Test  #87: r4d_emu_lora .....................   Passed   46.61 sec
+88/88 Test  #92: r4d_emu_moemx ....................   Passed   57.55 sec
+
+92% tests passed, 7 tests failed out of 88
+
+Label Time Summary:
+fast       = 308.00 sec*proc (88 tests)
+r4d_emu    =  75.79 sec*proc (10 tests)
+unit       = 132.23 sec*proc (70 tests)
+
+Total Test time (real) =  73.88 sec
+
+The following tests FAILED:
+	 25 - gbnf_test_shard2 (Failed)
+	 26 - gbnf_test_shard3 (Failed)
+	 33 - images_test (Failed)
+	 35 - kbench_mutant_test (Failed)
+	 36 - kbench_test (Failed)
+	 66 - tokenizer_test (Failed)
+	 72 - videos_test (Failed)
+Errors while running CTest
+real 73.91
+user 654.57
+sys 54.15
