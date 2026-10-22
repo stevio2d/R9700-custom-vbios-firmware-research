@@ -30,6 +30,14 @@ The capture host has four AMD SMI-identified XFX-subsystem R9700 functions. Firm
 
 The [host record](inventory/host_checks.md) preserves these attempts. No firmware write or custom-image acceptance test was attempted, so there is no failed-flash or successful-flash result to report.
 
+## Linux ROM-reading tool: R9700flash-dump
+
+We created **[R9700flash-dump](flashing/docs/r9700flash-dump.md)**, a read-only Linux utility that lists AMD display devices and reads the configured **2 MiB ROM address space** on supported Navi48/R9700 revisions. It uses the GPU's `ROM_INDEX`/`ROM_DATA` registers, providing a read path when the Linux PCI sysfs ROM read fails. The [source](flashing/src/r9700flash_dump_main.cpp) is included; see the [build and usage guide](flashing/README.md).
+
+**What worked:** it captured the ROM address space on the XFX R9700 at `0000:03:00.0`. One [2 MiB capture](bios/xfx-r9700-0000-03-00-0/original/stock-spi-capture.rom) is retained, with two complete, byte-identical embedded option-ROM chains. Unlike the ACPI VFCT-derived software dump, this uses the GPU ROM-register read path.
+
+**Limits:** it requires a supported device initialized by `amdgpu` and permission to map its PCI register BAR, normally root. It does not write, erase or unlock flash. Physical chip capacity and complete coverage have not been independently verified, so the capture is not yet a qualified full-chip recovery backup. This tool is separate from the [native reader core](ports/r9700-reader/README.md), whose production physical `identify`/`backup` commands remain disabled.
+
 ## What we tested: runtime performance
 
 These experiments used Qwen3.8-Flash-Next on a four-GPU tensor-parallel service (TP4). They tested runtime software with unchanged firmware and drivers. Their results do not validate a custom VBIOS.
@@ -88,6 +96,7 @@ Future live hardware capture or identification requires separate explicit task a
 | [ASUS analysis](bios/vendor-packages/asus/ASUS_ROM_ANALYSIS.md) | Package/payload provenance, field maps, static code analysis and unresolved bytes |
 | [Experiments](experiments/README.md) and [test log](inventory/test_log.csv) | Actual workload runs, positive/negative findings and retained logs |
 | [BIOS inventory guide](bios/README.md) | Card manifests, preserved acquisitions and unassociated vendor packages |
+| [Linux ROM-reading tool](flashing/docs/r9700flash-dump.md) | `R9700flash-dump` usage, ROM-register read path and capture limitations |
 | [Flashing guide](flashing/README.md) and [native reader](ports/r9700-reader/README.md) | Tool capabilities, disabled physical operations and recovery prerequisites |
 | [Source index](sources/README.md) | Three byte-preserved supplied originals, hashes and provenance |
 | `tools/` and `tests/` | Offline analysis helpers and repository verification |
